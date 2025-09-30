@@ -3,7 +3,7 @@
 !Version: 2025-10-01 00:30(GMT+8)
 !Homepage: https://github.com/nuomiiiii/Adguard-Rules
 !AdGuard Home Exclusive
-!Total lines: 92751
+!Total lines: 92750
 
 
 #———————ad rules———————
@@ -89640,7 +89640,7 @@
 ||amdcopen.m.taobao.com^  #阿里云内置域名解析服务
 ||eco.taobao.com^
 ||openacs.m.taobao.com^
-||msgacs.m.taobao.com^
+#||msgacs.m.taobao.com^  #影响淘宝客户端聊天？
 ||acs4public.m.taobao.com^
 ||accscdn4public.m.taobao.com^
 ||qh-material.taobao.com^  #莉景天气开屏广告
