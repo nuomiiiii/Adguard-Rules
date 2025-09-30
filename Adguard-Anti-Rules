@@ -1,7 +1,7 @@
 !Title: Adguard 拦截规则
 !Version: 2025-09-30 21:28:40(GMT+8)
 !Homepage: https://github.com/nuomiiiii/nuomi-ads
-!Total lines: XXXXX
+!Total lines: 5,065
 
 #———————DNS劫持———————
 #DNS，可能会导致hosts失效
