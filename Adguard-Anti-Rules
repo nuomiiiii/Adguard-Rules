@@ -56920,10 +56920,8 @@
 ||oppersianor.com^
 ||oppfamily.shop^
 ||adsfs.oppomobile.com^
-||httpdns.ocloud.oppomobile.com^
 ||u.oppomobile.com^
 ||adsfs-in.oppomobile.com^
-||httpdns.push.oppomobile.com^
 ||api.open.oppomobile.com^
 ||opportunitysearch.net^
 ||opposecurves.life^
@@ -90441,13 +90439,8 @@
 ||log.avlyun.sec.intl.miui.com^
 ||update.avlyun.sec.miui.com^
 #禁用后将无法云扫描病毒
-127.0.0.1 etl-xlmc-ssl.sandai.net
-127.0.0.1 cn.app.chat.xiaomi.net
-#屏蔽系统更新
-||update.miui.com^
-#小米rom下载加速（备用IP香港163.181.35.44，182.239.104.89，台北47.246.36.217，47.246.37.220）
-47.246.37.220 bigota.d.miui.com^
-47.246.37.220 hugeota.d.miui.com^
+||etl-xlmc-ssl.sandai.net
+||cn.app.chat.xiaomi.net
 #快应用
 ||qr.quickapp.cn^
 ||qrcdn.quickapp.cn^
