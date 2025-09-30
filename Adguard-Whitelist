@@ -3,7 +3,7 @@
 !Version: 2025-09-30 23:59(GMT+8)
 !Homepage: https://github.com/nuomiiiii/Adguard-Rules
 !AdGuard Home Exclusive
-!Total lines: 113
+!Total lines: 114
 
 @@||im.ele.me^ #饿了么聊天界面
 @@||ad.azure.com^
