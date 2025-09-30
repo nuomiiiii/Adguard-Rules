@@ -1,11 +1,11 @@
 [Adguard Whitelist]
 !Title: nuomi whitelist
-!Version: 2025-10-01 01:00(GMT+8)
+!Version: 2025-10-01 01:05(GMT+8)
 !Homepage: https://github.com/nuomiiiii/Adguard-Rules
 !AdGuard Home Exclusive
 !Total lines: 114
 
-@@im.ele.me #饿了么聊天界面
+@@||im.ele.me
 @@||ad.azure.com^
 @@||ad.ext.azure.com^
 @@||ads.taboola.com^
