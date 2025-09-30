@@ -1,6 +1,6 @@
 !Title: Adguard 拦截规则
 !Version: 2025-09-30 23:59(GMT+8)
-!Homepage: https://github.com/nuomiiiii/nuomi-ads
+!Homepage: https://github.com/nuomiiiii/Adguard-Rules
 !Total lines: 5066
 
 @@||ad.azure.com^
