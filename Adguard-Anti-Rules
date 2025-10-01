@@ -1,9 +1,9 @@
 [Adguard Anti Rules]
 !Title: nuomi anti rules
-!Version: 2025-10-01 00:30(GMT+8)
+!Version: 2025-10-01 11:17(GMT+8)
 !Homepage: https://github.com/nuomiiiii/Adguard-Rules
 !AdGuard Home Exclusive
-!Total lines: 92750
+!Total lines: 92749
 
 
 #———————ad rules———————
@@ -88785,7 +88785,7 @@
 #拼多多广告
 ||lp.pinduoduo.com^
 #饿了么
-||elemecdn.com^
+#||elemecdn.com^ #影响正常使用？
 ||fuss10.elemecdn.com^
 ||www1.elecfans.com^
 ||nr-op.elemecdn.com^
