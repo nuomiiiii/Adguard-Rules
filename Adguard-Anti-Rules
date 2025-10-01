@@ -6,7 +6,7 @@
 !Total lines: 92749
 
 
-#———————ad rules———————
+# >>>>>>>>>>>>>>> Ad Rules <<<<<<<<<<<<<<
 /^(\S+\.)?9377[a-z0-9]{2}\.com$/$dnstype=A
 /^(\S+\.)?ad(s?[\d]+|m|s)?\.[0-9\-a-z]+\./$denyallow=nucdn.net|azureedge.net|alibabacorp.com|alibabadns.com
 /^(\S+\.)?advert/$denyallow=alibabacorp.com|alibabadns.com|sm.cn|tanx.com|alibaba-inc.com|tmall.com|taobao.com
@@ -88553,8 +88553,9 @@
 ||zzyxhvqjjtgxj.online^
 ||a8.zzz-land.com^
 ||zzzjvqzmkayve.top^
-#———————DNS劫持———————
-#DNS，可能会导致hosts失效
+
+# >>>>>>>>>>>>>>> DNS劫持 <<<<<<<<<<<<<<
+# > DNS，可能会导致hosts失效
 ||httpdns.alicdn.com^
 ||dns.qq.com^
 ||doh.dns.apple.com^
@@ -88584,8 +88585,9 @@
 ||lofter.httpdns.c.163.com^
 ||music.httpdns.c.163.com^
 ||httpdns.immomo.com^
-#———————社交类———————
-#QQ
+
+# >>>>>>>>>>>>>>> 社交类 <<<<<<<<<<<<<<
+# > QQ
 ||iv6.gtimg.cn^  #个性字体（副作用未知）
 ||gxh.material.qq.com^  #气泡、头像挂件，误伤夜间模式不能下载
 #||downv6.qq.com^  #QQ下载安装包，但导致一些网页下载不了东西
@@ -88593,7 +88595,7 @@
 ||world.qpic.cn^  #小世界的图片，视频的封面图。
 ||tianshu.gtimg.cn^  #顶部横幅广告图片，误杀签到打卡后的图片
 ||minigame.gtimg.cn^  #QQ微信小游戏图标
-#微信公众号(只禁③广告位还在只是不显示广告图片&视频)
+# > 微信公众号(只禁③广告位还在只是不显示广告图片&视频)
 ||wxa.wxs.qq.com^
 ||wxsnsdy.wxs.qq.com^
 ||wxsnsdythumb.wxs.qq.com^
@@ -88605,7 +88607,7 @@
 ||dns.weixin.qq.com^
 ||dns.weixin.qq.com^.cn^
 ||dnstest.weixin.qq.com^
-#微博（前3顺手抓的未知，资讯流广告和正文一起的一损俱损，④开屏，⑥14.7后新增的视频开屏广告，⑤xml配置了很多加载广告，副作用未知）
+# > 微博（前3顺手抓的未知，资讯流广告和正文一起的一损俱损，④开屏，⑥14.7后新增的视频开屏广告，⑤xml配置了很多加载广告，副作用未知）
 ||admimage.biz.weibo.com^
 ||kadmimage.biz.weibo.com^
 ||down.apps.sina.cn^
@@ -88630,14 +88632,15 @@
 #||gateway2-tcp-spam.soulapp.cn^
 #||media-service.soulapp.cn^
 #||media-service-source.soulapp.cn^
-#blued个人界面广告，主页推荐直播
+# > blued个人界面广告，主页推荐直播
 ||social.blued.cn^
-#探探(①②追踪)
+# > 探探(①②追踪)
 ||client-tracking.tantanapp.com^
 ||client-tracking.tantanapp.com^.ctc^
 ||httpdns.tantanapp.com^
-#——————阅读小说类——————
-#七猫小说
+
+# >>>>>>>>>>>>>>> 阅读小说类 <<<<<<<<<<<<<<
+# > 七猫小说
 ||api.jietuhb.com^  #摇一摇广告
 ||pgdt.ugdtimg.com^  #图片开屏广告
 ||cdn-new-ad.wtzw.com^
@@ -88650,51 +88653,52 @@
 ||ad-drs-ipv6.52qumao.com^
 ||api-adx.52qumao.com^  #v7.73(可能更早)发现新增广告，新开屏广告见优比客思
 ||api-cfg.52qumao.com^
-#起点开屏广告(①)，误伤精选_漫画_小编精选和周冠军的封面图，影响超小。
+# > 起点开屏广告(①)，误伤精选_漫画_小编精选和周冠军的封面图，影响超小。
 ||bossaudioandcom^ic-1252317822.image.myqcloud.com^
 #||magev6.if.qidian.com^ 备用开屏
 ||a.game.qidian.com^
 ||abc.if.qidian.com^
 ||dwtrack.qidian.com^
 ||tongji.qidian.com^
-#掌阅
+# > 掌阅
 ||ad.zhangyue.com^
 ||img.ad.zhangyue.com^
 ||m.ad.zhangyue.com^
 ||saad.ms.zhangyue.net
 ||smad.ms.zhangyue.net
-#晋江小说阅读(副作用未知)
+# > 晋江小说阅读(副作用未知)
 ||android.jjwxc.com^
-#QQ阅读（①免费带广告阅读模式广告）
+# > QQ阅读（①免费带广告阅读模式广告）
 ||ii.gdt.qq.com^
 ||16dd-advertise-1252317822.file.myqcloud.com^
 ||16dd-advertise-1252317822.image.myqcloud.com^
 #||com^montgw.reader.qq.com^  开屏闪屏和“立即参与”按钮，禁用后主页感觉有点怪怪的
-#腾讯漫画(①开屏②活动福利弹窗、萌新顶栏)
+# > 腾讯漫画(①开屏②活动福利弹窗、萌新顶栏)
 ||manhua.acimg.cn^
 ||snowflake.qq.com^
-#快看漫画(开屏没去掉，一天只展示一次)
+# > 快看漫画(开屏没去掉，一天只展示一次)
 ||ad.v3mh.com^
 ||ads.v3mh.com^
-#懒人听书 开屏&播放页
+# > 懒人听书 开屏&播放页
 ||display.wting.info
 ||update.duokan.com^  #全民小说、多看阅读更新？
-#得间免费小说（①是开屏5秒空白摇一摇广告界面，可替换活动加速。②是阅读界面底部横幅广告，本地自带的横幅去不掉，起码不会误触跳转其他APP）
+# > 得间免费小说（①是开屏5秒空白摇一摇广告界面，可替换活动加速。②是阅读界面底部横幅广告，本地自带的横幅去不掉，起码不会误触跳转其他APP）
 ||api.qttunion.com^  #趣盟广告
 ||static.mddlsa.com^
-#——————新闻资讯类——————
-#腾讯新闻（①开屏和视频广告的封面图,②也能禁开屏广告但副作用未知）
+
+# >>>>>>>>>>>>>>> 新闻资讯类 <<<<<<<<<<<<<<
+# > 腾讯新闻（①开屏和视频广告的封面图,②也能禁开屏广告但副作用未知）
 ||pgdt.gtimg.cn^  #QQ音乐开屏
 ||news.ssp.qq.com^
 ||newsad.ssp.qq.com^
-#新浪新闻(①开屏②③未知)
+# > 新浪新闻(①开屏②③未知)
 ||sax.sina.com^.cn^
 ||saxn.sina.com^.cn^
 ||s3adm.ad.weibo.com^
 ||lupic.cdn.bcebos.com^  #新浪新闻首页资讯流广告图片
 ||apicloud.zol.com^.cn^ #中关村开屏
 ||ca.zol.com^.cn^  #中关村手机网页主页信息流广告
-#58同城
+# > 58同城
 ||adshow.58.com^
 ||ptracker.58.com^
 ||static.track.58.com^
@@ -88703,14 +88707,14 @@
 ||stat.58.xgo.com^.cn^
 ||stat.xgo.com^.cn^
 ||analytics.ganji.com^
-#鳳凰網
+# > 鳳凰網
 ||dol.deliver.ifeng.com^
 ||dolphin.deliver.ifeng.com^
 ||games.ifeng.com^
 ||iis1.deliver.ifeng.com^
 ||mfp.deliver.ifeng.com^
 ||api.newad.ifeng.com^ #信息流广告图
-#搜狐新闻(含开屏)
+# > 搜狐新闻(含开屏)
 ||m.ads.sohu.com^
 ||r.ads.sohu.com^
 ||s.ads.sohu.com^
@@ -88722,34 +88726,40 @@
 ||api-ad-pro^duct.huxiu.com^ #虎嗅
 ||adstatic.peopleapp.com^ #人民日报
 ||ads.zaobao.com^ #(新加坡)联合早报
-#——————社区类——————
-#豆瓣(①②开屏广告，然而照样被空白屏拖时间)
+
+# >>>>>>>>>>>>>>> 社区类 <<<<<<<<<<<<<<
+# > 豆瓣(①②开屏广告，然而照样被空白屏拖时间)
 ||frodo.douban.com^
 ||static-s.iqiyi.com^  #主页视频广告预览图
 ||data.video.iqiyi.com^  #主页视频广告视频
 ||dmp-data.vip.com^
 ||api.douban.com^  #日历推荐式开屏？
 ||artery.douban.com^
-#小红书
+# > 小红书
 ||spider-tracker.xiaohongshu.com^
 ||splash-online-decision.xiaohongshu.com^
 ||ads-img-bak.xhscdn.com^
-#虎扑
-#米游社(开屏，误伤首页顶部等部分图标，联网运行一次后再删splash文件夹即可)
+# > 虎扑
+||adx.hupu.com^
+||adx-api.hupu.com^
+||goblin.hupu.com^
+||orz.hupu.com^
+||cc.dace.hupu.com^
+# > 米游社(开屏，误伤首页顶部等部分图标，联网运行一次后再删splash文件夹即可)
 ||bbs-static.miyoushe.com^
 ||ad-log-upload.mihoyo.com^
-#NGA玩家社区
+# > NGA玩家社区
 ||adn.tapapis.cn^
 ||com^mercial.iem.taptap.cn^
 ||tapad.iem.taptap.cn^
 ||tapad-platform.oss-cn^-beijing.aliyuncs.com^
-#懂球帝开屏和首页信息流广告
+# > 懂球帝开屏和首页信息流广告
 ||gw.csdn.net  #CSDN开屏
-#Lofter ①②开屏 ③更新但误杀未测
+# > Lofter ①②开屏 ③更新但误杀未测
 ||ad.lofter.com^
 ||ad.mh.163.com^
 #———财经投资理财股市类———
-#东方财富开屏、抬头、banner
+# > 东方财富开屏、抬头、banner
 ||emdcadvertise-global.eastmoney.com^
 ||adfile.caixin.com^
 ||pro^mote.caixin.com^
@@ -88760,31 +88770,40 @@
 ||ad.yicai.com^  #第一财经
 ||amsapp.yicai.com^  #开屏
 ||ssp.dzh.com^.cn^  #大智慧开屏
-#招商银行开屏
+# > 招商银行开屏
 ||webappcfg.paas.cmbchina.com^
-#（中信）动卡空间开屏
+# > （中信）动卡空间开屏
 ||ump.sz.creditcard.ecitic.com^
-#浦发银行 开屏和营销活动
+# > 浦发银行 开屏和营销活动
 ||lban.spdb.com^.cn^
 ||ad.ysepay.com^  #银盛通
 #||antifraud.cup.com^.cn^ #银联反诈
 ||intellicc.bcs.cmbchina.com^ #(招行)掌上生活弹窗广告，开屏去不掉，误杀大量图片
-#—————买买买购物类#——————
-#当当开屏（部分横幅、图标、商品封面无图）
+
+# >>>>>>>>>>>>>>> 购物类 <<<<<<<<<<<<<<
+# > 当当开屏（部分横幅、图标、商品封面无图）
 ||img62.ddimg.cn^
-#疑似京东金融开屏广告，副作用未测试
+# > 疑似京东金融开屏广告
 ||kjstorage.360buyimg.com^
 ||support.you.163.com^  #网易严选
 ||mpcs.suning.com^  #苏宁易购
 ||adls.suning.com^  #苏宁未知
 ||flowplus.meituan.net  #美团开屏
 ||httpdns.meituan.com^
-#什么值得买(①开屏，②不知道)
+# > 什么值得买(①开屏，②不知道)
 ||app-api.smzdm.com^
 ||bc-ad-vod.zdmimg.com^
-#拼多多广告
+# > 拼多多
 ||lp.pinduoduo.com^
-#饿了么
+# > 美团 #20251001添加，待测试
+||ad.e.waimai.sankuai.com^
+||mads.meituan.com^
+||wmlog.meituan.com^
+||meituangov.cn^
+||meituan.yoga^
+||meituan.xn^
+||analytics.meituan.net^
+# > 饿了么
 #||elemecdn.com^ #影响正常使用？
 ||fuss10.elemecdn.com^
 ||www1.elecfans.com^
@@ -88793,10 +88812,11 @@
 ||ads.95516.com^  #云闪付
 #||ads.cup.com^.cn^  #云闪付，误杀本地优惠活动
 ||ad.maoyan.com^  #猫眼(购票)
-#——————行交通类——————
-#交管12123（开屏，误杀电子驾驶证）
+
+# >>>>>>>>>>>>>>> 出行类 <<<<<<<<<<<<<<
+# > 交管12123（开屏，误杀电子驾驶证）
 #||static.122.gov.cn^
-#百度地图（①开屏②开屏配置文件否则强行显示多几秒⑤首页底部推荐）
+# > 百度地图（①开屏②开屏配置文件否则强行显示多几秒⑤首页底部推荐）
 ||a1.alibabausercontent.com^
 ||afdconf.baidu.com^
 ||httpdns.baidubce.com^
@@ -88804,25 +88824,27 @@
 ||map-mobile-opnimg.cdn.bcebos.com^  #主界面左上角贴图，会误伤公交&我的 的部分图标以及其他角落的营销图。
 #||pms-cdn.bdstatic.com^  百度地图底栏_出行上滑出现的推荐的内容和点搜索框进去后的广告。
 ||aiad-aisuda.cdn.bcebos.com^
-#高德地图(①开屏②③横幅和通知中心？№④№ 测试⑤play版15.0返场开屏广告⑥⑦№)
-#||store.is.autonavi.com^  #导致加载缓慢？
+# > 高德地图(①开屏②③横幅和通知中心？№④№ 测试⑤play版15.0返场开屏广告⑥⑦№)
+||store.is.autonavi.com^ 
 ||adiu.amap.com^
+||page.amap.com^
+||optimus-ads.amap.com.w.alikunlun.com^
 ||cgicol.amap.com^
 ||awaken.amap.com^
 #||free-aos-cdn-image.amap.com^  #误伤一些图标
 ||optimus-ads-ykx.amap.com^
 ||gaode-acs.m.taobao.com^ #新开屏广告？
-#滴滴（①开屏广告会误伤主页一些图标的图）
+# > 滴滴（①开屏广告会误伤主页一些图标的图）
 #||img-ys011.didistatic.com^
 ||adtrack.xiaojukeji.com^  #追踪
-#去哪儿旅行（①顶部横幅广告图②开屏广告③强制升级弹窗）
+# > 去哪儿旅行（①顶部横幅广告图②开屏广告③强制升级弹窗）
 #||qimgs.qunarzz.com^
 ||homefront.qunar.com^
 ||minislugger.qunar.com^
-#携程&智行火车票(误杀智行推荐大量无图)
+# > 携程&智行火车票(误杀智行推荐大量无图)
 ||dimg04.c-ctrip.com^
 ||ad.12306.cn^  #12306开屏
-#汽车之家广告(①开屏，其他№)
+# > 汽车之家广告(①开屏，其他№)
 ||adpro^xy.autohome.com^.cn^
 ||33.autohome.com^.cn^
 ||c.autohome.com^.cn^
@@ -88831,10 +88853,10 @@
 ||adm1.autoimg.cn^
 ||adm2.autoimg.cn^
 ||adm3.autoimg.cn^
-#驾校一点通开屏
+# > 驾校一点通开屏
 ||richmanrules.ksedt.com^
 ||adx.yiche.com^  #易车信息流广告
-#花小猪打车(①②开屏缺一不可)
+# > 花小猪打车(①②开屏缺一不可)
 ||as.hongyibo.com^.cn^
 ||res.hongyibo.com^.cn^
 ||scs.kakamobi.cn^  #驾考宝典开屏
@@ -88843,59 +88865,62 @@
 ||cdn.web.chelaile.net.cn^ #车来了_推荐
 ||w.zuzuche.com^  #租租车开屏&弹窗
 ||down.lltskb.com^  #路路通_更新
-#懂车帝 （开屏在穿山甲那堆ib那条，ad词条不知道是什么，①部分信息流广告图）
+# > 懂车帝 （开屏在穿山甲那堆ib那条，ad词条不知道是什么，①部分信息流广告图）
 ||p3.dcarimg.com^
 ||v3-dcar-ad.dcarvod.com^
 ||v6-dcar-ad.dcarvod.com^
 ||v9-dcar-ad.dcarvod.com^
 ||v11-dcar-ad.dcarvod.com^
 ||v26-dcar-ad.dcarvod.com^
-#货拉拉(要注册帐号登录才能细测)
+# > 货拉拉(要注册帐号登录才能细测)
 ||ads-log.huolala.cn^
 ||www-ads.huolala.co
-#飞猪旅行(基于9.10.8.104测试，这两条漏其中一条都会漏开屏广告，在飞猪APP上没发现有误杀，但其他阿里系就不清楚)
+# > 飞猪旅行(基于9.10.8.104测试，这两条漏其中一条都会漏开屏广告，在飞猪APP上没发现有误杀，但其他阿里系就不清楚)
 ||pigeon.alicdn.com^
 ||tbexpand.alicdn.com^  #视频开屏
 ||ares.guazi.com^  #瓜子二手车版本更新
 ||growth-tracker.guazi.com^
-#太平洋汽车网(①是网页正文的横幅+弹窗广告，APP的好像也没了，③④太平洋电脑，⑤母婴)
+# > 太平洋汽车网(①是网页正文的横幅+弹窗广告，APP的好像也没了，③④太平洋电脑，⑤母婴)
 ||act1.pcauto.com^.cn^
 ||imgad0.pcauto.com^.cn^
 ||countad.pconline.com^.cn^
 ||imgad0.pconline.com^.cn^
 ||imgad0.pcbaby.com^.cn^
 ||ads.ishansong.com^  #闪送(没发现开屏广告所以不知道是不是开屏)
-#———————住房————————
-#安居客（开屏，会误伤底栏_我的的图标无图以及新房详情里的部分图标无图）
+
+# >>>>>>>>>>>>>>> 住房 <<<<<<<<<<<<<<
+# > 安居客（开屏，会误伤底栏_我的的图标无图以及新房详情里的部分图标无图）
 ||pic6.ajkimg.com^
-#链家（①开屏 ②屏蔽更新）
+# > 链家（①开屏 ②屏蔽更新）
 ||image2.ljcdn.com^
 ||i-shadow2.ke.com^
 ||z.5th.zone  #住这儿开屏和横幅广告
-#———————学习类———————
-#印象笔记（误伤识堂_识堂话题 封面图）
+
+# >>>>>>>>>>>>>>> 学习类 <<<<<<<<<<<<<<
+# > 印象笔记（误伤识堂_识堂话题 封面图）
 ||cdn.yinxiang.com^
-#扫描全能王开屏，误杀扫图转word等没网
+# > 扫描全能王开屏，误杀扫图转word等没网
 #||open.camscanner.com^
-#有道词典
+# > 有道词典
 ||ad-sdk-config.youdao.com^
 ||bucket-ynote-online-cdn.note.youdao.com^
 ||dsp.youdao.com^
 ||dict-live.youdao.com^
 ||wow.youdao.com^
 ||wow-activity.youdao.com^
-#有道精品课(误伤首页横幅图片，其他图未知)
+# > 有道精品课(误伤首页横幅图片，其他图未知)
 ||oimagec4.ydstatic.com^
 ||wanciwangdata.oss-cn^-beijing.aliyuncs.com^  #万词王开屏和横幅广告
-#学习通开屏，貌似没误杀
+# > 学习通开屏，貌似没误杀
 ||learn.chaoxing.com^
-#百词斩(①不知道②开屏误杀少量图片)
+# > 百词斩(①不知道②开屏误杀少量图片)
 ||advertise.baicizhan.com^
 ||vol.bczcdn.com^
 ||version.yangcong345.com^  #洋葱学园更新
 ||materialcenter.gsxcdn.com^  #高途开屏广告，误杀少量营销活动类图片
-#———————工具类———————
-#WiFi万能钥匙(尚网网络)
+
+# >>>>>>>>>>>>>>> 工具类 <<<<<<<<<<<<<<
+# > WiFi万能钥匙(尚网网络)
 ||a.wkanx.com^  #开屏广告、底部广告、插入式广告、我的_广告
 ||adx-ad-pro^d.wkanx.com^  #未知
 ||static.wkanx.com^  #连尚广告
@@ -88903,11 +88928,11 @@
 ||movies.ttwifi.net  #短剧
 ||track-config.y5kfpt.com^
 ||track-gateway.y5kfpt.com^
-#WiFi万能钥匙_好看
+# > WiFi万能钥匙_好看
 ||cds.wifi188.com^
 ||n.wifi188.com^
 ||ocean-alps.wifi188.com^
-#迅雷
+# > 迅雷
 ||advertpay-vip-ssl.xunlei.com^
 ||test.adsp.xunlei.com^
 ||api-mcp.adsp.xunlei.com^
@@ -88924,82 +88949,84 @@
 ||api-shoulei-ssl.xunlei.com^
 ||biz.live.xunlei.com^
 ||m.sjzhushou.com^
-#工时记录
+# > 工时记录
 ||yun.tuitiger.com^
 ||cdn.adxvip.com^
 ||s.adxvip.com^
 ||adui.tg.meitu.com^  #美颜相机
 ||ulike-api3.faceu.mobi #轻颜相机
-#612咔叽(相机)，测试时没发现任何广告。不同于上面俩相机着实是开屏广告，这仨只是域名看着像广告。
+# > 612咔叽(相机)，测试时没发现任何广告。不同于上面俩相机着实是开屏广告，这仨只是域名看着像广告。
 ||api-ad-data.kajicam.com^
 ||api-trace.kajicam.com^
 ||zjres-ad.kajicam.com^
-#夸克浏览器(①②更新提示缺一不可)
+# > 夸克浏览器(①②更新提示缺一不可)
 ||open-cms-api.quark.cn^
 ||puds.quark.cn^
-#99手游加速器(测试时也没发现广告)
+# > 99手游加速器(测试时也没发现广告)
 ||ad.99jiasu.com^
 ||adstatis.99jiasu.com^
 ||ad.xhey.top  #今日水印相机
 ||ad.cyapi.cn^  #彩云天气
 ||fcard.api.moji.com^  #墨迹天气顶部横幅
 ||vdo.api.moji.com^  #墨迹天气_墨迹看点
-#中国天气(①②信息流横幅广告，③右上角贴图)
+# > 中国天气(①②信息流横幅广告，③右上角贴图)
 ||ads-tracker.ranfenghd.com^
 ||stqt.weathercn.com^
-#2345系APP开屏广告和弹窗广告和更新
+# > 2345系APP开屏广告和弹窗广告和更新
 ||update.app.2345.com^
 ||c-adx.2345.com^
 ||business-syh-cdn.2345ii.com^
-#WPS
+# > WPS
 ||ad.docer.wps.cn^
 ||adm.zookingsoft.com^
 ||update.thread0.com^  #自定义水印相机更新？
-#百度输入法上传你输入了什么，副作用云联想词加载不出来。
+# > 百度输入法上传你输入了什么，副作用云联想词加载不出来。
 ||udpolimenew.baidu.com^
 ||udpolimeok.baidu.com^
 ||upl.baidu.com^
 ||ads.uutest.cn^  #【测网速】
-#网页[美国地址生成器]弹窗广告①上面②中间
+# > 网页[美国地址生成器]弹窗广告①上面②中间
 ||gloaphoo.net
-#———————其他———————
-#智联招聘(开屏和部分广告图，开屏倒计时仍然要霸占3秒才走，误伤少量图标)
+
+# >>>>>>>>>>>>>>> 其他 <<<<<<<<<<<<<<
+# > 智联招聘(开屏和部分广告图，开屏倒计时仍然要霸占3秒才走，误伤少量图标)
 ||storage-public.zhaopin.cn^
-#Keep（①图②视频开屏广告，①会误伤用户头像、首页_活动无图）
+# > Keep（①图②视频开屏广告，①会误伤用户头像、首页_活动无图）
 ||static1.keepcdn.com^
 ||v1.keepcdn.com^
 ||kad.gotokeep.com^
-#百度网盘（①是开屏广告②网页分享页上半部分的广告图片）
+# > 百度网盘（①是开屏广告②网页分享页上半部分的广告图片）
 ||dss0.bdstatic.com^
 ||staticsns.cdn.bcebos.com^
-#邮箱大师（①是开屏，nex为主页的广告）
+# > 邮箱大师（①是开屏，nex为主页的广告）
 ||client.mail.163.com^
 ||nex.163.com^  #网易主要的广告，网易邮箱大师首页插在邮件间的广告，网易新闻的开屏广告和首页资讯流广告
 ||appconf.mail.163.com^  #网易邮箱大师更新。副作用：没有配置文件不能点击通知直达邮件，只能到主界面。
-#联通营业厅APP的开屏广告
+# > 联通营业厅APP的开屏广告
 ||m1.ad.10010.com^
 ||ad.admin.10010.com^
-#中国电信
+# > 中国电信
 ||appupdate.189.cn^  #老版更新
 ||appupdates.189.cn^  #新版更新？
 ||bkappad.189.cn^  #广告？
-#美柚(开屏&信息流)
+# > 美柚(开屏&信息流)
 ||ad.seeyouyima.com^
 ||pic-ad-ld.tupian1234.com^
-#宝宝树孕育，信息流+弹窗+开屏
+# > 宝宝树孕育，信息流+弹窗+开屏
 ||adx.babytree.com^
 ||mapiweb.babytree.com^
 ||plough.babytree.com^
 ||apishow.babybus.com^  #宝宝巴士开屏广告
 #||yoyo.qq.com^ 掌上穿越火线开屏
-#蓝奏云分享页上的部分广告
+# > 蓝奏云分享页上的部分广告
 ||www.ordedr.com^  #也是蓝奏云
 ||android-imgs.25pp.com^  #豌豆荚开屏广告，误杀首页顶部横幅大图和部分应用详情页顶部大图。
 ||adx-fb.wandoujia.com^  #未知。
 ||appapi.51job.com^  #前程无忧51job开屏广告，看着误杀大实际未发现
 ||cdn.yyb.gtimg.com^  #应用宝开屏广告，误杀福利和少部分图标。
-#——————影音娱乐类——————
-#网易云音乐（据说②③影响了大喇叭，而且好像PC端播放不了）
+
+# >>>>>>>>>>>>>>> 影音娱乐类 <<<<<<<<<<<<<<
+# > 网易云音乐（据说②③影响了大喇叭，而且好像PC端播放不了）
 ||httpdns.music.163.com^ #会绕过hosts直接访问广告域名，误杀_无法打开更多模块，也就打不开更多和收藏的MV
 #||interface.music.163.com^
 #||interface3.music.163.com^
@@ -89010,13 +89037,44 @@
 ||iadmusicmatvideo.music.126.net
 #||ipv6.music.163.com^
 #||ipv4.music.163.com^
-#小米·QQ音乐（前2未知，③是开屏广告）
+# > 小米·QQ音乐（前2未知，③是开屏广告）
 ||ad.tencentmusic.com^
 ||us.l.qq.com^  #QQ阅读开屏广告
-#QQ音乐
+# > QQ音乐  #20251001更新
 #||c6.y.qq.com^  #更新？
 #||base.music.qq.com^  #更新？
-#酷我音乐（去开屏广告①②缺一不可，①会误伤主页的主banner轮播图，③是主页插入的广告如拼多多广告）
+||tmeadbak.y.qq.com^ #待定测试？
+||tmead.y.qq.com^ #待定测试？
+||adstats.tencentmusic.com^
+||ad.tencentmusic.com^
+||adcdn.tencentmusic.com^
+||adcdn6.tencentmusic.com^
+||adexpo.tencentmusic.com^
+||adclick.tencentmusic.com^
+||otheve.beacon.qq.com^
+||monitor.music.qq.com^
+||stat.y.qq.com^
+||oth.str.mdt.qq.com^
+||h.trace.qq.com^
+||sdk.e.qq.com^
+||p.l.qq.com^
+||us.l.qq.com^
+||tangram.e.qq.com^
+|| imtmp.net^
+||tmeadcomm.y.qq.com^
+||ad.tencentmusic.com^
+||adstats.tencentmusic.com^
+||tmead.y.qq.com^
+||rqd.qq.com^
+||wup.imtt.qq.com^
+||gdt.qq.com^
+||android.rqd.qq.com^
+||e.qq.com^
+||v.gdt.qq.com^
+||amsweb-cdn-gz-1258344696.file.myqcloud.com^
+||wallpaper-1258344696.file.myqcloud.com^
+||xs.gdt.qq.com^
+# > 酷我音乐（去开屏广告①②缺一不可，①会误伤主页的主banner轮播图，③是主页插入的广告如拼多多广告）
 ||kwimg3.kuwo.cn^
 ||httpdns.kg.qq.com^
 ||tmeadcom^m.y.qq.com^
@@ -89024,7 +89082,7 @@
 ||g.koowo.com^
 ||deliver.kuwo.cn^
 ||webstat.kuwo.cn^
-#酷狗音乐（开屏还是搞不掉，新版好像突然沒了？）
+# > 酷狗音乐
 ||adserviceretry.kglink.cn^  #开屏广告？抓包到好多splash字符，测试。
 ||gatewayretry.kugou.com^  #不知道什么的广告，抓包到好多ad、ads字符，副作用也未知。
 ||adservice.kugou.com^
@@ -89040,23 +89098,23 @@
 ||ads.bssdl.kugou.com^
 ||channel.fanxing.kugou.com^
 ||song.fanxing.kugou.com^
-#喜马拉雅
+# > 喜马拉雅
 ||ad.ximalaya.com^
 ||adbehavior.wsa.ximalaya.com^
 ||adbehaviorhera.ximalaya.com^
 ||gslbali.ximalaya.com^  #播放页视频广告
 ||gslbtx.ximalaya.com^  #播放页图片广告
-#蜻蜓FM
+# > 蜻蜓FM
 ||ad.qingting.fm
 ||admgr.qingting.fm
 ||dload.qd.qingting.fm
 ||logger.qingting.fm
 ||s.qd.qingting.fm
 ||ad-cdn.qtfm.cn^
-#1905电影网
+# > 1905电影网
 ||counter.m1905.com^
 ||link.1905.com^
-#乐视
+# > 乐视
 ||n.mark.le.com^  #片头视频广告
 ||ark.letv.com^
 ||fz.letv.com^
@@ -89067,7 +89125,7 @@
 ||letv.axp.admaster.com^.cn^
 ||apple.www.letv.com^
 ||dc.letv.com^
-#乐视tv
+# > 乐视tv
 ||api.game.letvstore.com^
 ||dev.dc.letv.com^
 ||msg.m.letv.com^
@@ -89075,7 +89133,7 @@
 ||static.app.m.letv.com^
 ||test.ark.letv.com^
 ||cdn.hpplay.com^.cn^  #乐投屏
-#PPtv
+# > PPtv
 ||ads.aplus.pptv.com^
 ||de.as.pptv.com^
 ||pub.aplus.pptv.com^
@@ -89093,7 +89151,7 @@
 ||vpptv.admaster.com^.cn^
 ||pptv.m.cn.miaozhen.com^
 ||tpptv.ipdx.cn.miaozhen.com^
-#芒果tv（首次打开显示没网，后面正常）
+# > 芒果tv（首次打开显示没网，后面正常）
 ||mobile.da.mgtv.com^  #开屏
 ||mobile2.da.mgtv.com^  #片头
 ||xnet.da.mgtv.com^  #小米视频的芒果tv片头广告
@@ -89132,17 +89190,17 @@
 ||m2.da.mgtv.com^
 ||m.da.mgtv.com^
 ||httpdns.ng.imgo.tv^
-#芒果tv-tv端
+# > 芒果tv-tv端
 ||ottupdate.api.mgtv.com^
 ||ottupdate2.api.mgtv.com^
 ||ott.liveapi.mgtv.com^
 ||4img.mgtv.com^  #退出时弹出的广告
 ||ttupdate2.api.mgtv.com^ #更新?
 ||ottupdate.api.nunaios.com^ #更新?
-#咪咕视频、音乐、阅读开屏和部分图片广告（②）
+# > 咪咕视频、音乐、阅读开屏和部分图片广告（②）
 ||adxserver.ad.cmvideo.cn^
 ||dspserver.ad.cmvideo.cn^
-#爱奇艺
+# > 爱奇艺
 ||api.iqiyi.com^  #更新、弹窗广告，误杀弹幕。
 ||t7z.cupid.iqiyi.com^  #客户端片头广告，手机网页会加载不了片头广告而无法播放视频，电脑网页配合插件就没影响。
 ||t7z.cupid.ptqy.gitv.tv^  #电视端奇异果片头广告
@@ -89159,7 +89217,7 @@
 ||msga.cupid.iqiyi.com^
 ||viqiyi.admaster.com^.cn^
 ||iqiyim.adtrack.enlightent.cn^
-#优酷，①片头广告，不全，会漏。
+# > 优酷，①片头广告，不全，会漏。
 ||vali-g1.cp31.ott.cibntv.net
 ||yk-ssp.ad.youku.com^
 ||appdownload.youku.com^
@@ -89185,7 +89243,7 @@
 ||m-vali.cp31.ott.cibntv.net
 ||mc.atm.youku.com^
 ||pre-acs.youku.com^
-#酷喵影视（CIBN优酷）
+# > 酷喵影视（CIBN优酷）
 ||pl.cp31.ott.cibntv.net  #酷喵(优酷)片头？
 ||vali-ugc.cp31.ott.cibntv.net  #淘票票详情页上方的简介视频无法播放
 ||api.adv.ott.cibntv.net
@@ -89207,25 +89265,25 @@
 ||appupgrade.cp12.ott.cibntv.net #更新？
 ||valipl.cp31.ott.cibntv.net  #片头？
 ||yk-ssp-ad.cp31.ott.cibntv.net
-#云视听极光(腾讯视频电视端)
+# > 云视听极光(腾讯视频电视端)
 ||sv-video.play.aiseet.atianqi.com^  #云视听极光（腾讯视频tv版）片头广告，V15.9发现已失效。
 ||news-l.play.aiseet.atianqi.com^
 ||p-l.play.aiseet.atianqi.com^
 ||tencent-dtv.m.cn.miaozhen.com^
 ||ad-reward.play.aiseet.atianqi.com^
-#腾讯云视频极光测试250318
+# > 腾讯云视频极光测试250318
 ||sdk-e.play.aiseet.atianqi.com^
 ||qrapi.play.aiseet.atianqi.com^
-#其它和其他端
+# > 其它和其他端
 ||gvod.aiseejapp.atianqi.com^
 ||tv.aiseet.atianqi.com^
 ||vv.play.aiseet.atianqi.com^
 ||omgmta.play.aiseet.atianqi.com^
-#酷云_电视广告数据
+# > 酷云_电视广告数据
 ||tvapi.kuyun.com^
 ||logonext.tv.kuyun.com^
 ||config.kuyun.com^
-#小米视频电视端
+# > 小米视频电视端
 ||tat.pandora.xiaomi.com^
 ||upgrade.mishop.pandora.xiaomi.com^
 ||appstore.cdn.pandora.xiaomi.com^
@@ -89247,22 +89305,29 @@
 #||t1.market.mi-img.com^
 #||t1.a.market.xiaomi.com^
 #||t2.a.market.xiaomi.com^
-#虎牙 24.04云更新后开屏和信息流都去不掉了
+# > 虎牙
 ||business.msstatic.com^
 ||live-ads.huya.com^
+||pp-cdnfile2pcdn.msstatic.com^
+||livewebbs2pcdn.msstatic.com^
+||huyafile.msstatic.com^
+||livewebbs2.msstatic.com^
+||business.msstatic.com^
+||v1d.szbdyd.com^
+||3dm.huya.com^
 ||au.qq.com^  #开屏？240813测试
 ||post-1254361794.file.myqcloud.com^  #埋堆堆(看tvB的)开屏
 ||rtbapi.douyucdn.cn^  #斗鱼开屏配置文件？非图，但禁了就不展示广告。
 ||ottimg.cdn.pandora.xiaomi.com^  #小米音箱(原小爱音箱)开屏广告
-#央视系广告
+# > 央视系广告
 ||res.ads.cctv.com^
 ||sspapi.ads.cctv.com^
 ||tracker.ads.cctv.com^
-#糖豆(广场舞)片头广告？
+# > 糖豆(广场舞)片头广告？
 ||creative.medpro^ad.com^
 ||qcwx.medpro^ad.com^
 ||update0.qquanquan.com^  #韩小圈更新？
-#腾讯优量汇广告
+# > 腾讯优量汇广告
 ||www.dutils.com^
 ||abroad-sdk-push.dutils.com^
 ||sdk-push.dutils.com^
@@ -89311,7 +89376,7 @@
 ||v6-m.mpl.dutils.com^
 ||v6-devs-data.dutils.com^
 ||667057482479489024-rta-api.dutils.com^
-#腾讯广告
+# > 腾讯广告
 ||lcsdk.3g.qq.com^
 ||mqqeve.beacon.qq.com^
 ||oth.str.beacon.qq.com^
@@ -89371,7 +89436,7 @@
 ||yybadaccess.3g.qq.com^
 ||discuz.gtimg.cn^
 ||pgdt.gtimg.com^
-#腾讯！
+# > 腾讯！
 ||2052.flash2-http.qq.com^
 ||3gsoftfile.tc.qq.com^
 ||3gsoftfile.tcdn.qq.com^
@@ -89573,7 +89638,7 @@
 #h.trace.qq.com^和aegis.qq.com^必须一起放行，不然手游加速器一些功能界面明明能打开但是秒跳转显示没网。
 ||a.gdt.qq.com^
 ||event.gdt.qq.com^
-#QQ浏览器
+# > QQ浏览器
 ||cooperation.html5.qq.com^
 ||zixuncooperation.html5.qq.com^
 ||kde.qq.com^  #小说的广告
@@ -89585,10 +89650,10 @@
 ||q.i.gdt.qq.com^
 ||c.gdt.qq.com^
 ||tangram-config.gdt.qq.com^
-#下载？
+# > 下载？
 ||c.gj.qq.com^
 #||c.pc.qq.com^  QQ群链接安全中转页无法直接点开
-#腾讯视频
+# > 腾讯视频
 ||acc.qq.com^  #腾讯视频片头广告，已知8.5~8.9版本安装完APP头三次打开APP播放不了视频，关掉再开，重复几次就好了；7.5.0和定制版8.6没网，需要移除本条，移除后7.5也不会有片头广告；9.0.X去片头后其它正常。
 ||vv6.video.qq.com^  #腾讯视频9.0之后的开屏广告
 ||m.l.qq.com^
@@ -89599,17 +89664,17 @@
 ||xs.gdt.qq.com^
 ||xsweb.gdt.qq.com^  #QQ阅读抓出
 ||isrpt-vn.gdt.qq.com^
-#欢乐麻将弹窗广告。两个都能单独屏蔽抽奖的弹窗广告(活动领奖励的弹窗未屏蔽)，第二个看起来还有别家用可能会误杀，好像是游戏资源下载
+# > 欢乐麻将弹窗广告。两个都能单独屏蔽抽奖的弹窗广告(活动领奖励的弹窗未屏蔽)，第二个看起来还有别家用可能会误杀，好像是游戏资源下载
 ||hlmj.broker.tplay.qq.com^
 #||down.pandora.qq.com^
-#隐私相关(GitHub扒)
+# > 隐私相关(GitHub扒)
 ||wup.imtt.qq.com^
 ||huatuo.qq.com^  #华佗诊断
 ||ping.huatuo.qq.com^
 ||tpns.tencent.com^
 ||stat.tpns.tencent.com^
 #||access1.tpns.tencent.com^  #会误杀酷安没有推送。 禁用腾讯推送相关组件也会没推送。
-#阿里广告
+# > 阿里广告
 ||orange-dc.alibaba.com^
 ||o2o-ad-clicking.alibaba.com^
 #||appdownload.alicdn.com^  闲鱼聊天发送图片界面初始化被卡住
@@ -89631,7 +89696,7 @@
 ||ad-host-backup-america.oss-us-west-1.aliyuncs.com^
 ||ad-host-backup-asia.oss-ap-southeast-1.aliyuncs.com^
 ||ad-host-backup-europe.oss-eu-central-1.aliyuncs.com^
-#淘宝广告
+# > 淘宝广告
 #||acs.m.taobao.com^  #会导致一些新装的阿里系APP没网，连过网再禁却没事，可能是和初始化有关。阿里云盘卡开屏。
 ||wcp.taobao.com^  #淘宝开屏？
 ||adashx.ut.cainiao.com^
@@ -89649,7 +89714,7 @@
 ||img.alimama.cn^
 ||mum.m.alibaba.com^
 ||umeng.com^.gds.alibabadns.com^
-#京东广告
+# > 京东广告
 #||dg.k.jd.com^ #值得买无法跳转京东
 ||img.360buyimg.com^
 ||img1.360buyimg.com^
@@ -89659,7 +89724,7 @@
 ||bdsp.x.jd.com^
 ||c.fa.jd.com^
 ||ccc.x.jd.com^
-||gia.jd.com^  #礼品卡？也能打开啊
+||gia.jd.com^  #礼品卡？
 ||jd-mail.co.uk
 ||jd.btmeifeng.cn^
 ||jd.c-ptsp.com^.cn^
@@ -89680,11 +89745,12 @@
 ||www.jd-mail.co.uk
 ||zt.jd.com^
 ||smartopen.jd.com^
-#百度广告
+||ad.3.cn^  #10.1添加待测试？
+# > 百度广告
 ||hmcdn.baidu.com^
 ||cpro^.baidu.com^
 ||update.baidu.com^  #更新？
-#新浪新闻首页插入的广告封面图+视频
+# > 新浪新闻首页插入的广告封面图+视频
 ||cm.baichuan.baidu.com^
 ||nj.baichuan.baidu.com^
 ||cm.pos.baidu.com^
@@ -89724,12 +89790,12 @@
 ||click-bes.baidu.com^
 ||g.baidu.com^  #250615
 ||miniapp-ad.bj.bcebos.com^
-#百度音乐
+# > 百度音乐
 ||ttmsg.qianqian.com^
 ||ttpack.qianqian.com^
 ||ttplayer.qianqian.com^
 ||ad.player.baidu.com^
-#贴吧
+# > 贴吧
 ||static.pay.baidu.com^
 ||gameplus-platform.cdn.bcebos.com^  #未知，好像没影响，250202测试
 ||tieba-ares.cdn.bcebos.com^
@@ -89740,23 +89806,23 @@
 ||fc2tn.baidu.com^
 ||fc4tn.baidu.com^
 ||fc5tn.baidu.com^
-#百度视频
-#百度知道
+# > 百度视频
+# > 百度知道
 ||stat.zhidahao.baidu.com^
 ||tongji.zhidao.baidu.com^
-#百度安全、杀毒
-#吧/百度浏览器
+# > 百度安全、杀毒
+# > 吧/百度浏览器
 ||toolbar.baidu.com^
 #baidu-soft/cleaner
 ||dl-vip.pcfaster.baidu.co.th
 #baidu-soft/down
 #baidu-soft/hao123
 ||update.123juzi.net
-#百度网盘
+# > 百度网盘
 ||issuecdn.baidupcs.com^
 ||update.pan.baidu.com^
 ||update.pan.n.shifen.com^
-#百度智能云
+# > 百度智能云
 ||aod-image-material.cdn.bcebos.com^
 ||dsp-idea.cdn.bcebos.com^
 ||edu-ad-test-cdn.cdn.bcebos.com^
@@ -89767,7 +89833,7 @@
 ||rmblive.cdn.bcebos.com^
 ||search-operate.cdn.bcebos.com^
 ||render-server.cdn.bcebos.com^
-#度小满(金融)
+# > 度小满(金融)
 ||www.dxmpay.com^
 ||www.baifubao.com^
 ||datasink.dxmpay.com^
@@ -89777,12 +89843,12 @@
 ||bi-sensors.duxiaoman.com^
 ||wap.duxiaoman.com^
 ||app.duxiaomanfintech.com^
-#隐私分析上报(GitHub扒)
+# > 隐私分析上报(GitHub扒)
 ||sp1.baidu.com^
 ||gsp1.baidu.com^
 ||wn.pos.baidu.com^
 ||cpro^.baidustatic.com^
-#网易系广告
+# > 网易系广告
 ||analytics.126.net
 ||stat.ws.126.net
 ||analytics.163.com^
@@ -89808,12 +89874,12 @@
 ||gad.netease.com^  #网易游戏广告？从网页抓来测试，网页也没见广告。
 ||nstool.netease.com^
 ||lbs.netease.im
-#网易阅读
+# > 网易阅读
 ||analytics.hz.netease.com^
 ||mr.da.netease.com^
 ||pr.da.netease.com^
 ||rd.da.netease.com^
-#新浪
+# > 新浪
 ||ads.sina.com^
 ||adbox.sina.com^.cn^
 ||beacon.sina.com^.cn^
@@ -89847,7 +89913,7 @@
 ||l6urqh27.sina.cn^  #网页手机新浪网首页的广告，屏蔽后仍显示空白广告位，起码不显示文字；新闻正文页的部分广告位，上面那条禁用后就没显示广告位了。
 ||qgnu18wo.sina.cn^  #同上
 ||9ibbcq2d.sina.cn^  #同上
-#爱问
+# > 爱问
 ||dd.iaskgo.com^
 ||qiye11.ejunshi.net
 #sina-icast
@@ -89856,11 +89922,11 @@
 ||res.icast.cn^
 ||rmtx.ra.icast.cn^
 ||track.ra.icast.cn^
-#微博
+# > 微博
 ||s.alitui.weibo.com^
 ||gw5.push.mcp.weibo.cn^
 ||m.game.weibo.cn^
-#搜狐搜狗
+# > 搜狐搜狗
 ||i.go.sohu.com^
 ||imp.go.sohu.com^
 ||pv.sohu.com^
@@ -89878,7 +89944,7 @@
 ||ad.mail.sohu.com^
 ||odin.sohu.com^  #文章网页的广告和推荐阅读
 ||qpb1.sohu.com^  #手机搜狐网网页主页信息流的广告
-#搜狐视频
+# > 搜狐视频
 ||click.hd.sohu.com^.cn^
 ||p.aty.sohu.com^
 ||pb.hd.sohu.com^.cn^
@@ -89897,7 +89963,7 @@
 ||m.aty.sohu.com^
 ||mmg.aty.sohu.com^
 ||pg.aty.sohu.com^
-#奇虎360
+# > 奇虎360
 ||ad.huajiao.com^
 ||ad.dev.360.cn^
 ||ad.gamebox.360.cn^
@@ -89928,7 +89994,7 @@
 ||tt.browser.360.cn^  #250115测试
 ||mobi.360doc.com^
 ||cientch.360doc.cn^  #网页360个人图书馆广告
-#穿山甲广告★
+# > 穿山甲广告★
 ||p3-ad-sign.byteimg.com^  #抖音部分图片？
 ||p6-ad-sign.byteimg.com^
 ||p9-ad-sign.byteimg.com^
@@ -89970,7 +90036,9 @@
 #||p3-sign.douyinpic.com^ #评论图
 #||p26-sign.douyinpic.com^
 ||free-lbv3.idouyinvod.com^  #据说误杀网页版视频，测试未发现有影响
-#番茄小说，v5.3禁用reading.snssdk.com^和abtest-ch.snssdk.com^和tnc3-alisc1.bytedance.com^会全部没网，只放行reading.snssdk.com^就好，但是会有领红包弹窗；放行tnc3和abtest禁用reading则初始化没网，过一下才好，但是没红包弹窗
+# > 番茄小说，v5.3禁用reading.snssdk.com^和abtest-ch.snssdk.com^和tnc3-alisc1.bytedance.com^会全部没网，只放行reading.snssdk.com^就好，但是会有领红包弹窗；放行tnc3和abtest禁用reading则初始化没网，过一下才好，但是没红包弹窗
+||novelapp.ixigua.com^
+||default.ixigua.com^
 ||api3-normal.fqnovel.com^
 ||api3-normal-hl.fqnovel.com^
 ||api3-normal-lf.fqnovel.com^
@@ -90200,11 +90268,11 @@
 ||tnc4-bjlgy.zijieapi.com^
 ||tnc5-bjlgy.zijieapi.com^
 ||vcs.zijieapi.com^
-#海外字节系广告
+# > 海外字节系广告
 ||tnc16-alisg.byteoversea.com^
 ||tnc16-useast1a.byteoversea.com^
 ||ssdk-sg.pangle.io
-#TopOn广告(酷安用，不然信息流漏广告)
+# > TopOn广告(酷安用，不然信息流漏广告)
 ||app.takuad.com^
 ||img.toponad.com^
 ||mores.toponad.com^
@@ -90216,7 +90284,7 @@
 ||www.toponad.com^
 ||tt.toponad.com^
 ||dd.toponad.com^
-#快手广告
+# > 快手广告
 ||p1.adkwai.com^
 ||p2.adkwai.com^
 ||p3.adkwai.com^
@@ -90274,7 +90342,7 @@
 ||pro^motion-partner.kuaishou.com^
 ||kuaishou.httpdns.pro^
 ||tx.a.kspkg.com^  #250326测试
-#UC
+# > UC
 ||gj.applog.uc.cn^
 ||mparticle.uc.cn^
 ||gj.track.uc.cn^
@@ -90307,20 +90375,20 @@
 ||vs19.gzcu.u3.ucweb.com^
 ||vs7.gzcu.u3.ucweb.com^
 ||vs8.gzcu.u3.ucweb.com^
-#三星
+# > 三星
 ||insights.samsung.com^
 ||ad.samsungadhub.com^
 ||ads.samsungads.com^
 ||config.samsungads.com^
-#苹果
+# > 苹果
 ||ca.iadsdk.apple.com^
 ||cf.iadsdk.apple.com^
 ||advertising.apple.com^
-#荣耀
+# > 荣耀
 ||ads-drcn.platform.hihonorcloud.com^
 ||metrics-ad-drcn.dt.hihonorcloud.com^
 ||installer-drcn.hispace.hihonorcloud.com^ 
-#魅族
+# > 魅族
 ||api-game.meizu.com^
 ||dw-reader.meizu.com^
 ||reader-res.mzres.com^
@@ -90334,12 +90402,12 @@
 ||safe.res.meizu.com^
 ||tongji.meizu.com^
 ||mz-api.smzdm.com^
-#OPPO
+# > OPPO
 ||adx.ads.oppomobile.com^
 ||bdapi.ads.oppomobile.com^
 ||data.ads.oppomobile.com^
 ||data-id.ads.oppomobile.com^
-#OV真我Realme一加
+# > OV真我Realme一加
 ||ads.heytapmobi.com^
 ||adx.ads.heytapmobi.com^  #据说是浏览器下载推荐
 ||adsfs.heytapimage.com^
@@ -90351,7 +90419,7 @@
 ||sms.ads.heytapmobi.com^  #短信和拨号广告
 ||icosa.coloros.com^  #据说是Realme应用增强服务_安装软件后上传包名
 ||ibrowser.feeds.heytapmobi.com^  #天气_精彩推荐
-#VIVO
+# > VIVO
 ||adlog.vivo.com^.cn^
 ||adreq.vivo.com^.cn^
 ||ads-marketing-vivofs.vivo.com^.cn^
@@ -90377,7 +90445,7 @@
 ||tracking-adnet.vivo.com^.cn^
 ||vcardsdkservice.vivo.com^.cn^
 ||open-ad.vivo.com^.cn^
-#VIVO国际
+# > VIVO国际
 ||asia-analyzer-appstore.vivoglobal.com^
 ||asia-com^onrt-stsdk.vivoglobal.com^
 ||asia-com^ort-stsdk.vivoglobal.com^
@@ -90395,7 +90463,7 @@
 ||tr-romsp-unifyconfig.vivoglobal.com^
 ||tr-st-sl.vivoglobal.com^
 ||tr-vcode-od.vivoglobal.com^
-#小米广告
+# > 小米广告
 ||ad.mi.com^
 ||ad.xiaomi.com^
 ||ad1.xiaomi.com^
@@ -90449,7 +90517,7 @@
 ||cn^bj1.fds.api.xiaomi.co  #小米遥控器底部横幅
 ||api.jr.mi.com^  #小米钱包净化
 ||sug.browser.miui.com^  #小米浏览器搜索提示，上方的应用推广和下面的联想词一起干没
-#反诈
+# > 反诈
 ||gjfzpt.cn^
 ||fzapp.gjfzpt.cn^
 ||fzapph5.gjfzpt.cn^
@@ -90461,7 +90529,7 @@
 ||oss.chanct.cn^
 ||sz.gafz.chanct.cn^
 ||tingfeng.chanct.cn^
-#政府平台(搬运)
+# > 政府平台(搬运)
 ||www.mps.gov.cn^
 ||mps.gov.c
 ||m.mps.gov.cn^
@@ -90480,7 +90548,7 @@
 ||ecidcwc.mps.gov.cn^
 ||miit.gov.cn^
 ||beian.miit.gov.cn^
-#微软广告
+# > 微软广告
 ||advertise.bingads.microsoft.com^
 ||www.bingads.microsoft.com^
 ||rad.microsoft.com^
@@ -90496,7 +90564,7 @@
 ||ads.msn.com^
 ||ads2.msn.com^
 ||ads.ninemsn.com^.au
-#谷歌广告
+# > 谷歌广告
 ||lh3.googleadsserving.cn^
 ||ssl.google-analytics.com^
 ||www.google-analytics.com^
@@ -90578,7 +90646,7 @@
 ||m.doubleclick.net
 ||s0.doubleclick.net
 ||static.doubleclick.net
-#油管推脸书P站
+# > 油管推脸书P站
 ||ads.youtube.com^
 ||pixel.facebook.com^
 ||ads.twitter.com^
@@ -90601,12 +90669,12 @@
 ||dc.ads.linkedin.com^  #领英
 ||tapi.apkpure.net  #APKpure广告图
 ||t.apkpure.net
-#Spotify(音频广告去不掉)
+# > Spotify(音频广告去不掉)
 ||ads.spotify.com^
 ||adstudio-assets.scdn.co
 ||audio-ad.spotify.com^
 ||enduser.adsrvr.org
-#SnapChat
+# > SnapChat
 ||snapads.com^
 ||adserver.snapads.com^
 ||usc.adserver.snapads.com^
@@ -90615,8 +90683,9 @@
 ||ads.snapchat.com^
 ||adsapi.snapchat.com^
 ||tr6.snapchat.com^
-#——————墙外的广告商——————
-#乱七八糟
+
+# >>>>>>>>>>>>>>> 墙外广告 <<<<<<<<<<<<<<
+# > 乱七八糟
 ||ad.tagtoo.co
 ||trace.popin.cc
 ||analytics.jbravo.co
@@ -90690,7 +90759,7 @@
 ||pok.mintegral.net
 ||gdl.news-cdn.site
 ||ad-delivery.net
-#Adobe
+# > Adobe
 ||campaign.adobe.com^
 ||mcd-mkt-pro^d31-lb.campaign.adobe.com^
 ||pandoramedia-mkt-pro^d1-t.campaign.adobe.com^
@@ -90698,10 +90767,10 @@
 ||geo.adobe.com^
 ||adtag.primetime.adobe.com^
 ||sstats.adobe.com^
-#91porn.com^
+# > 91porn.com^
 ||fans.bestvogue.com^
 ||bcp.crwdcn^trl.net
-#亚马逊广告
+# > 亚马逊广告
 ||aax.amazon-adsystem.com^
 ||aax-eu.amazon-adsystem.com^
 ||aax-eu-retail-direct.amazon-adsystem.com^
@@ -90722,7 +90791,7 @@
 ||ws-na.amazon-adsystem.com^
 ||z-eu.amazon-adsystem.com^
 ||z-na.amazon-adsystem.com^
-#亚马逊
+# > 亚马逊
 ||aax-us-east-retail-direct.amazon.com^
 ||ads-api-new-2052271615.ap-northeast-1.elb.amazonaws.com^
 ||adserver-1277986481.ap-northeast-1.elb.amazonaws.com^
@@ -90801,7 +90870,7 @@
 ||config.unityads.unitychina.cn^
 ||gw.mediation.unity3d.com^
 ||i-sdk.mediation.unity3d.com^
-#雅虎广告
+# > 雅虎广告
 ||ads.yahoo.com^
 ||api.ads.yahoo.com^
 ||adserver.yahoo.com^
@@ -90829,7 +90898,7 @@
 ||m.yap.yahoo.com^
 ||pr-bh.ybp.yahoo.com^
 ||partnerads.ysm.yahoo.com^
-# ADjust
+# > ADjust
 ||app.adjust.com^
 ||atom.adjust.com^
 ||events.adjust.com^
@@ -90837,7 +90906,7 @@
 ||view.adjust.com^
 ||app.adjust.net.in
 ||app.adjust.world
-# Flurry
+# > Flurry
 ||ad.flurry.com^
 ||adlog.flurry.com^
 ||ads.flurry.com^
@@ -90846,7 +90915,7 @@
 ||pro^ton.flurry.com^
 ||www.flurry.com^
 ||flurry.cachefly.net
-# TrAdPlus
+# > TrAdPlus
 ||www.tradplusad.com^
 ||a.tradplusad.com^
 ||api.tradplusad.com^
@@ -90873,7 +90942,7 @@
 ||test-developer.tradplusad.com^
 ||test-event.tradplusad.com^
 ||web-event.tradplusad.com^
-# Crwdcn^trl
+# > Crwdcn^trl
 ||ad.crwdcn^trl.net
 ||meez.crwdcn^trl.net
 ||multiply.crwdcn^trl.net
@@ -90882,7 +90951,7 @@
 ||td.crwdcn^trl.net
 ||td2.crwdcn^trl.net
 ||ts.crwdcn^trl.net
-# Adnxs
+# > Adnxs
 ||lax1-ib.adnxs.com^
 ||crcdn01.adnxs.com^
 ||crcdn09.adnxs.com^
@@ -90923,7 +90992,7 @@
 ||sin3-ib.adnxs.com^
 ||mediation.adnxs.com^  #据说是outlook的置顶广告，然而lite的还在
 ||msft-ssp.adnxs.com^
-# AppLovin
+# > AppLovin
 ||pro^d-mediate-events.applovin.com^
 ||pro^d-ms4.applovin.com^
 ||dash.applovin.com^
@@ -90949,7 +91018,7 @@
 ||www.applovin.com^
 ||a.applovin.com^
 ||applovin.com^
-# Taboola
+# > Taboola
 ||hk-api.taboola.com^
 ||hk-trc-events.taboola.com^
 ||ads.taboola.com^
@@ -90998,7 +91067,7 @@
 ||api.taboola.com^
 ||match.taboola.com^
 ||www.taboola.com^
-# Inmobi
+# > Inmobi
 ||go.inmobi.com^
 ||uat-demo.pulse.inmobi.com^
 ||iam.inmobi.com^
@@ -91052,7 +91121,7 @@
 ||config.inmobi.cn^
 ||www.inmobi.cn^
 ||api.w.inmobi.cn^
-# Branch营销
+# > Branch营销
 ||www.branch.io
 ||api.branch.io
 ||api2.branch.io
@@ -91062,7 +91131,7 @@
 ||dev.branch.io
 ||vulcan1.branch.io
 ||vulcan5.branch.io
-# AppsFlyer营销
+# > AppsFlyer营销
 ||launches.appsflyersdk.com^
 ||conversions.appsflyersdk.com^
 ||gcdsdk.appsflyersdk.com^
@@ -91113,7 +91182,7 @@
 ||hq1.appsflyer.com^
 ||track.appsflyer.com^
 ||www.appsflyer.com^
-# SuperSonicAds
+# > SuperSonicAds
 ||ow-gateway.supersonicads.com^
 ||ssp.supersonicads.com^
 ||is-gateway.supersonicads.com^
@@ -91128,7 +91197,7 @@
 ||ua.supersonicads.com^
 ||www.supersonicads.com^
 ||outcom^e.supersonicads.com^
-# Mtgglobals
+# > Mtgglobals
 ||cdn-adn-https.mtgglobals.com^
 ||configure-tcp-android.mtgglobals.com^
 ||hybird.mtgglobals.com^
@@ -91139,7 +91208,7 @@
 ||nl-gcp-ad-track-sdk-europe-west4-c.mtgglobals.com^
 ||nl-new-cdn-ssplib-europe-west4-b-hb.mtgglobals.com^
 ||nl-new-cdn-ssplib-europe-west4-c-hb.mtgglobals.com^
-# Vungle
+# > Vungle
 ||ads.api.vungle.com^
 ||adx.ads.vungle.com^
 ||config.ads.vungle.com^
@@ -91188,7 +91257,7 @@
 ||nl-new-cdn-ssplib-europe-west4-b-hb.rayjump.com^
 #||yandex.ru 【vpnify】底部横幅和弹窗，看上去会误杀很多俄罗斯的yandex网站的内容
 #=========各大广告联盟=========
-#个推广告
+# > 个推广告
 ||www.igexin.com^
 ||20.igexin.com^
 ||api.bz.igexin.com^
@@ -91682,7 +91751,7 @@
 ||push.xdrig.com^
 ||tdsdk.xdrig.com^
 ||tdsdk-ip6.xdrig.com^
-#布里奇信息(酷安评论信息流广告用)
+# > 布里奇信息(酷安评论信息流广告用)
 ||www.anythinktech.com^
 ||adx.anythinktech.com^
 ||adx-cn.anythinktech.com^
@@ -91696,7 +91765,7 @@
 ||mores.anythinktech.com^
 ||ujoy.anythinktech.com^
 ||pitk.birdgesdk.com^
-#天目广告
+# > 天目广告
 ||www.admobile.top
 ||a.admobile.top
 ||adctl.admobile.top
@@ -91718,7 +91787,7 @@
 ||ad-asm.tianmu.mobi
 ||sdk.tianmu.mobi
 ||tracker.tianmu.mobi
-#贵士移动
+# > 贵士移动
 ||a.qchannel01.cn^
 ||b.qchannel01.cn^
 ||c.qchannel01.cn^
@@ -91747,7 +91816,7 @@
 ||truth.qchannel03.cn^
 ||www.qchannel03.cn^
 ||wy.qchannel03.cn^
-#上海游昆数据
+# > 上海游昆数据
 ||api-c.hiaiabc.com^
 ||api-d.hiaiabc.com^
 ||api-df.hiaiabc.com^
@@ -91769,7 +91838,7 @@
 ||v6-api-p2.yksdks.com^
 ||v6-api-p3.yksdks.com^
 ||v6-api-p4.yksdks.com^
-#袤博
+# > 袤博
 ||106k.l.mob.com^
 ||1106.l.mob.com^
 ||117b.l.mob.com^
@@ -91883,7 +91952,7 @@
 ||v6-api-p3.mobsurl.com^
 ||v6-api-p4.mobsurl.com^
 ||www.mobsurl.com^
-#讯飞营销云
+# > 讯飞营销云
 ||ads.voiceads.cn^
 ||agms.voiceads.cn^
 ||agr.voiceads.cn^
@@ -91916,7 +91985,7 @@
 ||xiaomi.ws.voiceads.cn^
 ||xiaozhi.ai.voiceads.cn^
 ||www.voiceads.cn^
-#趣盟广告
+# > 趣盟广告
 ||aip.aiclk.com^
 ||adv.aiclk.com^
 ||api-ga.aiclk.com^
@@ -91947,7 +92016,7 @@
 ||v2.aiclk.com^
 ||v002.aiclk.com^
 ||whale-api.aiclk.com^
-#数字联盟
+# > 数字联盟
 ||www.shuzilm.cn^
 ||aads.shuzilm.cn^
 ||adt.shuzilm.cn^
@@ -91989,7 +92058,7 @@
 ||wdaa.shuzilm.cn^
 ||shuzilm-android.guazi.com^
 ||shuzilm-android-uni.guazi.com^
-#秒针广告
+# > 秒针广告
 ||www.miaozhen.com^
 ||ww.cn.miaozhen.com^
 ||cn.miaozhen.com^
@@ -92128,7 +92197,7 @@
 ||xdssp.mediav.com^
 ||www.mediav.com^
 ||ap.livemediav.com^  #贴吧用？
-#irs01艾瑞数据
+# > irs01艾瑞数据
 ||127.irs01.com^
 ||64511.a.irs01.com^
 ||64979.a.irs01.com^
@@ -92184,7 +92253,7 @@
 ||8710_s.gw.irs03.com^
 ||w.irs03.com^
 ||s9.irs03.com^
-#商助科技99click营销云
+# > 商助科技99click营销云
 ||www.oadz.com^
 ||1.oadz.com^
 ||671.oadz.com^
@@ -92210,7 +92279,7 @@
 ||m2297.oadz.com^
 ||m2387.oadz.com^
 ||s.oadz.com^
-#悠易广告
+# > 悠易广告
 ||aim.yoyi.com^.cn^
 ||amps.yoyi.com^.cn^
 ||atm.yoyi.com^.cn^
@@ -92232,7 +92301,7 @@
 ||sdk.yoyi.com^.cn^
 ||td.yoyi.com^.cn^
 ||www.yoyi.com^.cn^
-#多盟广告
+# > 多盟广告
 ||www.domob.cn^
 ||105187.bid.domob.cn^
 ||105155.bid.domob.cn^
@@ -92288,13 +92357,13 @@
 ||landing.domobcdn.com^
 ||sm.domobcdn.com^
 ||sm.easysale.domobcdn.com^
-#mmstat（阿里的广告追踪）
+# > mmstat（阿里的广告追踪）
 ||www.mmstat.com^
 ||ac.mmstat.com^
 ||ae.mmstat.com^
 ||aligtr026.mmstat.com^
 ||aligtr072.mmstat.com^
-||cn^zz.mmstat.com^
+||cnzz.mmstat.com^
 ||d-gm.mmstat.com^
 ||dz.mmstat.com^
 ||go.mmstat.com^
@@ -92321,12 +92390,12 @@
 ||ws.mmstat.com^
 ||yt.mmstat.com^
 ||yt1.mmstat.com^
-#阿里巴巴-tanx
+# > 阿里巴巴-tanx
 ||ifs.tanx.com^  #据说影响闲鱼签到，可我测试没影响
 ||mmstl-tianhe.tanx.com^
 ||sdk-config.tanx.com^
 ||kgb-ifs.tanx.com^
-#阿里巴巴-wrating
+# > 阿里巴巴-wrating
 ||c.wrating.com^
 ||sohu.wrating.com^
 ||click.wrating.com^
@@ -92337,7 +92406,7 @@
 ||msnclick.wrating.com^
 ||cn^tv.wrating.com^
 ||163.wrating.com^
-#基调听云（数据监控）
+# > 基调听云（数据监控）
 ||account.tingyun.com^
 ||apm3.tingyun.com^
 ||beacon-err.tingyun.com^
@@ -92374,22 +92443,22 @@
 ||wkrd.tingyun.com^
 ||wkrt.tingyun.com^
 ||www.tingyun.com^
-#杯子广告
+# > 杯子广告
 ||api-htp.beizi.biz
 ||sdk-api.beizi.biz  #据说123云盘卡开屏？反正我测试都没卡过。
 ||sdk.beizi.biz
 ||sdk-event.beizi.biz
 ||sdk-ipv6.beizi.biz
 ||www.beizi.biz
-#白盒广告
+# > 白盒广告
 ||ad.baihemob.com^
 ||admin.baihemob.com^
 ||inner.baihemob.com^
 ||report.baihemob.com^
-#国双科技 营销(几十条，懒得撸完它了)
+# > 国双科技 营销(几十条，懒得撸完它了)
 ||i.gridsumdissector.com^
 ||ad2.gridsumdissector.com^
-#新度博望(从贴吧抓出，好像是百度系的)
+# > 新度博望(从贴吧抓出，好像是百度系的)
 ||videohub.xdplt.com^
 ||rpen.xdplt.com^
 ||xmall-res.xdplt.com^
@@ -92417,7 +92486,7 @@
 ||pp.xdplt.com^
 ||cd.xdplt.com^
 ||powerful.xdplt.com^
-#深圳素人网络
+# > 深圳素人网络
 ||api.adpro^d.cn^
 ||img.adpro^d.cn^
 ||rta.adpro^d.cn^
@@ -92426,276 +92495,276 @@
 ||data.quminglemei.com^
 ||api.ctjpqg.cn^
 ||api.tsyouto.cn^
-#枫岚互联-广告营销
+# > 枫岚互联-广告营销
 ||dsp.maplehaze.cn^
 ||ssp.maplehaze.cn^
 ||www.maplehaze.cn^
-#cn^ZZ数据
-||v14.cn^zz.com^
-||v4.cn^zz.com^
-||hzs24.cn^zz.com^
-||hqs10.cn^zz.com^
-||v8.cn^zz.com^
-||v12.cn^zz.com^
-||v13.cn^zz.com^
-||s82.cn^zz.com^
-||s76.cn^zz.com^
-||s57.cn^zz.com^
-||s58.cn^zz.com^
-||s51.cn^zz.com^
-||s46.cn^zz.com^
-||s37.cn^zz.com^
-||s28.cn^zz.com^
-||s137.cn^zz.com^
-||s107.cn^zz.com^
-||q7.cn^zz.com^
-||gxbr.cn^zz.com^
-||q1.cn^zz.com^
-||jssdk.cn^zz.com^
-||hzs25.cn^zz.com^
-||c4.cn^zz.com^
-||emoticon.cn^zz.com^
-||wwe.cn^zz.com^
-||hqs1.cn^zz.com^
-||v2.cn^zz.com^
-||s124.cn^zz.com^
-||s109.cn^zz.com^
-||pwoem.cn^zz.com^
-||2020.cn^zz.com^
-||s8.cn^zz.com^
-||s72.cn^zz.com^
-||doc.cn^zz.com^
-||jiaoliu.cn^zz.com^
-||b89.cn^zz.com^
-||jifen.cn^zz.com^
-||client.cn^zz.com^
-||education.data.cn^zz.com^
-||os.data.cn^zz.com^
-||open.cn^zz.com^
-||data.cn^zz.com^
-||help.fenxi.cn^zz.com^
-||s138.cn^zz.com^
-||s36.cn^zz.com^
-||b178.cn^zz.com^
-||s139.cn^zz.com^
-||s120.cn^zz.com^
-||zs10.cn^zz.com^
-||hzs18.cn^zz.com^
-||all.cn^zz.com^
-||pubg.lite.cn^zz.com^
-||track.gxb.cn^zz.com^
-||s49.cn^zz.com^
-||s56.cn^zz.com^
-||s40.cn^zz.com^
-||alibaba.cn^zz.com^
-||pubg.cn^zz.com^
-||s115.cn^zz.com^
-||mt.cn^zz.com^
-||zvs1.cn^zz.com^
-||b76.cn^zz.com^
-||test.cn^zz.com^
-||s.cn^zz.com^
-||q13.cn^zz.com^
-||q12.cn^zz.com^
-||q19.cn^zz.com^
-||s110.cn^zz.com^
-||s54.cn^zz.com^
-||s69.cn^zz.com^
-||s83.cn^zz.com^
-||v9.cn^zz.com^
-||q.gds.cn^zz.com^
-||s118.cn^zz.com^
-||s33.cn^zz.com^
-||s39.cn^zz.com^
-||go.cn^zz.com^
-||smtp.cn^zz.com^
-||download.cn^zz.com^
-||app.cn^zz.com^
-||ns2.cn^zz.com^
-||ns1.cn^zz.com^
-||bookmark.cn^zz.com^
-||cache.cn^zz.com^
-||s78.cn^zz.com^
-||qq.cn^zz.com^
-||gdsns2.cn^zz.com^
-||otg3.cn^zz.com^
-||gdsns1.cn^zz.com^
-||zvs2.cn^zz.com^
-||api.mobile.cn^zz.com^
-||z.cn^zz.com^
-||s141.cn^zz.com^
-||zs25.cn^zz.com^
-||aas.cn^zz.com^
-||cn^zz.com^w.cn^zz.com^
-||mtp.cn^zz.com^
-||mta.cn^zz.com^
-||tui.cn^zz.com^
-||m.cn^zz.com^
-||b.cn^zz.com^
-||collector.mobile.cn^zz.com^
-||mx.cn^zz.com^
-||engine.data.cn^zz.com^
-||wss.cn^zz.com^
-||stats.cn^zz.com^
-||ping.cn^zz.com^
-||zhanzhang.cn^zz.com^
-||s34.cn^zz.com^
-||s26.cn^zz.com^
-||oplus.cn^zz.com^
-||tongji.cn^zz.com^
-||s130.cn^zz.com^
-||zs8.cn^zz.com^
-||help.cn^zz.com^
-||s21.cn^zz.com^
-||s74.cn^zz.com^
-||hzvs2.cn^zz.com^
-||a.cn^zz.com^
-||hzs19.cn^zz.com^
-||z3.cn^zz.com^
-||s65.cn^zz.com^
-||z8.cn^zz.com^
-||hzvs1.cn^zz.com^
-||q4.cn^zz.com^
-||s61.cn^zz.com^
-||hqs2.cn^zz.com^
-||s52.cn^zz.com^
-||z2.cn^zz.com^
-||hzs17.cn^zz.com^
-||s105.cn^zz.com^
-||s94.cn^zz.com^
-||online.cn^zz.com^
-||qhm2.cn^zz.com^
-||hzs10.cn^zz.com^
-||s85.cn^zz.com^
-||s48.cn^zz.com^
-||hzs4.cn^zz.com^
-||hzs5.cn^zz.com^
-||s17.cn^zz.com^
-||hzs23.cn^zz.com^
-||hqs7.cn^zz.com^
-||hqs3.cn^zz.com^
-||s92.cn^zz.com^
-||hzs13.cn^zz.com^
-||s71.cn^zz.com^
-||hzs21.cn^zz.com^
-||hzs14.cn^zz.com^
-||s30.cn^zz.com^
-||s27.cn^zz.com^
-||hqs4.cn^zz.com^
-||hm3.cn^zz.com^
-||s42.cn^zz.com^
-||z12.cn^zz.com^
-||s12.cn^zz.com^
-||hzs2.cn^zz.com^
-||hzs9.cn^zz.com^
-||hm2.cn^zz.com^
-||hm1.cn^zz.com^
-||s67.cn^zz.com^
-||s25.cn^zz.com^
-||s5.cn^zz.com^
-||s98.cn^zz.com^
-||s102.cn^zz.com^
-||s103.cn^zz.com^
-||s81.cn^zz.com^
-||hzs6.cn^zz.com^
-||s35.cn^zz.com^
-||z9.cn^zz.com^
-||z10.cn^zz.com^
-||s140.cn^zz.com^
-||s84.cn^zz.com^
-||jserr.cn^zz.com^
-||s79.cn^zz.com^
-||s6.cn^zz.com^
-||hos1.cn^zz.com^
-||s45.cn^zz.com^
-||s87.cn^zz.com^
-||hqs5.cn^zz.com^
-||hzs16.cn^zz.com^
-||hzs7.cn^zz.com^
-||s47.cn^zz.com^
-||s20.cn^zz.com^
-||s32.cn^zz.com^
-||qhm1.cn^zz.com^
-||s91.cn^zz.com^
-||s88.cn^zz.com^
-||z5.cn^zz.com^
-||v11.cn^zz.com^
-||s114.cn^zz.com^
-||s29.cn^zz.com^
-||s24.cn^zz.com^
-||s126.cn^zz.com^
-||s142.cn^zz.com^
-||s7.cn^zz.com^
-||hzs22.cn^zz.com^
-||s129.cn^zz.com^
-||hzs12.cn^zz.com^
-||s104.cn^zz.com^
-||s80.cn^zz.com^
-||s106.cn^zz.com^
-||q5.cn^zz.com^
-||s10.cn^zz.com^
-||s121.cn^zz.com^
-||z6.cn^zz.com^
-||hzs3.cn^zz.com^
-||s44.cn^zz.com^
-||v1.cn^zz.com^
-||hqs9.cn^zz.com^
-||s119.cn^zz.com^
-||s86.cn^zz.com^
-||hzs1.cn^zz.com^
-||q14.cn^zz.com^
-||v6.cn^zz.com^
-||s131.cn^zz.com^
-||s128.cn^zz.com^
-||s123.cn^zz.com^
-||z7.cn^zz.com^
-||s50.cn^zz.com^
-||hzs8.cn^zz.com^
-||z1.cn^zz.com^
-||vvip.cn^zz.com^
-||s41.cn^zz.com^
-||s97.cn^zz.com^
-||s127.cn^zz.com^
-||q3.cn^zz.com^
-||q16.cn^zz.com^
-||s117.cn^zz.com^
-||pw.cn^zz.com^
-||hqs6.cn^zz.com^
-||hzs15.cn^zz.com^
-||z.gds.cn^zz.com^
-||s13.cn^zz.com^
-||s63.cn^zz.com^
-||s19.cn^zz.com^
-||quanjing.cn^zz.com^
-||s14.cn^zz.com^
-||pcookie.cn^zz.com^
-||hzs11.cn^zz.com^
-||ei.cn^zz.com^
-||z4.cn^zz.com^
-||s95.cn^zz.com^
-||s16.cn^zz.com^
-||s9.cn^zz.com^
-||s4.cn^zz.com^
-||z13.cn^zz.com^
-||s23.cn^zz.com^
-||s22.cn^zz.com^
-||s3.cn^zz.com^
-||s1.cn^zz.com^
-||s2.cn^zz.com^
-||w.cn^zz.com^
-||s11.cn^zz.com^
-||icon.cn^zz.com^
-||zhan.cn^zz.com^
-||q17.cn^zz.com^
-||new.cn^zz.com^
-||z11.cn^zz.com^
-||v7.cn^zz.com^
-||gzs20.cn^zz.com^
-||c.cn^zz.com^
-||s15.cn^zz.com^
-||s96.cn^zz.com^
-||www.cn^zz.com^
-#美数科技（腾讯手游加速器开屏用，AM图标）
+# > cnZZ数据
+||v14.czz.com^
+||v4.cnzz.com^
+||hzs24.cnzz.com^
+||hqs10.cnzz.com^
+||v8.cnzz.com^
+||v12.cnzz.com^
+||v13.cnzz.com^
+||s82.cnzz.com^
+||s76.cnzz.com^
+||s57.cnzz.com^
+||s58.cnzz.com^
+||s51.cnzz.com^
+||s46.cnzz.com^
+||s37.cnzz.com^
+||s28.cnzz.com^
+||s137.cnzz.com^
+||s107.cnzz.com^
+||q7.cnzz.com^
+||gxbr.cnzz.com^
+||q1.cnzz.com^
+||jssdk.cnzz.com^
+||hzs25.cnzz.com^
+||c4.cnzz.com^
+||emoticon.cnzz.com^
+||wwe.cnzz.com^
+||hqs1.cnzz.com^
+||v2.cnzz.com^
+||s124.cnzz.com^
+||s109.cnzz.com^
+||pwoem.cnzz.com^
+||2020.cnzz.com^
+||s8.cnzz.com^
+||s72.cnzz.com^
+||doc.cnzz.com^
+||jiaoliu.cnzz.com^
+||b89.cnzz.com^
+||jifen.cnzz.com^
+||client.cnzz.com^
+||education.data.cnzz.com^
+||os.data.cnzz.com^
+||open.cnzz.com^
+||data.cnzz.com^
+||help.fenxi.cnzz.com^
+||s138.cnzz.com^
+||s36.cnzz.com^
+||b178.cnzz.com^
+||s139.cnzz.com^
+||s120.cnzz.com^
+||zs10.cnzz.com^
+||hzs18.cnzz.com^
+||all.cnzz.com^
+||pubg.lite.cnzz.com^
+||track.gxb.cnzz.com^
+||s49.cnzz.com^
+||s56.cnzz.com^
+||s40.cnzz.com^
+||alibaba.cnzz.com^
+||pubg.cnzz.com^
+||s115.cnzz.com^
+||mt.cnzz.com^
+||zvs1.cnzz.com^
+||b76.cnzz.com^
+||test.cnzz.com^
+||s.cnzz.com^
+||q13.cnzz.com^
+||q12.cnzz.com^
+||q19.cnzz.com^
+||s110.cnzz.com^
+||s54.cnzz.com^
+||s69.cnzz.com^
+||s83.cnzz.com^
+||v9.cnzz.com^
+||q.gds.cnzz.com^
+||s118.cnzz.com^
+||s33.cnzz.com^
+||s39.cnzz.com^
+||go.cnzz.com^
+||smtp.cnzz.com^
+||download.cnzz.com^
+||app.cnzz.com^
+||ns2.cnzz.com^
+||ns1.cnzz.com^
+||bookmark.cnzz.com^
+||cache.cnzz.com^
+||s78.cnzz.com^
+||qq.cnzz.com^
+||gdsns2.cnzz.com^
+||otg3.cnzz.com^
+||gdsns1.cnzz.com^
+||zvs2.cnzz.com^
+||api.mobile.cnzz.com^
+||z.cnzz.com^
+||s141.cnzz.com^
+||zs25.cnzz.com^
+||aas.cnzz.com^
+||cnzz.com^w.cnzz.com^
+||mtp.cnzz.com^
+||mta.cnzz.com^
+||tui.cnzz.com^
+||m.cnzz.com^
+||b.cnzz.com^
+||collector.mobile.cnzz.com^
+||mx.cnzz.com^
+||engine.data.cnzz.com^
+||wss.cnzz.com^
+||stats.cnzz.com^
+||ping.cnzz.com^
+||zhanzhang.cnzz.com^
+||s34.cnzz.com^
+||s26.cnzz.com^
+||oplus.cnzz.com^
+||tongji.cnzz.com^
+||s130.cnzz.com^
+||zs8.cnzz.com^
+||help.cnzz.com^
+||s21.cnzz.com^
+||s74.cnzz.com^
+||hzvs2.cnzz.com^
+||a.cnzz.com^
+||hzs19.cnzz.com^
+||z3.cnzz.com^
+||s65.cnzz.com^
+||z8.cnzz.com^
+||hzvs1.cnzz.com^
+||q4.cnzz.com^
+||s61.cnzz.com^
+||hqs2.cnzz.com^
+||s52.cnzz.com^
+||z2.cnzz.com^
+||hzs17.cnzz.com^
+||s105.cnzz.com^
+||s94.cnzz.com^
+||online.cnzz.com^
+||qhm2.cnzz.com^
+||hzs10.cnzz.com^
+||s85.cnzz.com^
+||s48.cnzz.com^
+||hzs4.cnzz.com^
+||hzs5.cnzz.com^
+||s17.cnzz.com^
+||hzs23.cnzz.com^
+||hqs7.cnzz.com^
+||hqs3.cnzz.com^
+||s92.cnzz.com^
+||hzs13.cnzz.com^
+||s71.cnzz.com^
+||hzs21.cnzz.com^
+||hzs14.cnzz.com^
+||s30.cnzz.com^
+||s27.cnzz.com^
+||hqs4.cnzz.com^
+||hm3.cnzz.com^
+||s42.cnzz.com^
+||z12.cnzz.com^
+||s12.cnzz.com^
+||hzs2.cnzz.com^
+||hzs9.cnzz.com^
+||hm2.cnzz.com^
+||hm1.cnzz.com^
+||s67.cnzz.com^
+||s25.cnzz.com^
+||s5.cnzz.com^
+||s98.cnzz.com^
+||s102.cnzz.com^
+||s103.cnzz.com^
+||s81.cnzz.com^
+||hzs6.cnzz.com^
+||s35.cnzz.com^
+||z9.cnzz.com^
+||z10.cnzz.com^
+||s140.cnzz.com^
+||s84.cnzz.com^
+||jserr.cnzz.com^
+||s79.cnzz.com^
+||s6.cnzz.com^
+||hos1.cnzz.com^
+||s45.cnzz.com^
+||s87.cnzz.com^
+||hqs5.cnzz.com^
+||hzs16.cnzz.com^
+||hzs7.cnzz.com^
+||s47.cnzz.com^
+||s20.cnzz.com^
+||s32.cnzz.com^
+||qhm1.cnzz.com^
+||s91.cnzz.com^
+||s88.cnzz.com^
+||z5.cnzz.com^
+||v11.cnzz.com^
+||s114.cnzz.com^
+||s29.cnzz.com^
+||s24.cnzz.com^
+||s126.cnzz.com^
+||s142.cnzz.com^
+||s7.cnzz.com^
+||hzs22.cnzz.com^
+||s129.cnzz.com^
+||hzs12.cnzz.com^
+||s104.cnzz.com^
+||s80.cnzz.com^
+||s106.cnzz.com^
+||q5.cnzz.com^
+||s10.cnzz.com^
+||s121.cnzz.com^
+||z6.cnzz.com^
+||hzs3.cnzz.com^
+||s44.cnzz.com^
+||v1.cnzz.com^
+||hqs9.cnzz.com^
+||s119.cnzz.com^
+||s86.cnzz.com^
+||hzs1.cnzz.com^
+||q14.cnzz.com^
+||v6.cnzz.com^
+||s131.cnzz.com^
+||s128.cnzz.com^
+||s123.cnzz.com^
+||z7.cnzz.com^
+||s50.cnzz.com^
+||hzs8.cnzz.com^
+||z1.cnzz.com^
+||vvip.cnzz.com^
+||s41.cnzz.com^
+||s97.cnzz.com^
+||s127.cnzz.com^
+||q3.cnzz.com^
+||q16.cnzz.com^
+||s117.cnzz.com^
+||pw.cnzz.com^
+||hqs6.cnzz.com^
+||hzs15.cnzz.com^
+||z.gds.cnzz.com^
+||s13.cnzz.com^
+||s63.cnzz.com^
+||s19.cnzz.com^
+||quanjing.cnzz.com^
+||s14.cnzz.com^
+||pcookie.cnzz.com^
+||hzs11.cnzz.com^
+||ei.cnzz.com^
+||z4.cnzz.com^
+||s95.cnzz.com^
+||s16.cnzz.com^
+||s9.cnzz.com^
+||s4.cnzz.com^
+||z13.cnzz.com^
+||s23.cnzz.com^
+||s22.cnzz.com^
+||s3.cnzz.com^
+||s1.cnzz.com^
+||s2.cnzz.com^
+||w.cnzz.com^
+||s11.cnzz.com^
+||icon.cnzz.com^
+||zhan.cnzz.com^
+||q17.cnzz.com^
+||new.cnzz.com^
+||z11.cnzz.com^
+||v7.cnzz.com^
+||gzs20.cnzz.com^
+||c.cnzz.com^
+||s15.cnzz.com^
+||s96.cnzz.com^
+||www.cnzz.com^
+# > 美数科技（腾讯手游加速器开屏用，AM图标）
 ||s.1rtb.net
 ||sdk.1rtb.net  #pu口袋校园
 ||sdk-demo.1rtb.net
@@ -92709,7 +92778,7 @@
 ||agent-01.1rtb.com^
 ||cm.1rtb.com^
 ||ssp.1rtb.com^
-#软告移动广告交易平台
+# > 软告移动广告交易平台
 ||monitor.ads.8le8le.com^
 ||netease.jump.8le8le.com^
 ||pro^to.ads.8le8le.com^
@@ -92717,7 +92786,7 @@
 ||sigmob.ads.8le8le.com^
 ||uat1.bfsspadserver.8le8le.com^
 ||www.8le8le.com^
-#倍业科技
+# > 倍业科技
 ||walle.bayescom^.com^
 ||shuttle.bayescom^.com^
 ||mantis.bayescom^.com^
@@ -92727,7 +92796,7 @@
 ||jupiter2.bayescom^.com^
 ||ad.bayescom^.com^
 ||www.bayescom^.com^
-#瑞狮网络
+# > 瑞狮网络
 ||tk2.vlion.cn^
 ||bj-superset.oa.vlion.cn^
 ||cn.oss.vlion.cn^
@@ -92745,7 +92814,7 @@
 ||bj-td-menta-01-callback.advlion.com^
 ||s1.cdn-sg.advlion.com^
 ||www.advlion.com^
-#喆威
+# > 喆威
 ||api-auth.flysleep.cn^
 ||cdn-api-auth.flysleep.cn^
 ||cfgc.flysleep.cn^
@@ -92756,7 +92825,7 @@
 ||tg.flysleep.cn^
 ||tgc.flysleep.cn^
 ||upc.flysleep.cn^
-#掌之淘信息
+# > 掌之淘信息
 ||api-auth.zztfly.com^
 ||cdn-api-auth.zztfly.com^
 ||cfgc.zztfly.com^
@@ -92767,7 +92836,7 @@
 ||tg.zztfly.com^
 ||tgc.zztfly.com^
 ||upc.zztfly.com^
-#巨量引擎
+# > 巨量引擎
 ||bes-api.oceanengine.com^
 ||lf-event-manager.oceanengine.com^
 ||v6-cc.oceanengine.com^
@@ -92818,7 +92887,7 @@
 ||feiyu.oceanengine.com^
 ||market.oceanengine.com^
 ||www.oceanengine.com^
-#优比客思(七猫小说开屏广告用)
+# > 优比客思(七猫小说开屏广告用)
 ||dsp-creative.ubixioe.com^
 ||e-u1.ubixioe.com^
 ||entry.ubixioe.com^
@@ -92828,12 +92897,12 @@
 ||tower.ubixioe.com^
 ||tx-cfg-u1.ubixioe.com^
 ||tx-data-u1.ubixioe.com^
-#济南维快营销
+# > 济南维快营销
 ||v.adx.hubcloud.com^.cn^
 ||api.htp.hubcloud.com^.cn^
 ||res1.hubcloud.com^.cn^
 ||sdktmp.hubcloud.com^.cn^
-#优推
+# > 优推
 ||ad.gameley.com^
 ||de.ad.gameley.com^
 ||jp.ad.gameley.com^
@@ -92842,7 +92911,7 @@
 ||lemon.gameley.com^
 ||jp.youtui.gameley.com^
 ||www.gameley.com^
-#Sigmob移动广告平台
+# > Sigmob移动广告平台
 ||adservice.sigmob.cn^
 ||adstage.sigmob.cn^
 ||api.ssp.sigmob.cn^
@@ -92859,7 +92928,7 @@
 ||m.sigmob.com^
 ||sdkci.sigmob.com^
 ||www.sigmob.com^
-#章鱼移动-Octopus-移动广告平台
+# > 章鱼移动-Octopus-移动广告平台
 ||vv.adintl.cn^
 ||sv.adintl.cn^
 ||sdkcfg.adintl.cn^
@@ -92875,12 +92944,12 @@
 ||act.adintl.cn^
 ||sdk.zhangyuyidong.cn^  #乐橙开屏广告
 ||sdklog.zhangyuyidong.cn^
-#汇量科技
+# > 汇量科技
 ||check.rayjump.com^
 ||lazy.rayjump.com^
 ||nl-new-cdn-ssplib-europe-west4-c-hb.rayjump.com^
 ||policy.rayjump.com^
-#广东万唯_移动短视频广告
+# > 广东万唯_移动短视频广告
 ||ag-tk.oneway.mobi
 ||rta-bj.oneway.mobi
 ||diagnosis.oneway.mobi
@@ -92904,7 +92973,7 @@
 ||track.oway.mobi
 ||owads.audioadx.com^
 ||owtk.audioadx.com^
-#各种乱七八糟的广告商、广告联盟
+# > 各种乱七八糟的广告商、广告联盟
 ||track.billowlink.com^
 ||www.chengzijianzhan.com^ #字节
 ||mssdk.volces.com^  #火山引擎
@@ -92995,7 +93064,7 @@
 ||api.wxcjgg.cn^  #小蚕霸王餐开屏？
 ||user.wxcjgg.cn^  #领页广告
 ||stats.dmp.ghac.cn^  #广汽本田营销
-#乐播投屏及广告流
+# > 乐播投屏及广告流
 ||etl.xlmc.sandai.net
 ||clickc.admaster.com^.cn^
 ||media.admob.com^
@@ -93020,7 +93089,7 @@
 ||android-sdk.zhangyuyidong.cn^
 ||ads.adfunlink.com^ #抓自韩小圈
 ||adtracker.adfunlink.com^
-#杂七杂八（不含开屏）
+# > 杂七杂八（不含开屏）
 ||app.wiki.gg
 ||applog.camera360.com^
 ||ad.zhuanzhuan.com^  #转转用
@@ -93048,7 +93117,7 @@
 ||ad.xiaotucc.com^  #小兔充充
 ||ad.mcloud.139.com^  #移动云盘
 ||adx.zuoyebang.com^  #作业帮、大学搜题酱
-#修改版应用被劫持的垃圾弹窗，帝落、改的贴吧、笔趣阁完美版等弹窗
+# > 修改版应用被劫持的垃圾弹窗，帝落、改的贴吧、笔趣阁完美版等弹窗
 ||arm.z74d.cn^
 ||q.z74d.com^
 ||mine.z74d.com^
@@ -93070,7 +93139,7 @@
 ||ad-display.diwodiwo.xyz
 ||qadx.qinlinad.com^  #亲邻开门
 ||ad.aggrx.com^  #硬核聚视
-#U净，甚至可以考虑放行，广告不恶心，还是几条tips，禁用了反而难看。
+# > U净，甚至可以考虑放行，广告不恶心，还是几条tips，禁用了反而难看。
 ||ads.zhinengxiyifang.cn^
 ||adsoss.zhinengxiyifang.cn^
 ||api.appcenter.ms  #贴吧lite更新
