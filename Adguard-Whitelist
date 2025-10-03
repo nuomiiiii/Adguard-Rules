@@ -1,10 +1,11 @@
 [Adguard Whitelist]
 !Title: nuomi whitelist
-!Version: 2025-10-01 11:17(GMT+8)
+!Version: 2025-10-03 23:21(GMT+8)
 !Homepage: https://github.com/nuomiiiii/Adguard-Rules
 !AdGuard Home Exclusive
-!Total lines: 113
+!Total lines: 114
 
+@@||awaken.amap.com
 @@||ad.azure.com^
 @@||ad.ext.azure.com^
 @@||ads.taboola.com^
