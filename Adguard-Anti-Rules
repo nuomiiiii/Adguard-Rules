@@ -3,7 +3,7 @@
 !Version: 2025-10-03 23:24(GMT+8)
 !Homepage: https://github.com/nuomiiiii/Adguard-Rules
 !AdGuard Home Exclusive
-!Total lines: 4228
+!Total lines: 4227
 
 
 # >>>>>>>>>>>>>>> DNS劫持 <<<<<<<<<<<<<<
@@ -282,7 +282,7 @@
 ||page.amap.com^
 ||optimus-ads.amap.com.w.alikunlun.com^
 ||cgicol.amap.com^
-||awaken.amap.com^
+#||awaken.amap.com^
 #||free-aos-cdn-image.amap.com^  #误伤一些图标
 ||optimus-ads-ykx.amap.com^
 ||gaode-acs.m.taobao.com^ #新开屏广告？
