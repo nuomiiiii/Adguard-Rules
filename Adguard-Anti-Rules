@@ -1,6 +1,6 @@
 [Adguard Anti Rules]
 !Title: nuomi anti rules
-!Version: 2025-10-03 23:45(GMT+8)
+!Version: 2025-10-03 23:48(GMT+8)
 !Homepage: https://github.com/nuomiiiii/Adguard-Rules
 !AdGuard Home Exclusive
 !Total lines: 4219
@@ -1843,7 +1843,7 @@
 ||qr.quickapp.cn^
 ||qrcdn.quickapp.cn^
 ||statres.quickapp.cn^
-||cn^bj1.fds.api.xiaomi.co  #小米遥控器底部横幅
+||cnbj1.fds.api.xiaomi.co  #小米遥控器底部横幅
 ||api.jr.mi.com^  #小米钱包净化
 ||sug.browser.miui.com^  #小米浏览器搜索提示，上方的应用推广和下面的联想词一起干没
 # > 反诈
