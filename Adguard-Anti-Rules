@@ -1,9 +1,9 @@
 [Adguard Anti Rules]
 !Title: nuomi anti rules
-!Version: 2025-10-03 23:33(GMT+8)
+!Version: 2025-10-03 23:34(GMT+8)
 !Homepage: https://github.com/nuomiiiii/Adguard-Rules
 !AdGuard Home Exclusive
-!Total lines: 4227
+!Total lines: 4225
 
 
 # >>>>>>>>>>>>>>> DNS劫持 <<<<<<<<<<<<<<
@@ -40,8 +40,6 @@
 
 # >>>>>>>>>>>>>>> 社交类 <<<<<<<<<<<<<<
 # > QQ
-||iv6.gtimg.cn^  #个性字体（副作用未知）
-||gxh.material.qq.com^  #气泡、头像挂件，误伤夜间模式不能下载
 #||downv6.qq.com^  #QQ下载安装包，但导致一些网页下载不了东西
 #||qzonestyle.gtimg.cn^ #QQ空间装扮
 ||world.qpic.cn^  #小世界的图片，视频的封面图。
