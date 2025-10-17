@@ -21,8 +21,6 @@
 ||badjs.weixinbridge.com
 ||wximg.wxs.qq.com  #微信小程序开屏和其他广告图片，然而照样会空白屏显示3~5秒，弹窗广告照弹(只是无图)，广告位照样占(只是无图)。误杀暂未发现，看域名应该会有一些。
 ||wxsmw.wxs.qq.com  #微信小程序底下的视频广告，广告位还在，只是能省点流量，不会被视频打扰。误杀未知。
-||dns.weixin.qq.com
-||dns.weixin.qq.com.cn
 ||aedns.weixin.qq.com
 ||dnstest.weixin.qq.com
 #微博（前3顺手抓的未知，资讯流广告和正文一起的一损俱损，④开屏，⑥14.7后新增的视频开屏广告，⑤xml配置了很多加载广告，副作用未知）
@@ -39,22 +37,11 @@
 ||fastimage.uve.weibo.com #开屏?
 ||uve.weibo.com
 ||ad.weibo.com
-#||api.weibo.cn
-#||mapi.weibo.cn
 ||adsmind.ugdtimg.com
 ||adstrategy.biz.weibo.com
 #Soul（①②是开屏，后面是别的APP引用）
 ||ad-r.soulapp.cn
 ||soul-ad.soulapp.cn
-#||base-growth.soulapp.cn
-#||data-collector.soulapp.cn
-#||data-connector-server.soulapp.cn
-#||increase-openapi.soulapp.cn
-#||insight.soulapp.cn
-#||gateway-mobile-gray.soulapp.cn
-#||gateway2-tcp-spam.soulapp.cn
-#||media-service.soulapp.cn
-#||media-service-source.soulapp.cn
 #blued个人界面广告，主页推荐直播
 ||social.blued.cn
 #探探(①②追踪)
@@ -231,7 +218,6 @@
 #浦发银行 开屏和营销活动
 ||lban.spdb.com.cn
 ||ad.ysepay.com  #银盛通
-#||antifraud.cup.com.cn #银联反诈
 ||intellicc.bcs.cmbchina.com #(招行)掌上生活弹窗广告，开屏去不掉，误杀大量图片
 
 
@@ -261,7 +247,6 @@
 ||nr-op.elemecdn.com
 ||app-monitor.ele.me
 ||ads.95516.com  #云闪付
-#||ads.cup.com.cn  #云闪付，误杀本地优惠活动
 ||ad.maoyan.com  #猫眼(购票)
 
 
