@@ -1,9 +1,9 @@
 [Adguard Anti Rules]
 !Title: nuomi anti rules
-!Version: 2025-10-17 11:52(GMT+8)
+!Version: 2025-10-17 11:54(GMT+8)
 !Homepage: https://github.com/nuomiiiii/Adguard-Rules
 !AdGuard Home Exclusive
-!Total lines: 5061
+!Total lines: 5062
 
 
 #———————test———————
@@ -13,6 +13,7 @@
 ||mum.alibabachengdun.com^
 ||collector.github.com^
 ||gaode-acs.m.taobao.com^
+||dataflow.biliapi.com^
 
 #———————社•交•类———————
 #QQ
