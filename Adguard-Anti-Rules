@@ -1,10 +1,18 @@
 [Adguard Anti Rules]
 !Title: nuomi anti rules
-!Version: 2025-10-17 10:35(GMT+8)
+!Version: 2025-10-17 11:30(GMT+8)
 !Homepage: https://github.com/nuomiiiii/Adguard-Rules
 !AdGuard Home Exclusive
-!Total lines: 4219
+!Total lines: 5061
 
+
+#———————test———————
+#20251017
+||rmonitor.qq.com^
+||guid.tpns.tencent.com^
+||mum.alibabachengdun.com^
+||collector.github.com^
+||gaode-acs.m.taobao.com^
 
 #———————社•交•类———————
 #QQ
