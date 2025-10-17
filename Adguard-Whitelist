@@ -1,8 +1,11 @@
 [Adguard Whitelist]
 !Title: nuomi whitelist
-!Version: 2025-10-17 10:40(GMT+8)
+!Version: 2025-10-17 11:25(GMT+8)
 !Homepage: https://github.com/nuomiiiii/Adguard-Rules
 !AdGuard Home Exclusive
-!Total lines: 1
+!Total lines: 4
 
-@@||im.ele.me
+@@||dns.weixin.qq.com.cn^
+@@||www.msftconnecttest.com^
+@@||settings-win.data.microsoft.com^
+@@||aliyun.com^$important
