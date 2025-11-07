@@ -1,14 +1,14 @@
-#!name=AdBlock
-#!desc=广告拦截
+#!name=广告拦截
+#!desc=针对国内主流APP广告拦截
 #!tag=去广告, nuomi
 #!system=iOS, iPadOS
 #!system_version = 
 #!loon_version = 
-#!date=2025-11-07 21:30:00
+#!date=2025-11-07 23:05:00
 [Rule]
 #20251107update↓
 DOMAIN,dns.weixin.qq.com.cn,DIRECT
-DOMAIN-SUFFIX,10086.cn,DIRECT
+DOMAIN,10086.cn,DIRECT
 DOMAIN,gaode-acs.m.taobao.com,REJECT
 DOMAIN,dataflow.biliapi.com,REJECT
 DOMAIN,data.bilibili.com,REJECT
@@ -20,7 +20,7 @@ DOMAIN,rmonitor.qq.com,REJECT
 DOMAIN,atoken.m.taobao.com,REJECT
 DOMAIN,loggw-ex.alipay.com,REJECT
 DOMAIN,mum.alibabachengdun.com,REJECT
-DOMAIN,logs.amap.com
+DOMAIN,logs.amap.com,REJECT
 DOMAIN,amdc.alipay.com,REJECT
 DOMAIN,oth.eve.mdt.qq.com,REJECT
 DOMAIN,twns.p2ptun.qq.com,REJECT
@@ -33,6 +33,11 @@ DOMAIN,data-sdk-uuid-log.d.meituan.net,REJECT
 DOMAIN,mazu.m.qq.com,REJECT
 DOMAIN,guid.tpns.tencent.com,REJECT
 DOMAIN,mllog.jd.com,REJECT
+DOMAIN,referee.xiaohongshu.com,REJECT
+DOMAIN,pcapp-data-collect.youku.com,REJECT
+DOMAIN,flash.xiaohongshu.com,REJECT
+DOMAIN,crash.xiaohongshu.com,REJECT
+DOMAIN,kuiniuca.com,REJECT
 #20251107update↑
 DOMAIN,world.qpic.cn,REJECT
 DOMAIN,tianshu.gtimg.cn,REJECT
@@ -1739,8 +1744,8 @@ DOMAIN,webcast5-open-lf.douyin.com,REJECT
 DOMAIN,p3-webcast.douyinpic.com,REJECT
 DOMAIN,p6-webcast.douyinpic.com,REJECT
 DOMAIN,p9-webcast.douyinpic.com,REJECT
-DOMAIN,pull-flv-l11.douyincdn.com,REJECT
-DOMAIN,free-lbv3.idouyinvod.com,REJECT
+#DOMAIN,pull-flv-l11.douyincdn.com,REJECT #20251107解除屏蔽，影响抖音直播
+#DOMAIN,free-lbv3.idouyinvod.com,REJECT #20251107解除屏蔽，影响部分正常内容
 DOMAIN,api3-normal.fqnovel.com,REJECT
 DOMAIN,api3-normal-hl.fqnovel.com,REJECT
 DOMAIN,api3-normal-lf.fqnovel.com,REJECT
@@ -1796,7 +1801,7 @@ DOMAIN,ug.snssdk.com,REJECT
 DOMAIN,vas-hl-x.snssdk.com,REJECT
 DOMAIN,vc-brain.snssdk.com,REJECT
 DOMAIN,vc-mirror.snssdk.com,REJECT
-DOMAIN,vcs.snssdk.com,REJECT
+#DOMAIN,vcs.snssdk.com,REJECT
 DOMAIN,vcs-hl.snssdk.com,REJECT
 DOMAIN,tobapplog.ctobsnssdk.com,REJECT
 DOMAIN,toblog.ctobsnssdk.com,REJECT
@@ -1815,8 +1820,8 @@ DOMAIN,it.snssdk.com.edgekey.net,REJECT
 DOMAIN,iu.snssdk.com.edgekey.net,REJECT
 DOMAIN,lianmengapi.snssdk.com,REJECT
 DOMAIN,log-hl.snssdk.com,REJECT
-DOMAIN,log.snssdk.com.bytedns.net,REJECT
-DOMAIN,mcs.snssdk.com,REJECT
+#DOMAIN,log.snssdk.com.bytedns.net,REJECT
+#DOMAIN,mcs.snssdk.com,REJECT
 DOMAIN,mercury-sdk.snssdk.com,REJECT
 DOMAIN,open.snssdk.com.bytedns.net,REJECT
 DOMAIN,sdfp.snssdk.com,REJECT
@@ -1824,7 +1829,7 @@ DOMAIN,smr.snssdk.com,REJECT
 DOMAIN,temai.snssdk.com,REJECT
 DOMAIN,toblog.snssdk.com,REJECT
 DOMAIN,toutiao-frontier.snssdk.com,REJECT
-DOMAIN,verify.snssdk.com,REJECT
+#DOMAIN,verify.snssdk.com,REJECT
 DOMAIN,xlog.snssdk.com,REJECT
 DOMAIN,frontier.snssdk.com,REJECT
 DOMAIN,i-lq.snssdk.com,REJECT
@@ -1844,7 +1849,7 @@ DOMAIN,f-cashloan.snssdk.com,REJECT
 DOMAIN,video-cn.snssdk.com,REJECT
 DOMAIN,pangolin16.sgsnssdk.com,REJECT
 DOMAIN,toblog.tobsnssdk.com,REJECT
-#DOMAIN,security.snssdk.com,REJECT #20251107屏蔽，疑似影响抖音消息发送
+#DOMAIN,security.snssdk.com,REJECT #20251107屏蔽，影响抖音消息发送
 DOMAIN,hotsoon.snssdk.com,REJECT
 DOMAIN,mercury.snssdk.com,REJECT
 DOMAIN,rc.snssdk.com,REJECT
@@ -4843,5 +4848,3 @@ DOMAIN,stg.shuhonggz.com,REJECT
 DOMAIN,adshows.21cn.com,REJECT
 DOMAIN,tk2.xfadx.com,REJECT
 DOMAIN,t.ag.b9ad.com,REJECT
-
-
