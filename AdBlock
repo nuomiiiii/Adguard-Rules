@@ -1,5 +1,5 @@
 #!name=广告拦截规则
-#!desc=广告拦截
+#!desc=针对国内主流APP广告拦截
 #!tag=去广告, nuomi
 #!system=iOS, iPadOS
 #!system_version = 
