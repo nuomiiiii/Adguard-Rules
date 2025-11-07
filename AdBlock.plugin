@@ -4,7 +4,7 @@
 #!system=iOS, iPadOS
 #!system_version = 
 #!loon_version = 
-#!date=2025-11-07 21:00:00
+#!date=2025-11-07 21:21:00
 [Rule]
 #20251107update↓
 DOMAIN,dns.weixin.qq.com.cn,DIRECT
@@ -1816,7 +1816,7 @@ DOMAIN,iu.snssdk.com.edgekey.net,REJECT
 DOMAIN,lianmengapi.snssdk.com,REJECT
 DOMAIN,log-hl.snssdk.com,REJECT
 DOMAIN,log.snssdk.com.bytedns.net,REJECT
-DOMAIN,mcs.snssdk.com,REJECT
+#DOMAIN,mcs.snssdk.com,REJECT
 DOMAIN,mercury-sdk.snssdk.com,REJECT
 DOMAIN,open.snssdk.com.bytedns.net,REJECT
 DOMAIN,sdfp.snssdk.com,REJECT
@@ -4843,3 +4843,4 @@ DOMAIN,stg.shuhonggz.com,REJECT
 DOMAIN,adshows.21cn.com,REJECT
 DOMAIN,tk2.xfadx.com,REJECT
 DOMAIN,t.ag.b9ad.com,REJECT
+
