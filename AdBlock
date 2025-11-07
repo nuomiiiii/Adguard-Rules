@@ -4,10 +4,8 @@
 #!system=iOS, iPadOS
 #!system_version = 
 #!loon_version = 
-#!date=2025-11-07 21:25:00
+#!date=2025-11-07 21:30:00
 #20251107update↓
-DOMAIN,dns.weixin.qq.com.cn,DIRECT
-DOMAIN-SUFFIX,10086.cn,DIRECT
 DOMAIN,gaode-acs.m.taobao.com
 DOMAIN,dataflow.biliapi.com
 DOMAIN,data.bilibili.com
