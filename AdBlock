@@ -4,7 +4,7 @@
 #!system=iOS, iPadOS
 #!system_version = 
 #!loon_version = 
-#!date=2025-11-07 21:50:00
+#!date=2025-11-07 23:00:00
 #20251107update↓
 DOMAIN,gaode-acs.m.taobao.com
 DOMAIN,dataflow.biliapi.com
@@ -1742,7 +1742,7 @@ DOMAIN,p3-webcast.douyinpic.com
 DOMAIN,p6-webcast.douyinpic.com
 DOMAIN,p9-webcast.douyinpic.com
 #DOMAIN,pull-flv-l11.douyincdn.com #20251107解除屏蔽，影响抖音直播
-DOMAIN,free-lbv3.idouyinvod.com
+#DOMAIN,free-lbv3.idouyinvod.com #20251107解除屏蔽，影响部分正常内容
 DOMAIN,api3-normal.fqnovel.com
 DOMAIN,api3-normal-hl.fqnovel.com
 DOMAIN,api3-normal-lf.fqnovel.com
@@ -1798,7 +1798,7 @@ DOMAIN,ug.snssdk.com
 DOMAIN,vas-hl-x.snssdk.com
 DOMAIN,vc-brain.snssdk.com
 DOMAIN,vc-mirror.snssdk.com
-DOMAIN,vcs.snssdk.com
+#DOMAIN,vcs.snssdk.com
 DOMAIN,vcs-hl.snssdk.com
 DOMAIN,tobapplog.ctobsnssdk.com
 DOMAIN,toblog.ctobsnssdk.com
@@ -1817,8 +1817,8 @@ DOMAIN,it.snssdk.com.edgekey.net
 DOMAIN,iu.snssdk.com.edgekey.net
 DOMAIN,lianmengapi.snssdk.com
 DOMAIN,log-hl.snssdk.com
-DOMAIN,log.snssdk.com.bytedns.net
-DOMAIN,mcs.snssdk.com
+#DOMAIN,log.snssdk.com.bytedns.net
+#DOMAIN,mcs.snssdk.com
 DOMAIN,mercury-sdk.snssdk.com
 DOMAIN,open.snssdk.com.bytedns.net
 DOMAIN,sdfp.snssdk.com
@@ -1826,7 +1826,7 @@ DOMAIN,smr.snssdk.com
 DOMAIN,temai.snssdk.com
 DOMAIN,toblog.snssdk.com
 DOMAIN,toutiao-frontier.snssdk.com
-DOMAIN,verify.snssdk.com
+#DOMAIN,verify.snssdk.com
 DOMAIN,xlog.snssdk.com
 DOMAIN,frontier.snssdk.com
 DOMAIN,i-lq.snssdk.com
@@ -1846,7 +1846,7 @@ DOMAIN,f-cashloan.snssdk.com
 DOMAIN,video-cn.snssdk.com
 DOMAIN,pangolin16.sgsnssdk.com
 DOMAIN,toblog.tobsnssdk.com
-#DOMAIN,security.snssdk.com #20251107屏蔽，疑似影响抖音消息发送
+#DOMAIN,security.snssdk.com #20251107屏蔽，影响抖音消息发送
 DOMAIN,hotsoon.snssdk.com
 DOMAIN,mercury.snssdk.com
 DOMAIN,rc.snssdk.com
