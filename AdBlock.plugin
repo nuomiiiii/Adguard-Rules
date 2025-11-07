@@ -4,7 +4,7 @@
 #!system=iOS, iPadOS
 #!system_version = 
 #!loon_version = 
-#!date=2025-11-07 17:58:00
+#!date=2025-11-07 18:00:00
 [Rule]
 #20251107update↓
 DOMAIN,dns.weixin.qq.com.cn,DIRECT
@@ -20,10 +20,11 @@ DOMAIN,rmonitor.qq.com,REJECT
 DOMAIN,atoken.m.taobao.com,REJECT
 DOMAIN,loggw-ex.alipay.com,REJECT
 DOMAIN,mum.alibabachengdun.com,REJECT
-mllog.jd.com,REJECT
 DOMAIN,logs.amap.com
 DOMAIN,amdc.alipay.com,REJECT
 DOMAIN,oth.eve.mdt.qq.com,REJECT
+DOMAIN,twns.p2ptun.qq.com,REJECT
+DOMAIN,oth.bls.mdt.qq.com,REJECT
 DOMAIN,log0-misc-lf.amemv.com,REJECT
 DOMAIN,tnc0-alisc1.zijieapi.com,REJECT
 DOMAIN,p0.meituan.net,REJECT
