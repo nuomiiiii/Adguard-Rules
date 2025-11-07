@@ -4,12 +4,25 @@
 #!system=iOS, iPadOS
 #!system_version = 
 #!loon_version = 
-#!date=2025-11-07 17:25:00
+#!date=2025-11-07 17:32:00
 [Rule]
+#20251107update↓
 DOMAIN,dns.weixin.qq.com.cn,DIRECT
 DOMAIN-SUFFIX,10086.cn,DIRECT
 DOMAIN,gaode-acs.m.taobao.com,REJECT
 DOMAIN,dataflow.biliapi.com,REJECT
+DOMAIN,data.bilibili.com,REJECT
+DOMAIN,edith.xiaohongshu.com,REJECT
+DOMAIN,apm-native.xiaohongshu.com,REJECT
+DOMAIN,rmonitor.qq.com,REJECT
+DOMAIN,atoken.m.taobao.com,REJECT
+DOMAIN,loggw-ex.alipay.com,REJECT
+DOMAIN,mum.alibabachengdun.com,REJECT
+DOMAIN,logs.amap.com
+DOMAIN,amdc.alipay.com,REJECT
+DOMAIN,oth.eve.mdt.qq.com,REJECT
+DOMAIN,log0-misc-lf.amemv.com,REJECT
+#20251107update↑
 DOMAIN,world.qpic.cn,REJECT
 DOMAIN,tianshu.gtimg.cn,REJECT
 DOMAIN,minigame.gtimg.cn,REJECT
@@ -21,7 +34,6 @@ DOMAIN,bc.weixin.qq.com,REJECT
 DOMAIN,channels.weixin.qq.com,REJECT
 DOMAIN,badjs.weixinbridge.com,REJECT
 DOMAIN,wximg.wxs.qq.com,REJECT
-DOMAIN,rmonitor.qq.com,REJECT
 DOMAIN,aedns.weixin.qq.com,REJECT
 DOMAIN,dnstest.weixin.qq.com,REJECT
 DOMAIN,adimg.uve.weibo.com,REJECT
