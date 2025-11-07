@@ -4,7 +4,7 @@
 #!system=iOS, iPadOS
 #!system_version = 
 #!loon_version = 
-#!date=2025-11-07 21:45:00
+#!date=2025-11-07 21:50:00
 #20251107update↓
 DOMAIN,gaode-acs.m.taobao.com
 DOMAIN,dataflow.biliapi.com
@@ -32,6 +32,10 @@ DOMAIN,guid.tpns.tencent.com
 DOMAIN,mllog.jd.com
 DOMAIN,referee.xiaohongshu.com
 DOMAIN,pcapp-data-collect.youku.com
+DOMAIN,flash.xiaohongshu.com
+DOMAIN,crash.xiaohongshu.com
+DOMAIN,up-hl.3g.qq.com
+DOMAIN,kuiniuca.com
 #20251107update↑
 DOMAIN,world.qpic.cn
 DOMAIN,tianshu.gtimg.cn
