@@ -1,4 +1,4 @@
-#!name=Adblock
+#!name=AdBlock
 #!desc=20251107 测试
 #!tag=去广告, nuomi
 #!system=iOS, iPadOS
@@ -1174,3 +1174,4 @@ DOMAIN,huatuo.qq.com,REJECT
 DOMAIN,ping.huatuo.qq.com,REJECT
 DOMAIN,tpns.tencent.com,REJECT
 DOMAIN,stat.tpns.tencent.com,REJECT
+
