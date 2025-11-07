@@ -4,7 +4,7 @@
 #!system=iOS, iPadOS
 #!system_version = 
 #!loon_version = 
-#!date=2025-11-07 17:32:00
+#!date=2025-11-07 17:47:00
 [Rule]
 #20251107update↓
 DOMAIN,dns.weixin.qq.com.cn,DIRECT
@@ -13,9 +13,9 @@ DOMAIN,gaode-acs.m.taobao.com,REJECT
 DOMAIN,dataflow.biliapi.com,REJECT
 DOMAIN,data.bilibili.com,REJECT
 DOMAIN,edith.xiaohongshu.com,REJECT
-DOMAIN,apm-native.xiaohongshu.com,REJECT
 DOMAIN,www.xiaohongshu.com,REJECT
-DOMAIN,rec.xiaohongshu.com,REJEC
+DOMAIN,rec.xiaohongshu.com,REJECT
+DOMAIN,apm-native.xiaohongshu.com,REJECT
 DOMAIN,rmonitor.qq.com,REJECT
 DOMAIN,atoken.m.taobao.com,REJECT
 DOMAIN,loggw-ex.alipay.com,REJECT
@@ -24,6 +24,12 @@ DOMAIN,logs.amap.com
 DOMAIN,amdc.alipay.com,REJECT
 DOMAIN,oth.eve.mdt.qq.com,REJECT
 DOMAIN,log0-misc-lf.amemv.com,REJECT
+DOMAIN,ltnc0-alisc1.zijieapi.com,REJECT
+DOMAIN,lp0.meituan.net,REJECT
+DOMAIN,ldreport.meituan.net,REJECT
+DOMAIN,ldata-sdk-uuid-log.d.meituan.net,REJECT
+DOMAIN,lmazu.m.qq.com,REJECT
+DOMAIN,lguid.tpns.tencent.com,REJECT
 #20251107update↑
 DOMAIN,world.qpic.cn,REJECT
 DOMAIN,tianshu.gtimg.cn,REJECT
@@ -4834,4 +4840,3 @@ DOMAIN,stg.shuhonggz.com,REJECT
 DOMAIN,adshows.21cn.com,REJECT
 DOMAIN,tk2.xfadx.com,REJECT
 DOMAIN,t.ag.b9ad.com,REJECT
-
