@@ -4,7 +4,7 @@
 #!system=iOS, iPadOS
 #!system_version = 
 #!loon_version = 
-#!date=2025-11-07 23:05:00
+#!date=2025-11-07 23:15:00
 [Rule]
 #20251107update↓
 DOMAIN,dns.weixin.qq.com.cn,DIRECT
@@ -26,7 +26,7 @@ DOMAIN,oth.eve.mdt.qq.com,REJECT
 DOMAIN,twns.p2ptun.qq.com,REJECT
 DOMAIN,oth.bls.mdt.qq.com,REJECT
 DOMAIN,log0-misc-lf.amemv.com,REJECT
-DOMAIN,tnc0-alisc1.zijieapi.com,REJECT
+#DOMAIN,tnc0-alisc1.zijieapi.com,REJECT #导致抖音初始化加载缓慢
 DOMAIN,p0.meituan.net,REJECT
 DOMAIN,dreport.meituan.net,REJECT
 DOMAIN,data-sdk-uuid-log.d.meituan.net,REJECT
@@ -4848,3 +4848,4 @@ DOMAIN,stg.shuhonggz.com,REJECT
 DOMAIN,adshows.21cn.com,REJECT
 DOMAIN,tk2.xfadx.com,REJECT
 DOMAIN,t.ag.b9ad.com,REJECT
+
