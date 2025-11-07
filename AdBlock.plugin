@@ -14,6 +14,8 @@ DOMAIN,dataflow.biliapi.com,REJECT
 DOMAIN,data.bilibili.com,REJECT
 DOMAIN,edith.xiaohongshu.com,REJECT
 DOMAIN,apm-native.xiaohongshu.com,REJECT
+DOMAIN,www.xiaohongshu.com,REJECT
+DOMAIN,rec.xiaohongshu.com,REJEC
 DOMAIN,rmonitor.qq.com,REJECT
 DOMAIN,atoken.m.taobao.com,REJECT
 DOMAIN,loggw-ex.alipay.com,REJECT
@@ -4832,3 +4834,4 @@ DOMAIN,stg.shuhonggz.com,REJECT
 DOMAIN,adshows.21cn.com,REJECT
 DOMAIN,tk2.xfadx.com,REJECT
 DOMAIN,t.ag.b9ad.com,REJECT
+
