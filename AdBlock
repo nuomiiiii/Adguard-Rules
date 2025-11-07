@@ -1,10 +1,10 @@
-#!name=AdBlock
+#!name=AdBlock Rules
 #!desc=广告拦截
 #!tag=去广告, nuomi
 #!system=iOS, iPadOS
 #!system_version = 
 #!loon_version = 
-#!date=2025-11-07 21:35:00
+#!date=2025-11-07 21:40:00
 #20251107update↓
 DOMAIN,gaode-acs.m.taobao.com
 DOMAIN,dataflow.biliapi.com
@@ -30,6 +30,7 @@ DOMAIN,data-sdk-uuid-log.d.meituan.net
 DOMAIN,mazu.m.qq.com
 DOMAIN,guid.tpns.tencent.com
 DOMAIN,mllog.jd.com
+DOMAIN,referee.xiaohongshu.com
 #20251107update↑
 DOMAIN,world.qpic.cn
 DOMAIN,tianshu.gtimg.cn
