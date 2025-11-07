@@ -1,10 +1,10 @@
-#!name=AdBlock Rules
+#!name=广告拦截规则
 #!desc=广告拦截
 #!tag=去广告, nuomi
 #!system=iOS, iPadOS
 #!system_version = 
 #!loon_version = 
-#!date=2025-11-07 23:00:00
+#!date=2025-11-07 23:40:00
 #20251107update↓
 DOMAIN,gaode-acs.m.taobao.com
 DOMAIN,dataflow.biliapi.com
@@ -311,7 +311,6 @@ DOMAIN,ocean-alps.wifi188.com
 DOMAIN,advertpay-vip-ssl.xunlei.com
 DOMAIN,test.adsp.xunlei.com
 DOMAIN,api-mcp.adsp.xunlei.com
-DOMAIN,advertpay-vip-ssl.xunlei.com
 DOMAIN,watch.advertising.speed.cdn.vip.xunlei.com
 DOMAIN,advertpay.vip.xunlei.com
 DOMAIN,adsp.xunlei.com
@@ -734,7 +733,6 @@ DOMAIN,devs-data.dutils.com
 DOMAIN,g-adnet.dutils.com
 DOMAIN,m-adnet.dutils.com
 DOMAIN,log-verify.dutils.com
-DOMAIN,m-adnet.dutils.com
 DOMAIN,jp-api-fc.dutils.com
 DOMAIN,jp-api-fd.dutils.com
 DOMAIN,jp-devs-data.dutils.com
@@ -816,7 +814,6 @@ DOMAIN,tmead.y.qq.com
 DOMAIN,hb.kg.qq.com
 DOMAIN,tdid.m.qq.com
 DOMAIN,oth.str.mdt.qq.com
-DOMAIN,oth.eve.mdt.qq.com
 DOMAIN,adsmind.gdtimg.com
 DOMAIN,qzs.gdtimg.com
 DOMAIN,oth.update.mdt.qq.com
@@ -1162,7 +1159,6 @@ DOMAIN,mqqad.html5.qq.com
 DOMAIN,tpush.html5.qq.com
 DOMAIN,mqqadr.reader.qq.com
 DOMAIN,game.html5.qq.com
-DOMAIN,jpush.html5.qq.com
 DOMAIN,novelsns.html5.qq.com
 DOMAIN,cooperation.html5.qq.com
 DOMAIN,zixuncooperation.html5.qq.com
@@ -1198,7 +1194,6 @@ DOMAIN,xsweb.gdt.qq.com
 DOMAIN,isrpt-vn.gdt.qq.com
 DOMAIN,hlmj.broker.tplay.qq.com
 DOMAIN,wup.imtt.qq.com
-DOMAIN,huatuo.qq.com
 DOMAIN,ping.huatuo.qq.com
 DOMAIN,tpns.tencent.com
 DOMAIN,stat.tpns.tencent.com
@@ -1235,7 +1230,6 @@ DOMAIN,admonitor-feedback.cn-hangzhou.log.aliyuncs.com
 DOMAIN,bixi.alicdn.com
 DOMAIN,cdn.ynuf.aliapp.org
 DOMAIN,ynuf.aliapp.org
-DOMAIN,adash.man.aliyuncs.com
 DOMAIN,ad-host-backup-america.oss-us-west-1.aliyuncs.com
 DOMAIN,ad-host-backup-asia.oss-ap-southeast-1.aliyuncs.com
 DOMAIN,ad-host-backup-europe.oss-eu-central-1.aliyuncs.com
@@ -1525,7 +1519,6 @@ DOMAIN,r.mail.163.com
 DOMAIN,ir.mail.163.com
 DOMAIN,irpmt.mail.163.com
 DOMAIN,rec.g.163.com
-DOMAIN,g.163.com
 DOMAIN,g1.163.com
 DOMAIN,analytics.ws.126.net
 DOMAIN,android.push.126.net
@@ -1542,7 +1535,6 @@ DOMAIN,pg-ad-b2.ws.126.net
 DOMAIN,advert.lx.netease.com
 DOMAIN,e-p4p.163.com
 DOMAIN,n.3g.163.com
-DOMAIN,adgeo.163.com
 DOMAIN,popme.163.com
 DOMAIN,bobo.163.com
 DOMAIN,fa.163.com
@@ -1574,7 +1566,6 @@ DOMAIN,cm.dmp.sina.cn
 DOMAIN,sdkclick.mobile.sina.cn
 DOMAIN,u1.img.mobile.sina.cn
 DOMAIN,wapwbclick.mobile.sina.cn
-DOMAIN,wbapp.mobile.sina.cn
 DOMAIN,wbpctips.mobile.sina.cn
 DOMAIN,rs.sinajs.cn
 DOMAIN,adm.leju.sina.com.cn
@@ -2103,8 +2094,6 @@ DOMAIN,static.yximgs.com
 DOMAIN,js-ad.a.yximgs.com
 DOMAIN,adtrack.e.kuaishou.com
 DOMAIN,api.kwaizt.com
-DOMAIN,w1.kskwai.com
-DOMAIN,w2.kskwai.com
 DOMAIN,w1.gskwai.com
 DOMAIN,w2.gskwai.com
 DOMAIN,promotion-partner.kuaishou.com
@@ -2609,7 +2598,6 @@ DOMAIN,test-developer.tradplusad.com
 DOMAIN,test-event.tradplusad.com
 DOMAIN,web-event.tradplusad.com
 DOMAIN,ad.crwdcntrl.net
-DOMAIN,bcp.crwdcntrl.net
 DOMAIN,meez.crwdcntrl.net
 DOMAIN,multiply.crwdcntrl.net
 DOMAIN,optout.crwdcntrl.net
@@ -3356,7 +3344,6 @@ DOMAIN,oc.umeng.com
 DOMAIN,ocp.umeng.com
 DOMAIN,ocx.umeng.com
 DOMAIN,offmsg.umeng.com
-DOMAIN,ocx.umeng.com
 DOMAIN,open.umeng.com
 DOMAIN,oss.message.umeng.com
 DOMAIN,ouplog.umeng.com
@@ -3398,7 +3385,6 @@ DOMAIN,www.umengcloud.com
 DOMAIN,alog.umengcloud.com
 DOMAIN,alogs.umengcloud.com
 DOMAIN,cnlogs.umengcloud.com
-DOMAIN,ex.umengcloud.com
 DOMAIN,log.umengcloud.com
 DOMAIN,msg.umengcloud.com
 DOMAIN,uk.umengcloud.com
@@ -3676,7 +3662,6 @@ DOMAIN,cfg-cdn.aiclk.com
 DOMAIN,config-flag.aiclk.com
 DOMAIN,cpc-service-square.aiclk.com
 DOMAIN,cpc-cdn.aiclk.com
-DOMAIN,cpc-service-square.aiclk.com
 DOMAIN,dmp-api.aiclk.com
 DOMAIN,game-motivatead.aiclk.com
 DOMAIN,inner-million-api.aiclk.com
@@ -3892,7 +3877,6 @@ DOMAIN,letv.irs01.com
 DOMAIN,m.irs01.com
 DOMAIN,msdk.irs01.com
 DOMAIN,pcauto.irs01.com
-DOMAIN,qq.irs01.com
 DOMAIN,rest.irs01.com
 DOMAIN,shjs.irs01.com
 DOMAIN,shjs2.irs01.com
@@ -4557,7 +4541,6 @@ DOMAIN,clue.oceanengine.com
 DOMAIN,cc.oceanengine.com
 DOMAIN,feiyu.oceanengine.com
 DOMAIN,market.oceanengine.com
-DOMAIN,ad.oceanengine.com
 DOMAIN,www.oceanengine.com
 DOMAIN,dsp-creative.ubixioe.com
 DOMAIN,e-u1.ubixioe.com
@@ -4638,7 +4621,6 @@ DOMAIN,tl.oway.mobi
 DOMAIN,track.oway.mobi
 DOMAIN,owads.audioadx.com
 DOMAIN,owtk.audioadx.com
-DOMAIN,tk.vlion.cn
 DOMAIN,track.billowlink.com
 DOMAIN,www.chengzijianzhan.com
 DOMAIN,apmplus.volces.com
@@ -4727,7 +4709,6 @@ DOMAIN,mon.ad.xelements.cn
 DOMAIN,adxlog.9zas5.com
 DOMAIN,adx.adubest.com
 DOMAIN,mos.adubest.com
-DOMAIN,img.adprod.cn
 DOMAIN,j.youzan.com
 DOMAIN,h5.youzan.com
 DOMAIN,www.youzan.com
@@ -4737,7 +4718,6 @@ DOMAIN,trackingprd.hwwt8.com
 DOMAIN,adx.sogaha.cn
 DOMAIN,api.wxcjgg.cn
 DOMAIN,user.wxcjgg.cn
-DOMAIN,sdkcfg.adintl.cn
 DOMAIN,stats.dmp.ghac.cn
 DOMAIN,etl.xlmc.sandai.net
 DOMAIN,clickc.admaster.com.cn
@@ -4749,7 +4729,6 @@ DOMAIN,stat.funshion.net
 DOMAIN,hw.zuimeitianqi.com
 DOMAIN,devicemgr.hpplay.cn
 DOMAIN,c.etoolads.cn
-DOMAIN,sv.adintl.cn
 DOMAIN,c.tobidad.cn
 DOMAIN,tracker.yfanads.com
 DOMAIN,mmjs.adutp.com
@@ -4770,7 +4749,6 @@ DOMAIN,applog.camera360.com
 DOMAIN,ad.zhuanzhuan.com
 DOMAIN,g-adnet.hiaiabc.com
 DOMAIN,m-adnet.hiaiabc.com
-DOMAIN,adx.maplehaze.cn
 DOMAIN,adapi.izuiyou.com
 DOMAIN,adstat.izuiyou.com
 DOMAIN,adcdn6.tencentmusic.com
@@ -4835,7 +4813,6 @@ DOMAIN,bd-cdn.halomobi.com
 DOMAIN,sdk.aqyad.com
 DOMAIN,trace.aqyad.com
 DOMAIN,volc.bj.ad.track.66mobi.com
-DOMAIN,ads.mykudou.com
 DOMAIN,fasthuyitool.jidiandian.cn
 DOMAIN,huyitool.jidiandian.cn
 DOMAIN,common.shuhonggz.com
