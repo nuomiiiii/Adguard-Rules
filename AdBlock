@@ -1841,7 +1841,7 @@ DOMAIN,f-cashloan.snssdk.com
 DOMAIN,video-cn.snssdk.com
 DOMAIN,pangolin16.sgsnssdk.com
 DOMAIN,toblog.tobsnssdk.com
-DOMAIN,security.snssdk.com
+#DOMAIN,security.snssdk.com #20251107屏蔽，疑似影响抖音消息发送
 DOMAIN,hotsoon.snssdk.com
 DOMAIN,mercury.snssdk.com
 DOMAIN,rc.snssdk.com
