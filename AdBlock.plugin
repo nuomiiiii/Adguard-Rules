@@ -12,6 +12,7 @@ DOMAIN,world.qpic.cn,REJECT
 DOMAIN,tianshu.gtimg.cn,REJECT
 DOMAIN,minigame.gtimg.cn,REJECT
 DOMAIN,wxa.wxs.qq.com,REJECT
+DOMAIN,rmonitor.qq.com,REJECT
 DOMAIN,wxsnsdy.wxs.qq.com,REJECT
 DOMAIN,wxsnsdythumb.wxs.qq.com,REJECT
 DOMAIN,ad.wx.com,REJECT
@@ -1174,4 +1175,5 @@ DOMAIN,huatuo.qq.com,REJECT
 DOMAIN,ping.huatuo.qq.com,REJECT
 DOMAIN,tpns.tencent.com,REJECT
 DOMAIN,stat.tpns.tencent.com,REJECT
+
 
