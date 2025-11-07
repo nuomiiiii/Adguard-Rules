@@ -4,7 +4,7 @@
 #!system=iOS, iPadOS
 #!system_version = 
 #!loon_version = 
-#!date=2025-11-07 21:30:00
+#!date=2025-11-07 21:35:00
 #20251107update↓
 DOMAIN,gaode-acs.m.taobao.com
 DOMAIN,dataflow.biliapi.com
@@ -1736,7 +1736,7 @@ DOMAIN,webcast5-open-lf.douyin.com
 DOMAIN,p3-webcast.douyinpic.com
 DOMAIN,p6-webcast.douyinpic.com
 DOMAIN,p9-webcast.douyinpic.com
-DOMAIN,pull-flv-l11.douyincdn.com
+#DOMAIN,pull-flv-l11.douyincdn.com #20251107解除屏蔽，影响抖音直播
 DOMAIN,free-lbv3.idouyinvod.com
 DOMAIN,api3-normal.fqnovel.com
 DOMAIN,api3-normal-hl.fqnovel.com
