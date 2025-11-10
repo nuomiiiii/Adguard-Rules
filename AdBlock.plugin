@@ -4,7 +4,7 @@
 #!system=iOS,iPadOS
 #!system_version=
 #!loon_version=
-#!date=2025-11-10 12:30:00
+#!date=2025-11-10 12:35:00
 
 [Rule]
 
@@ -4999,7 +4999,8 @@ hostname=portal.zjzwfw.gov.cn
 ^https?:\/\/portal\.zjzwfw\.gov\.cn\/app_api\/appHome\/selectStartPic response-body-json-replace data {}
 
 [Script]
-http-response^https?:\/\/api\.m\.mi\.com\/v1\/app\/startscript-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/myBlockAds.js,requires-body=true,timeout=60
+http-response^https?:\/\/api\.m\.mi\.com\/v1\/app\/startscript-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/myBlockAds.js,requires-body=true,timeout=60,enable
+
 
 
 
