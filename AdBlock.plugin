@@ -4,7 +4,7 @@
 #!system=iOS,iPadOS
 #!system_version=
 #!loon_version=
-#!date=2025-11-10 11:45:00
+#!date=2025-11-10 11:55:00
 
 [Rule]
 
@@ -70,6 +70,7 @@ DOMAIN,httpdns.immomo.com,REJECT
 #20251110update↓
 #字节跳动广告拦截测试↓
 AND,((DOMAIN-KEYWORD,tnc0-alisc),(DOMAIN-SUFFIX,zijieapi.com)),REJECT
+AND,((DOMAIN-KEYWORD,log),(DOMAIN-SUFFIX,zijieapi.com)),REJECT
 AND,((OR,((DOMAIN-KEYWORD,api-access),(DOMAIN-KEYWORD,log-api))),(DOMAIN-KEYWORD,pangolin-sdk-toutiao)),REJECT
 AND,((DOMAIN-KEYWORD,-ad-),(DOMAIN-SUFFIX,byteimg.com)),REJECT
 AND,((DOMAIN-KEYWORD,-ttam-),(DOMAIN-SUFFIX,ibyteimg.com)),REJECT
@@ -90,7 +91,6 @@ AND,((DOMAIN-KEYWORD,api),(DOMAIN-KEYWORD,-log-),(DOMAIN-SUFFIX,pangle.io)),REJE
 AND,((DOMAIN-KEYWORD,api),(DOMAIN-KEYWORD,-dual-event-),(DOMAIN-SUFFIX,pangle.io)),REJECT
 AND,((DOMAIN-KEYWORD,api),(DOMAIN-KEYWORD,pangolin),(DOMAIN-SUFFIX,sgsnssdk.com)),REJECT
 AND,((DOMAIN-KEYWORD,ads),(DOMAIN-KEYWORD,-normal-lq),(DOMAIN-SUFFIX,zijieapi.com)),REJECT
-URL-REGEX,^http:\/\/p\d+-be-pack-sign\.pglstatp-toutiao\.com\/(ad-app-package|web\.business\.image)\/,REJECT
 DOMAIN,log.sgsnssdk.com,REJECT
 DOMAIN,mon.zijieapi.com,REJECT
 DOMAIN,bds.snssdk.com,REJECT
@@ -110,12 +110,12 @@ DOMAIN,mssdk.volces.com,REJECT
 DOMAIN,pangolin.snssdk.com,REJECT
 DOMAIN,gromore.pangolin-sdk-toutiao.com,REJECT
 DOMAIN-KEYWORD,-ad-sign.byteimg.com,REJECT
-DOMAIN-KEYWORD,log-api.pangolin-sdk-toutiao,REJECT
 DOMAIN-KEYWORD,-ad.byteoversea.com,REJECT
 DOMAIN-KEYWORD,video-cn.snssdk.com,REJECT
 DOMAIN-KEYWORD,asiad.byteactivity,REJECT
 AND,((DOMAIN-KEYWORD,tnc),(OR,((DOMAIN-SUFFIX,capcutapi.com),(DOMAIN-SUFFIX,zijieapi.com),(DOMAIN-SUFFIX,isnssdk.com),(DOMAIN-SUFFIX,toutiaoapi.com),(DOMAIN-SUFFIX,bytedance.com),(DOMAIN-SUFFIX,snssdk.com),(DOMAIN-SUFFIX,sgsnssdk.com)))),DIRECT
 #字节跳动广告拦截测试↑
+
 DOMAIN,adashx.ut.amap.com,REJECT
 DOMAIN,h-adashx.ut.taobao.com,REJECT
 DOMAIN,resolver.msg.xiaomi.net,REJECT
@@ -1900,7 +1900,6 @@ DOMAIN,api-access.pangolin-sdk-toutiao.com,REJECT
 DOMAIN,api-access.pangolin-sdk-toutiao1.com,REJECT
 DOMAIN,ecom.pangolin-sdk-toutiao.com,REJECT
 DOMAIN,ether-pack.pangolin-sdk-toutiao.com,REJECT
-DOMAIN,gromore.pangolin-sdk-toutiao.com,REJECT
 DOMAIN,novel.pangolin-sdk-toutiao.com,REJECT
 DOMAIN,log-api.pangolin-sdk-toutiao.com,REJECT
 DOMAIN,access.pangolin-sdk-toutiao-b.com,REJECT
@@ -4877,6 +4876,7 @@ hostname = m.ctrip.com
 ^https?:\/\/m\.ctrip\.com\/restapi\/soa2\/13916\/scjson\/tripAds reject-dict
 
 [Script]
+
 
 
 
