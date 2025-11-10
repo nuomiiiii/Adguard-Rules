@@ -4,7 +4,72 @@
 #!system=iOS,iPadOS
 #!system_version=
 #!loon_version=
-#!date=2025-11-10 12:35:00
+#!date=2025-11-10 13:15:00
+
+[Argument]
+51job_enable=switch,true,false,tag=51job-脚本开关
+albb_enable=switch,true,false,tag=阿里巴巴-脚本开关
+alyp_enable=switch,true,false,tag=阿里云盘-脚本开关
+aiqiyi_enable=switch,true,false,tag=爱奇艺-脚本开关
+bdduditu_enable=switch,true,false,tag=百度地图-脚本开关
+bddutpba_enable=switch,true,false,tag=百度贴吧-脚本开关
+lawson_enable=switch,true,false,tag=罗森点点-脚本开关
+bohejmkh_enable=switch,true,false,tag=薄荷健康-脚本开关
+cdyytmqi_enable=switch,false,true,tag=彩云天气-脚本开关
+cdnngogo_enable=switch,true,false,tag=菜鸟裹裹-脚本开关
+davsdmpk_enable=switch,true,false,tag=大众点评-脚本开关
+didiiuxk_enable=switch,true,false,tag=滴滴出行-脚本开关
+ddmc_enable=switch,true,false,tag=叮咚买菜-脚本开关
+ffbi_enable=switch,true,false,tag=粉笔-脚本开关
+hlzh_enable=switch,true,false,tag=航旅纵横-脚本开关
+hema_enable=switch,true,false,tag=盒马-脚本开关
+itzj_enable=switch,true,false,tag=IT之家-脚本开关
+jhsh_enable=switch,true,false,tag=建行生活-脚本开关
+jkds_enable=switch,true,false,tag=京东-脚本开关
+jkxi_enable=switch,true,false,tag=京喜-脚本开关
+keep_enable=switch,true,false,tag=keep-脚本开关
+kkuz_enable=switch,true,false,tag=快手-脚本开关
+kxke_enable=switch,true,false,tag=夸克-脚本开关
+glgclmmg_enable=switch,true,false,tag=快手联盟,优量汇,穿山甲「广告联盟」-脚本开关
+kuan_enable=switch,true,false,tag=酷安-脚本开关
+mddjba_enable=switch,true,false,tag=买单吧-脚本开关
+mhgotv_enable=switch,true,false,tag=芒果TV-脚本开关
+mafgwo_enable=switch,true,false,tag=马蜂窝-脚本开关
+meiyou_enable=switch,true,false,tag=美柚-脚本开关
+51job_enable=switch,true,false,tag=前程无忧-脚本开关
+rfrfuipk_enable=switch,true,false,tag=人人视频-脚本开关
+#Spotify
+tab=switch,true,tag=Spotify-移除底栏创建按钮,desc=此开关控制是否移除底栏创建按钮
+useractivity=switch,true,tag=Spotify-启用Apple设备接力,desc=此开关控制是否使用Apple设备接力
+smzdm_enable=switch,true,false,tag=什么值得买-脚本开关
+tcbc_enable=switch,true,false,tag=淘宝-脚本开关
+tgxyxbwf_enable=switch,true,false,tag=腾讯新闻-脚本开关
+#网易云音乐
+MY=switch,true,tag=网易云音乐-[隐藏底部]漫游标签
+DT=switch,false,tag=网易云音乐-[隐藏底部]笔记标签
+FX=switch,true,tag=网易云音乐-[隐藏底部]发现标签
+PRGG=switch,true,tag=网易云音乐-[隐藏首页]问候语
+PRRK=switch,false,tag=网易云音乐-[隐藏首页]排行榜
+PRDRD=switch,false,tag=网易云音乐-[隐藏首页]每日推荐
+PRSCVPT=switch,false,tag=网易云音乐-[隐藏首页]推荐歌单
+PRST=switch,false,tag=网易云音乐-[隐藏首页]最近常听
+PRRR=switch,true,tag=网易云音乐-[隐藏首页]雷达歌单
+HMPR=switch,false,tag=网易云音乐-[隐藏首页]音乐合伙人
+PRMST=switch,true,tag=网易云音乐-[隐藏首页]推荐专属歌单
+PRCN=switch,true,tag=网易云音乐-[隐藏首页]你的专属歌单
+whyiyyybyt_enable=switch,true,false,tag=网易云音乐-脚本开关
+xnmiuhig_enable=switch,true,false,tag=小米商城-脚本开关
+xntuisis_enable=switch,true,false,tag=小兔充充-脚本开关
+xmyu_enable=switch,true,false,tag=闲鱼-脚本开关
+xhs_enable=switch,true,false,tag=小红书-脚本开关
+ximalaya_enable=switch,true,false,tag=喜马拉雅-脚本开关
+youtube_enable=switch,true,false,tag=YouTube-脚本开关
+yzku_enable=switch,true,false,tag=优酷-脚本开关
+vihu_enable=switch,true,false,tag=知乎-脚本开关
+vhuhgsjn_enable=switch,true,false,tag=掌上公交-脚本开关
+vrvr_enable=switch,true,false,tag=转转-脚本开关
+vsgogojihhks_enable=switch,true,false,tag=中国国际航空-脚本开关
+vsgorfbc_enable=switch,true,false,tag=中国人保-脚本开关
 
 [Rule]
 
@@ -4845,6 +4910,11 @@ hostname=res.kfc.com.cn
 ^https?:\/\/res\.kfc\.com\.cn\/CRM\/kfcad\/apphome6\/\w+\.json\?reject-dict
 ^https?:\/\/res\.kfc\.com.\cn\/advertisement\/reject
 
+#必胜客
+hostname=res.pizzahut.com.cn
+^https?:\/\/res\.pizzahut\.com\.cn\/CRM\/phad\/member\/app\/member reject-200
+^https?:\/\/res\.pizzahut\.com\.cn\/CRM\/phad\/apphome\/apphome reject
+
 #闲鱼
 hostname=acs.m.goofish.com,g-acs.m.goofish.com
 #搜索页多余推荐列表
@@ -4998,8 +5068,525 @@ hostname=smarket.dian.so, file.dian.so
 hostname=portal.zjzwfw.gov.cn
 ^https?:\/\/portal\.zjzwfw\.gov\.cn\/app_api\/appHome\/selectStartPic response-body-json-replace data {}
 
+#阿里云盘
+hostname=api.alipan.com, member.alipan.com
+^https:\/\/api\.alipan\.com\/adrive\/v1\/file\/getTopFolders reject-dict
+^https:\/\/member\.alipan\.com\/v2\/activity\/sign_in_luckyBottle reject-dict
+
+#爱奇艺
+hostname=-i.vip.iqiyi.com, *.iqiyi.com
+#播放页开通会员提示
+^https?:\/\/act\.vip\.iqiyi\.com\/interact\/api\/v2\/show\? reject-dict
+#播放页多余动效
+^https?:\/\/iface2\.iqiyi\.com\/ivos\/interact\/video\/data\? reject-dict
+#播放页升级白金会员按钮
+^https?:\/\/iface2\.iqiyi\.com\/video\/3\.0\/v_interface_proxy\? reject-dict
+#青少年弹窗
+^https?:\/\/iface2\.iqiyi\.com\/views_pop\/3\.0\/pop_control\? reject-dict
+
+#爱企查
+hostname=b2baifanfan.baidu.com
+^https?:\/\/b2baifanfan\.baidu\.com\/crm\/web\/b2b\/im\/common\/getConfigByDeviceNum reject-200
+
+#爱回收
+hostname=gw.aihuishou.com
+^https?:\/\/gw\.aihuishou\.com\/app-portal\/home\/getadvertisement reject
+
+#爱思助手
+hostname=list-app-m.i4.cn
+^https?:\/\/list-app-m\.i4\.cn\/(adclickcb|getHotSearchList|getopfstadinfo)\.xhtml reject
+
+#百度
+hostname = www.baidu.com, fcvbjbcebos.baidu.com, cover.baidu.com, baichuan.baidu.com, api*.tuisong.baidu.com, afd.baidu.com, mobads.baidu.com, issuecdn.baidupcs.com, update.pan.baidu.com, sa*.tuisong.baidu.com, m.baidu.com, sofire.baidu.com,appwk.baidu.com
+^https?:\/\/fcvbjbcebos\.baidu\.com\/.+.mp4 reject
+^https?:\/\/fcvbjbcebos\.baidu\.com\/.+?\.mp4 reject-img
+^https?:\/\/cover\.baidu\.com\/cover\/page\/dspSwitchAds\/ reject
+^https?:\/\/baichuan\.baidu\.com\/rs\/adpmobile\/launch reject
+^https?:\/\/api\d\.tuisong\.baidu\.com reject-img
+^https?:\/\/afd\.baidu\.com\/afd\/entry reject
+^https?:\/\/als\.baidu\.com\/clog\/clog reject
+^https?:\/\/mobads\.baidu\.com\/cpro\/ui\/mads.+ reject
+^https?:\/\/issuecdn\.baidupcs\.com\/issue\/netdisk\/guanggao\/ reject-200
+^https?:\/\/[\s\S]*\.baidu\.com/.*?ad[xs]\.php reject-img
+^https?:\/\/t\d{2}\.baidu\.com reject-img
+^https?:\/\/log.+?baidu\.com reject
+^https?:\/\/sa\d\.tuisong\.baidu\.com reject-img
+^https?:\/\/www.baidu.com\/?action=static&ms=1&version=css_page_2@0.*? reject
+#百度文库
+^https?:\/\/appwk\.baidu\.com\/xpage\/interface\/wknaad reject-200
+
+#薄荷健康
+hostname=api.boohee.com, bohe.sfo-tx-shanghai-01.saas.sensorsdata.cn, lego.boohee.com, status.boohee.com
+#记录悬浮部件
+^https:\/\/api\.boohee\.com\/meta-interface\/v1\/index\/page_float_bubbles\? reject-dict
+#记录发布
+^https:\/\/api\.boohee\.com\/meta-interface\/v1\/index\/tool_buttons\? reject-dict
+#记录搜索发现
+^https:\/\/api\.boohee\.com\/app-interface\/v1\/search\/search\? reject-dict
+#记录消息通知横幅推广
+^https:\/\/status\.boohee\.com\/api\/v1\/merged_messages$ reject-dict
+#弹窗配置
+^https:\/\/bohe\.sfo-tx-shanghai-01\.saas\.sensorsdata\.cn\/api\/v2\/sfo\/user_popup_configs\? reject-dict
+#绑定设备横幅推广
+^https:\/\/api\.boohee\.com\/meta-interface\/v1\/index\/sensor-banners\? reject-dict
+
+#CSDN
+hostname=app-gw.csdn.net, gw.csdn.net
+^https?:\/\/app-gw\.csdn\.net\/silkroad-api\/api\/v\d\/assemble\/list\/pub\/channel\/app_open_screen_ad reject
+^https?:\/\/app-gw\.csdn\.net\/abtesting\/v2\/getList? reject
+^https?:\/\/gw\.csdn\.net\/cms-app\/v\d+\/home_page\/open_advertisement reject
+
+#大众点评
+hostname=103.37.155.60, *.dianping.com, img.meituan.net, p.meituan.com, rms.meituan.com, www.dpfile.com, awp-assets.meituan.net, s3plus.meituan.net, p*.meituan.net, ddplus.meituan.net
+#开屏广告
+^https?:\/\/103\.37\.155\.60\/fetch - reject
+^https?:\/\/catdot\.dianping\.com\/broker-service\/hijack - reject
+^https?:\/\/mapi\.dianping\.com\/mapi\/operating\/(?>indexopsmodules|loadsplashconfig) - reject
+^https?:\/\/mapi\.dianping\.com\/mapi\/intelliindex - reject-dict
+^https?:\/\/mapi\.dianping\.com\/wdrpreload\/userprediction - reject
+^https?:\/\/mapi\.dianping\.com\/adshopping - reject
+^https?:\/\/img\.meituan\.net\/goodsawardpic\/\w+\.gif - reject-img
+^https?:\/\/p\.meituan\.com\/api\/privacy\/config - reject
+^https?:\/\/rms\.meituan\.com\/api\/v\d\/rmsmina\/c\/queryWechatAdvertisement - reject-dict
+^https?:\/\/www\.dpfile\.com\/app\/fecommonservice-lottie\/ugc-write-done\/media - reject
+^https?:\/\/www\.dpfile\.com\/picasso\/picasso-qa\/src\/AnswerList\/AnswerList-bundle - reject
+^https?:\/\/www\.dpfile\.com\/sc\/indexpromotion - reject
+^https?:\/\/catfront\.dianping\.com\/api\/metric\?v=\d&p=rn_gcbu_mrn-joy-poidetail - reject
+^https?:\/\/awp-assets\.meituan\.net\/hfe\/fep\/\w+\.json - reject
+^https?:\/\/s3plus\.meituan\.net\/ocean-blk-index\/index\/blk_conf - reject
+^https?:\/\/p\d\.meituan\.net\/nrpresourcevenus\/\w+\.gif - reject-img
+^https?:\/\/p\d\.meituan\.net\/travelcube\/(?!c129a661)\w+\.gif - reject-img
+^https?:\/\/ddplus\.meituan\.net\/v\d\/mss_\w+\/(?>ehc|titansx|ddblue|edfu)\/ - reject
+
+#大麦
+hostname=acs.m.taobao.com, amdc.m.taobao.com
+^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.damai\.wireless\.home\.welcome reject-200
+^https?:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch\?appkey=23782110 reject
+
+#斗鱼直播
+hostname=daoyu.sdo.com, rtbapi.douyucdn.cn, staticlive.douyucdn.cn, capi.douyucdn.cn, douyucdn.cn
+^https?:\/\/daoyu\.sdo\.com\/api\/userCommon\/getAppStartAd reject
+^https?:\/\/rtbapi\.douyucdn\.cn\/japi\/sign\/app\/getinfo reject-dict
+^https?:\/\/staticlive\.douyucdn\.cn\/upload\/signs\/ reject
+^https?:\/\/staticlive\.douyucdn\.cn\/.+\/getStartSend reject
+^https?:\/\/staticlive\.douyucdn\.cn\/.+?\/getStartSend reject-img
+^https?:\/\/capi\.douyucdn\.cn\/lapi\/sign\/app(api)?\/getinfo\?client_sys=ios reject
+^https?:\/\/capi\.douyucdn\.cn\/api\/ios_app\/check_update reject-img
+^https?:\/\/capi\.douyucdn\.cn\/api\/v1\/getStartSend?client_sys=ios reject-img
+^https?:\/\/douyucdn\.cn\/.+\/appapi\/getinfo reject
+^https?:\/\/douyucdn\.cn\/.+?\/appapi\/getinfo reject-img
+
+#东方航空
+hostname=app.ceair.com
+^https?:\/\/app\.ceair\.com\/customize\/security\/update reject-200
+^https?:\/\/app\.ceair\.com\/customize\/main\/adScreen reject-dict
+
+#钉钉
+hostname=gw.alicdn.com, img.alicdn.com
+#阿里系开屏
+^https?:\/\/(gw|img)\.alicdn\.com\/imgextra\/.+\/[\w!]+\d+-\d+-.+-\b([8-9]\d{2,}|[1-9]\d{3,})\b-\b([5-9]\d{2,}|[1-9]\d{3,})\b reject-dict
+
+#得物
+#开屏广告
+^https?:\/\/app\.dewu\.com\/api\/v1\/app\/advertisement reject
+^https?:\/\/cdn\.poizon\.com\/node-common\/.*.jpg reject-200
+
+#飞猪
+hostname=acs.m.taobao.com, gw.alicdn.com
+^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.fliggy\.crm\.screen\.(allresource|predict) reject-dict
+^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.trip\.activity\.querytmsresources\/1\.0\?type=originaljson reject-img
+^https?:\/\/gw\.alicdn\.com\/mt\/ reject
+^https?:\/\/gw\.alicdn\.com\/imgextra\/\w{2}\/[\w!]+-\d-tps-\d{3}-\d{4}\.(jpg|png)$ reject
+
+#飞常准
+hostname=app.variflight.com
+^https?:\/\/app\.variflight\.com\/ad\/ reject
+^https?:\/\/app\.variflight\.com\/v\d\/advert\/ reject
+
+#12123
+hostname=gab.122.gov.cn
+#^https?:\/\/gab\.122\.gov\.cn\/eapp\/m\/sysquery reject
+^https?:\/\/gab\.122\.gov\.cn\/eapp\/m\/sysquery\/adver$ reject
+
+#前程无忧 51Job
+hostname=appapi.51job*.com, cupid.51job*.com
+^https?:\/\/appapi\.51job(app)?\.com\/api\/market\/(adtrace|get_launch|get_prompt) reject
+^https?:\/\/cupid\.51job(app)?\.com\/open\/index\/recommend-infos reject
+
+#网易云音乐
+hostname=ipv4.music.163.com, interface.music.163.com, interface3.music.163.com, interface9.music.163.com
+#屏蔽广告
+https?:\/\/(ipv4|interface\d?)\.music\.163.com\/e?api\/ad reject-dict
+#今日运势 商城 Beat专区 音乐收藏家 | type:ACTIVITY | 低至5.2折
+^https?:\/\/interface\d?\.music\.163\.com\/w?e?api\/(side-bar\/mini-program\/music-service\/account|delivery\/(batch-deliver|deliver)|moment\/tab\/info\/get|yunbei\/account\/entrance\/get) reject-dict
+#播放页歌名下方∶乐迷团｜关注｜播放页提示｜音乐应用红点｜播放提示
+^https?:\/\/interface\d?\.music\.163\.com\/eapi\/(resource\/comments?\/musiciansaid|community\/friends\/fans-group\/artist\/group\/get|user\/sub\/artist|music\/songshare\/text\/recommend\/get|mine\/applet\/redpoint|resniche\/position\/play\/new\/get) reject-dict
+#搜索页热搜卡片｜猜你喜欢｜我的应用下方提醒
+^https?:\/\/interface\d?\.music\.163.com\/w?e?api\/(search\/(chart|default|rcmd\/keyword|specialkeyword)|resource-exposure\/|activity\/bonus\/playpage\/time\/query) reject-dict
+^https?:\/\/interface\d?\.music\.163.com\/eapi\/(mlivestream\/entrance\/playpage|link\/(position\/show\/strategy|scene\/show)|ios\/version|v\d\/content\/exposure\/comment\/banner) reject-dict
+
+#网上国网
+hostname=osg-static.sgcc.com.cn, osg-service.sgcc.com.cn
+^https?:\/\/(?>csc|osg)-service\.sgcc\.com\.cn:\d+\/emss-pfa-appset-front\/appForceUpdate reject
+^https?:\/\/(?>csc|osg)-service\.sgcc\.com\.cn:\d+\/emss-pfa-appset-front\/appSync\/getAppForceUpgrade reject
+^https?:\/\/(?>csc|osg)-service\.sgcc\.com\.cn:\d+\/emss-pfa-appset-front\/bootpageoutter\/ reject-dict
+^https?:\/\/(?>csc|osg)-service\.sgcc\.com\.cn:\d+\/.*\/app_api\/selectInfoByCondition reject-dict
+^https?:\/\/(?>csc|osg)-service\.sgcc\.com\.cn:\d+\/.*\/inner\/cache reject
+
+#百度地图
+hostname=dss0.bdstatic.com, tb1.bdstatic.com, tb2.bdstatic.com, ss0.bdstatic.com, gss0.bdstatic.com, newclient.map.baidu.com
+^https?:\/\/dss0\.bdstatic\.com\/-0U0bnSm1A5BphGlnYG\/ reject-200
+^https?:\/\/dss0\.bdstatic\.com\/.+/tam-ogel\/.+\.(jpg|mp4) reject
+^https?:\/\/tb1\.bdstatic\.com\/tb\/cms\/ngmis\/adsense\/*.jpg reject
+^https?:\/\/tb2\.bdstatic\.com\/tb\/mobile\/spb\/widget\/jump reject-img
+^https?:\/\/ss0\.bdstatic\.com/.+?_\d{3}_\d{4}\.jpg reject-200
+^https?:\/\/gss0\.bdstatic\.com\/.+?\/static\/wiseindex\/img\/bd_red_packet\.png reject-img
+
 [Script]
-http-response^https?:\/\/api\.m\.mi\.com\/v1\/app\/startscript-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/myBlockAds.js,requires-body=true,timeout=60,enable
+#前程无忧51Job
+http-response^https?:\/\/cupid\.51job(app)?\.com\/open\/noauth\/recommend\/job-tab-dynamicscript-path=https://raw.githubusercontent.com/zirawell/R-Store/main/Res/Scripts/AntiAd/51job.js,requires-body=true,timeout=60,tag=51job,enable={51job_enable}
+
+#阿里巴巴
+http-response^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.mshowscript-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cainiao/cainiao.js,requires-body=true,timeout=60,tag=阿里巴巴广告,enable={albb_enable}
+http-response^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.taobao\.(cloudvideo\.video\.query|wireless\.home\.splash\.awesome\.get)script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/myBlockAds.js,requires-body=true,timeout=60,tag=阿里巴巴广告,enable={albb_enable}
+http-response^https:\/\/poplayer\.template\.alibaba\.com\/\w+\.jsonscript-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/myBlockAds.js,requires-body=true,timeout=60,tag=myBlockAds,enable={albb_enable}
+
+#阿里云盘
+http-response^https:\/\/api\.alipan\.com\/apps\/v2\/users\/home\/(news|widgets)script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/adrive/adrive.js,requires-body=true,timeout=60,tag=阿里云盘,enable={alyp_enable}
+http-response^https:\/\/member\.alipan\.com\/v1\/users\/onboard_listscript-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/adrive/adrive.js,requires-body=true,timeout=60,tag=阿里云盘,enable={alyp_enable}
+
+#爱奇艺
+#首页信息流广告
+http-response^https?:\/\/[\d\.]+\/3f1\/cards\.iqiyi\.com\/(views_home\/3\.0\/qy_home|waterfall\/3\.0\/feed)\?script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cnftp.js,requires-body=true,timeout=60,tag=爱奇艺首页信息流广告,enable={aiqiyi_enable}
+http-response^https?:\/\/access\.if\.iqiyi\.com\/3f1\/cards\.iqiyi\.com\/(views_category\/3\.0\/category_home|views_home\/3\.0\/qy_home|waterfall\/3\.0\/feed)\?script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cnftp.js,requires-body=true,timeout=60,tag=爱奇艺首页信息流广告,enable={aiqiyi_enable}
+http-response^https?:\/\/cards\.iqiyi\.com\/views_category\/3\.0\/(category_home|categorylib_content|film_hybrid)\?script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cnftp.js,requires-body=true,timeout=60,tag=爱奇艺首页信息流广告,enable={aiqiyi_enable}
+http-response^https?:\/\/cards\.iqiyi\.com\/(views_home\/3\.0\/qy_home|waterfall\/3\.0\/feed)\?script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cnftp.js,requires-body=true,timeout=60,tag=爱奇艺首页信息流广告,enable={aiqiyi_enable}
+#播放详情页
+http-response^https?:\/\/cards\.iqiyi\.com\/views_plt\/3\.0\/player_tabs_v2\?script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cnftp.js,requires-body=true,timeout=60,tag=爱奇艺播放详情页广告,enable={aiqiyi_enable}
+#搜索页列表
+http-response^https?:\/\/cards\.iqiyi\.com\/views_search\/3\.0\/(hot_query_)?search\?script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cnftp.js,requires-body=true,timeout=60,tag=爱奇艺搜索页列表广告,enable={aiqiyi_enable}
+#评论区
+http-response^https?:\/\/comment-card\.iqiyi\.com\/views_comment\/3\.0\/long_video_comments\?script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cnftp.js,requires-body=true,timeout=60,tag=爱奇艺评论区,enable={aiqiyi_enable}
+#我的页面菜单
+http-response^https?:\/\/iface2\.iqiyi\.com\/aggregate\/3\.0\/getMyMenus\?script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cnftp.js,requires-body=true,timeout=60,tag=爱奇艺我的页面菜单,enable={aiqiyi_enable}
+#首页左上角天气
+http-response^https?:\/\/iface2\.iqiyi\.com\/control\/3\.0\/init_proxy\?script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cnftp.js,requires-body=true,timeout=60,tag=爱奇艺首页左上角天气,enable={aiqiyi_enable}
+#通用控制,各tab页二楼
+http-response^https?:\/\/iface2\.iqiyi\.com\/fusion\/3\.0\/common_switch\?script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cnftp.js,requires-body=true,timeout=60,tag=爱奇艺通用控制,各tab页二楼,enable={aiqiyi_enable}
+#底部tab,顶部tab
+http-response^https?:\/\/iface2\.iqiyi\.com\/views\/3\.0\/(bottom_theme|home_top_menu)\?script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cnftp.js,requires-body=true,timeout=60,tag=爱奇艺底部tab,顶部tab,enable={aiqiyi_enable}
+#搜索框填充词
+http-response^https?:\/\/search\.video\.iqiyi\.com\/q\?script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cnftp.js,requires-body=true,timeout=60,tag=爱奇艺搜索框填充词,enable={aiqiyi_enable}
+#开屏广告,播放广告
+http-response^https?:\/\/(kjp|t7z)\.cupid\.iqiyi\.com\/mixer\?script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cnftp.js,requires-body=true,timeout=60,tag=爱奇艺开屏广告,播放广告,enable={aiqiyi_enable}
+
+#百度地图
+http-response^https?:\/\/newclient\.map\.baidu\.com\/client\/phpui2\/\?qt=adsscript-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/baidumap.js,requires-body=true,timeout=60,tag=百度地图广告,enable={bdduditu_enable}
+
+#百度贴吧
+http-response^http(s:\/\/tiebac|:\/\/c\.tieba)\.baidu\.com\/(c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)$|tiebaads\/commonbatch|c\/s\/sync$)script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/tieba-json.js,requires-body=true,timeout=60,tag=百度贴吧广告,enable={bddutpba_enable}
+http-response^http(s:\/\/tiebac|:\/\/c\.tieba)\.baidu\.com\/c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)\?cmdscript-path=https://raw.githubusercontent.com/app2smile/rules/master/js/tieba-proto.js,requires-body=true,binary-body-mode=true,timeout=60,tag=百度贴吧广告,enable={bddutpba_enable}
+
+#哔哩哔哩
+http-request^https:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.community\.service\.dm\.v1\.DM\/DmSegMobile$script-path=https://raw.githubusercontent.com/kokoryh/Sparkle/refs/heads/master/dist/bilibili.protobuf.request.js,argument=[{logLevel}],requires-body=true,binary-body-mode=true,enable={airborne},tag=bilibili.airborne
+http-response^https:\/\/live\.bilibili\.com\/blackboard\/era\/.+\.html\?script-path=https://raw.githubusercontent.com/kokoryh/Sparkle/refs/heads/master/dist/webpage.bilibili.js,requires-body=true,enable={purifyWebpage},tag=bilibili.webpage
+http-response^https:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.(app\.(show\.v1\.Popular\/Index|dynamic\.v2\.Dynamic\/DynAll|view(unite)?\.v1\.View\/(View|ViewProgress|RelatesFeed)|playurl\.v1\.PlayURL\/PlayView|playerunite\.v1\.Player\/PlayViewUnite)|polymer\.app\.search\.v1\.Search\/SearchAll|community\.service\.dm\.v1\.DM\/DmView|main\.community\.reply\.v1\.Reply\/MainList|pgc\.gateway\.player\.v2\.PlayURL\/PlayView)$script-path=https://raw.githubusercontent.com/kokoryh/Sparkle/refs/heads/master/dist/bilibili.protobuf.response.js,argument=[{showUpList},{purifyTopReplies},{airborne},{logLevel}],requires-body=true,binary-body-mode=true,tag=bilibili.protobuf
+
+#哔哩哔哩漫画
+http-response^https?:\/\/manga\.bilibili\.com\/twirp\/user\.v\d\.User\/UCenterConfscript-path=https://raw.githubusercontent.com/zirawell/R-Store/main/Res/Scripts/AntiAd/bilibiliManga.js,requires-body=true,timeout=60,tag=哔哩哔哩漫画,enable={bilimanhua_enable}
+http-response^https?:\/\/manga\.bilibili\.com\/twirp\/user\.v\d\.User\/GetInitInfoscript-path=https://raw.githubusercontent.com/zirawell/R-Store/main/Res/Scripts/AntiAd/bilibiliManga.js,requires-body=true,timeout=60,tag=哔哩哔哩漫画,enable={bilimanhua_enable}
+
+#薄荷健康
+#记录大家都在看data.recom_cards/底部按钮data.recom_btns
+http-response^https:\/\/api\.boohee\.com\/meta-interface\/v2\/index\?script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/bohe/bohe_ads.js,requires-body=true,timeout=60,tag=薄荷健康,enable={bohejmkh_enable}
+#广场推荐红标data.tabs[1].badge/轮播图data.recommend_ads
+http-response^https:\/\/api\.boohee\.com\/meta-interface\/v1\/index\/plaza\?script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/bohe/bohe_ads.js,requires-body=true,timeout=60,tag=薄荷健康,enable={bohejmkh_enable}
+#代谢中心顶部轮播图top_banner/免费问诊推广diagnos_config/合作医疗机构partner_hospital/医患问答question_answer/热门商品product/品牌大事件brand_story
+http-response^https:\/\/api\.boohee\.com\/open-interface\/v1\/string\/market_page\?title=metabolism_config$script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/bohe/bohe_ads.js,requires-body=true,timeout=60,tag=薄荷健康,enable={bohejmkh_enable}
+
+#菜鸟裹裹
+http-response^https?:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch$script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/header.js,timeout=60,tag=菜鸟裹裹,enable={cdnngogo_enable}
+http-response^https?:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.m?show\.cnscript-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cainiao/cainiao.js,requires-body=true,timeout=60,tag=菜鸟裹裹,enable={cdnngogo_enable}
+http-response^https?:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.nbpresentation\.(pickup\.empty\.page|protocol\.homepage)\.get\.cnscript-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cainiao/cainiao.js,requires-body=true,timeout=60,tag=菜鸟裹裹,enable={cdnngogo_enable}
+#消息中心
+http-response^https?:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.nbfriend\.message\.conversation\.list\.cnscript-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cainiao/cainiao.js,requires-body=true,timeout=60,tag=菜鸟裹裹,enable={cdnngogo_enable}
+
+#大众点评
+#开屏广告
+http-response^https?:\/\/img\.meituan\.net\/dpmobile\/script-path=https://raw.githubusercontent.com/zirawell/R-Store/main/Res/Scripts/AntiAd/dianping.js,requires-body=true,timeout=60,tag=大众点评,enable={davsdmpk_enable}
+http-response^https?:\/\/img\.meituan\.net\/goodsawardpic\/\w+\.(?!gif)\w+$script-path=https://raw.githubusercontent.com/zirawell/R-Store/main/Res/Scripts/AntiAd/dianping.js,requires-body=true,timeout=60,tag=大众点评,enable={davsdmpk_enable}
+http-response^https?:\/\/ddplus\.meituan\.net\/v\d\/mss_\w+\/picassovcscript-path=https://raw.githubusercontent.com/zirawell/R-Store/main/Res/Scripts/AntiAd/dianping.js,requires-body=true,timeout=60,tag=大众点评,enable={davsdmpk_enable}
+
+#滴滴出行
+http-response^https?:\/\/ct\.xiaojukeji\.com\/agent\/v3\/feedsscript-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/didi/didiAds.js,requires-body=true,timeout=60,tag=滴滴出行,enable={didiiuxk_enable}
+http-response^https?:\/\/freight\.xiaojukeji\.com\/gatewayscript-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/didi/didiAds.js,requires-body=true,timeout=60,tag=滴滴出行,enable={didiiuxk_enable}
+http-response^https?:\/\/res\.xiaojukeji\.com\/resapi\/activity\/xpgetscript-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/didi/didiAds.js,requires-body=true,timeout=60,tag=滴滴出行,enable={didiiuxk_enable}
+http-response^https?:\/\/res\.xiaojukeji\.com\/resapi\/activity\/mgetscript-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/didi/didiAds.js,requires-body=true,timeout=60,tag=滴滴出行,enable={didiiuxk_enable}
+http-response^https?:\/\/conf\.diditaxi\.com\.cn\/homepage\/v\d\/other\/fastscript-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/didi/didiAds.js,requires-body=true,timeout=60,tag=滴滴出行,enable={didiiuxk_enable}
+#http-response^https?:\/\/conf\.diditaxi\.com\.cn\/homepage\/v\d\/corescript-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/didi/didiAds.js,requires-body=true,timeout=60,tag=滴滴出行
+http-response^https?:\/\/conf\.diditaxi\.com\.cn\/dynamic\/confscript-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/didi/didiAds.js,requires-body=true,timeout=60,tag=滴滴出行,enable={didiiuxk_enable}
+http-response^https?:\/\/common\.diditaxi\.com\.cn\/common\/v\d\/usercenter\/mescript-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/didi/didiAds.js,requires-body=true,timeout=60,tag=滴滴出行,enable={didiiuxk_enable}
+http-response^https?:\/\/daijia\.kuaidadi\.com\/gatewayscript-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/didi/didiAds.js,requires-body=true,timeout=60,tag=滴滴出行,enable={didiiuxk_enable}
+http-response^https?:\/\/daijia\.kuaidadi\.com:443\/gatewayscript-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/didi/didiAds.js,requires-body=true,timeout=60,tag=滴滴出行,enable={didiiuxk_enable}
+#微信小程序个人中心净化
+http-response^https?:\/\/common\.diditaxi\.com\.cn\/common\/v5script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/didi/didiAds.js,requires-body=true,timeout=60,tag=微信小程序个人中心净化,enable={didiiuxk_enable}
+
+#叮咚买菜
+#开屏广告及首页推荐流及底部状态栏优化
+http-response^https?:\/\/maicai\.api\.ddxq\.mobi\/homeApi\/(?>bottomNavi|homeFlowDetail)script-path=https://raw.githubusercontent.com/zirawell/R-Store/main/Res/Scripts/AntiAd/ddxq.js,requires-body=true,timeout=60,tag=叮咚买菜,enable={ddmc_enable}
+#右下角AI
+http-response^https?:\/\/maicai\.api\.ddxq\.mobi\/tool\/getConfigscript-path=https://raw.githubusercontent.com/zirawell/R-Store/main/Res/Scripts/AntiAd/ddxq.js,requires-body=true,timeout=60,tag=叮咚买菜,enable={ddmc_enable}
+#我的页净化
+http-response^https?:\/\/user\.api\.ddxq\.mobi\/userportal-service\/api\/v\d\/user\/queryMyPagescript-path=https://raw.githubusercontent.com/zirawell/R-Store/main/Res/Scripts/AntiAd/ddxq.js,requires-body=true,timeout=60,tag=叮咚买菜,enable={ddmc_enable}
+
+#粉笔
+http-response^https?:\/\/tiku\.fenbi\.com\/activity\/app\/launcher\?script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/fenbi.js,requires-body=true,timeout=60,tag=粉笔开屏广告,enable={ffbi_enable}
+
+#航旅纵横
+http-response^http?:\/\/(114\.115\.217\.129)|(home\.umetrip\.com)\/gateway\/api\/umetrip\/native$script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/umetrip/umetrip_ads.js,requires-body=true,timeout=60,tag=航旅纵横,enable={hlzh_enable}
+
+#盒马
+http-response^https?:\/\/acs(\.|-)m\.(taobao|freshippo)\.com\/gw\/mtop\.wdk\.render\.query(?>indexpage|mypage|tabfeedstream)script-path=https://raw.githubusercontent.com/zirawell/R-Store/main/Res/Scripts/AntiAd/freshippo.js,requires-body=true,timeout=60,tag=盒马,enable={hema_enable}
+
+#IT之家
+#移除轮播图置顶文章信息流广告
+http-response^https?:\/\/napi\.ithome\.com\/api\/(news\/index|topmenu\/getfeeds)script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/ithome/ithome.js,requires-body=true,timeout=60,tag=ithome,enable={itzj_enable}
+
+#建行生活
+http-response^https?:\/\/yunbusiness\.ccb\.com\/basic_service\/txCtrl\?txcode=A3341AB04script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/ccbLife/ccbLifeAds.js,requires-body=true,timeout=60,tag=建行生活,enable={jhsh_enable}
+#内置饿了么
+http-response^https?:\/\/g\.alicdn\.com\/.*o2o-adscript-path=https://raw.githubusercontent.com/zirawell/R-Store/main/Res/Scripts/AntiAd/alicdn.js,requires-body=true,timeout=60,tag=建行生活内置饿了么,enable={jhsh_enable}
+
+#京东
+http-response^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=(deliverLayer|getTabHomeInfo|myOrderInfo|orderTrackBusiness|personinfoBusiness|start|welcomeHome)script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/jingdong/jingdong.js,requires-body=true,timeout=60,tag=京东,enable={jkds_enable}
+
+#京喜
+http-response^https?:\/\/api\.m\.jd\.com\/api\?functionId=delivery_showscript-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/jingxiAd.js,requires-body=true,timeout=60,tag=京喜,enable={jkxi_enable}
+
+#Keep
+#我的页面去推广
+http-response^https?:\/\/api\.gotokeep\.com\/athena\/v\d\/people\/my$script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/keep.js,requires-body=true,timeout=60,tag=keep,enable={keep_enable}
+#应用底部栏净化
+http-response^https?:\/\/api\.gotokeep\.com\/config\/v\d\/basicscript-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/keep.js,requires-body=true,timeout=60,tag=keep,enable={keep_enable}
+#发现页处理
+http-response^https?:\/\/api\.gotokeep\.com\/homepage\/v\d\/tabscript-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/keep.js,requires-body=true,timeout=60,tag=keep,enable={keep_enable}
+#课程预览页广告
+http-response^https?:\/\/api\.gotokeep\.com\/nuocha\/course\/v\d/\w+\/previewscript-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/keep.js,requires-body=true,timeout=60,tag=keep,enable={keep_enable}
+#我的运动页面去除下方推荐
+http-response^https?:\/\/api\.gotokeep\.com\/sportpage\/sport\/v\d\/mysportscript-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/keep.js,requires-body=true,timeout=60,tag=keep,enable={keep_enable}
+
+#夸克
+http-response^https?:\/\/open-cms-api\.(uc|quark)\.cn\/open-cmsscript-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/quark.js,requires-body=true,timeout=60,tag=夸克,enable={kxke_enable}
+
+#快手联盟,优量汇,穿山甲「广告联盟」
+http-response^https:\/\/(api-access\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/get_ads|open\.e\.kuaishou\.com\/rest\/e\/v3\/open\/univ$|mi\.gdt\.qq\.com\/gdt_mview\.fcg\?)script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/adsense.js,requires-body=true,timeout=60,tag=快手联盟,优量汇,穿山甲「广告联盟」,enable={glgclmmg_enable}
+
+#酷安
+http-response^https?:\/\/api\.coolapk\.com\/v6\/feed\/(detail|replyList)\?script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/coolapk.js,requires-body=true,timeout=60,tag=酷安,enable={kuan_enable}
+http-response^https?:\/\/api\.coolapk\.com\/v6\/main\/(dataList|indexV8|init)script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/coolapk.js,requires-body=true,timeout=60,tag=酷安,enable={kuan_enable}
+http-response^https?:\/\/api\.coolapk\.com\/v6\/page\/dataList\?script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/coolapk.js,requires-body=true,timeout=60,tag=酷安,enable={kuan_enable}
+
+#罗森点点
+http-response^https:\/\/lawsonapi\.yorentown\.com\/area\/sh-lawson\/app\/v1\/script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/lawson.js,requires-body=true,timeout=60,tag=罗森点点,enable={lawson_enable}
+http-response^https:\/\/lawsonapi\.yorentown\.com\/portal\/app\/globalLaunch\/listAdvertscript-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/lawson.js,requires-body=true,timeout=60,tag=罗森点点,enable={lawson_enable}
+
+#买单吧
+http-response^https?:\/\/creditcardapp\.bankcomm\.(com|cn)\/rcg\/index\.html\?callbackurl=rcg\/index\.html&orclogin=1&script-path=https://raw.githubusercontent.com/zirawell/R-Store/main/Res/Scripts/AntiAd/mdb.js,requires-body=true,timeout=60,tag=mdb,enable={mddjba_enable}
+
+#芒果TV
+#我的页面
+http-response^https?:\/\/me\.bz\.mgtv\.com\/v3\/module\/list\?script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cnftp.js,requires-body=true,timeout=60,tag=芒果TV我的页面,enable={mhgotv_enable}
+#首页信息流,顶部tab
+http-response^https?:\/\/mob-st\.bz\.mgtv\.com\/odin\/c1\/channel\/index\?script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cnftp.js,requires-body=true,timeout=60,tag=芒果TV首页信息流,顶部tab,enable={mhgotv_enable}
+http-response^https?:\/\/dc2?\.bz\.mgtv\.com\/dynamic\/v1\/channel\/(index|vrsList)\/\wscript-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cnftp.js,requires-body=true,timeout=60,tag=芒果TV,enable={mhgotv_enable}
+#底部tab
+http-response^https?:\/\/mobile\.api\.mgtv\.com\/mobile\/config\?script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cnftp.js,requires-body=true,timeout=60,tag=芒果TV底部tab,enable={mhgotv_enable}
+#播放详情页
+http-response^https?:\/\/mobile\.api\.mgtv\.com\/v10\/video\/info\?script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cnftp.js,requires-body=true,timeout=60,tag=芒果TV播放详情页,enable={mhgotv_enable}
+http-response^https?:\/\/mobile-thor\.api\.mgtv\.com\/v1\/vod\/info\?script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cnftp.js,requires-body=true,timeout=60,tag=芒果TV播放详情页,enable={mhgotv_enable}
+#搜索框填充词
+http-response^https?:\/\/mobileso\.bz\.mgtv\.com\/mobile\/recommend\/v2\?script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cnftp.js,requires-body=true,timeout=60,tag=芒果TV搜索框填充词,enable={mhgotv_enable}
+
+#马蜂窝
+http-response^https?:\/\/mapi\.mafengwo\.cn\/user\/profile\/get_(list|profile)script-path=https://raw.githubusercontent.com/zirawell/R-Store/main/Res/Scripts/AntiAd/mafengwo.js,requires-body=true,timeout=60,tag=马蜂窝,enable={mafgwo_enable}
+
+#美柚
+http-response^https:\/\/config-service\.seeyouyima\.com\/api\/configs\/batch\?script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/meiyou/meiyou_ads.js,requires-body=true,timeout=60,tag=美柚App净化,enable={meiyou_enable}
+http-response^https:\/\/config-service\.seeyouyima\.com\/api\/configs\?script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/meiyou/meiyou_ads.js,requires-body=true,timeout=60,tag=美柚App净化,enable={meiyou_enable}
+
+#咪咕视频
+http-response^https?:\/\/display-sc\.miguvideo\.com\/display\/v3\/static\/PERSONAL_CENTER$script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/refs/heads/main/Scripts/miguvideo/miguvideo_ads.js,requires-body=true,timeout=60,tag=咪咕视频个人中心去广告
+
+#起点读书
+#起点开屏页广告,每日导读去除,冷启动强制跳转精选页去除,去除发现页弹出的活动弹窗,去除下方(精选发现中间的)活动时的tab,去除书架右下角的活动/广告的悬浮icon,搜索页可以搜索用户
+#http-response^https?:\/\/magev6\.if\.qidian\.com\/argus\/api\/(v4\/client\/getsplashscreen|v2\/deeplink\/geturl|v1\/(client\/getconf|adv\/getadvlistbatch\?positions=iOS_tab|dailyrecommend\/getdailyrecommend))script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/qidian.js,requires-body=true,timeout=60,tag=起点读书
+
+#企迈-QMAI(包含:挪瓦咖啡、林里柠檬茶、霸王茶姬、陈香贵)
+http-response^https?:\/\/(?>webapi|miniapp)\.qmai\.cn\/web\/catering([0-9]-apiserver)?\/advertising\/ad\/advertiseInfoscript-path=https://raw.githubusercontent.com/zirawell/R-Store/main/Res/Scripts/AntiAd/qmai.js,requires-body=true,timeout=60,tag=企迈（挪瓦咖啡、林里柠檬茶、霸王茶姬、陈香贵）
+
+#人人视频
+#RRTV_level_info
+http-response^https?:\/\/api\.rr\.tv\/\w{3}\/level\/infoscript-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/rrtv_json.js,requires-body=true,timeout=60,tag=rrtv_json,enable={rfrfuipk_enable}
+#RRTV_去除首頁廣告
+http-responsehttps://api.rr.tv/v3plus/index/channel\?pageNum=1&position=CHANNEL_INDEXscript-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/rrtv_json.js,requires-body=true,timeout=60,tag=rrtv_json,enable={rfrfuipk_enable}
+#RRTV_去除廣場tab
+http-response^https?:\/\/api\.rr\.tv\/app\/config\/h5NativeBarscript-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/rrtv_json.js,requires-body=true,timeout=60,tag=rrtv_json,enable={rfrfuipk_enable}
+#RRTV_去除商城廣告
+http-response^https?:\/\/api\.rr\.tv\/v3plus\/index\/channel\?pageNum=1&position=CHANNEL_MYscript-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/rrtv_json.js,requires-body=true,timeout=60,tag=rrtv_json,enable={rfrfuipk_enable}
+#RRTV_Ad_List
+http-response^https?:\/\/api\.rr\.tv\/user\/privilege\/listscript-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/rrtv_json.js,requires-body=true,timeout=60,tag=rrtv_json,enable={rfrfuipk_enable}
+#RRTV_Ad_All
+http-response^https?:\/\/api\.rr\.tv\/ad\/getAllscript-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/rrtv_json.js,requires-body=true,timeout=60,tag=rrtv_json,enable={rfrfuipk_enable}
+#RRTV_Get_Drama
+http-response^https?:\/\/api\.rr\.tv\/drama\/app\/get_combined_drama_detailscript-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/rrtv_json.js,requires-body=true,timeout=60,tag=rrtv_json,enable={rfrfuipk_enable}
+#RRTV_Watch_V4
+http-responsehttps://api.rr.tv/watch/v4script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/rrtv_json.js,requires-body=true,timeout=60,tag=rrtv_json,enable={rfrfuipk_enable}
+#RRTV_User_Info
+http-responsehttps://api.rr.tv/user/profilescript-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/rrtv_json.js,requires-body=true,timeout=60,tag=rrtv_json,enable={rfrfuipk_enable}
+
+#Spotify
+http-response^https:\/\/(?:\w+-spclient|spclient\.wg)\.spotify\.com(?::443)?\/(?:bootstrap|user-customization-service)script-path=https://raw.githubusercontent.com/001ProMax/Surge/refs/heads/main/Script/Spotify.Crack.Dev.js,requires-body=true,binary-body-mode=true,timeout=3,argument=[{tab},{useractivity}],tag=Protobuf
+
+
+#什么值得买
+#hostname=homepage-api.smzdm.com,haojia-api.smzdm.com,app-api.smzdm.com,user-api.smzdm.com,article-api.smzdm.com,qianbao.smzdm.com,s-api.smzdm.com,haojia.m.smzdm.com
+http-response^https?:\/\/haojia\.m\.smzdm\.com\/detail_modul\/user_related_modul\?script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/smzdm/smzdm_ads.js,requires-body=true,timeout=60,tag=什么值得买去广告,enable={smzdm_enable}
+http-response^https?:\/\/haojia-api\.smzdm\.com\/ranking_list\/articles\?script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/smzdm/smzdm_ads.js,requires-body=true,timeout=60,tag=什么值得买去广告,enable={smzdm_enable}
+http-response^https?:\/\/s-api\.smzdm\.com\/sou\/filter\/tags\/hot_tags\?script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/smzdm/smzdm_ads.js,requires-body=true,timeout=60,tag=什么值得买去广告,enable={smzdm_enable}
+http-response^https?:\/\/s-api\.smzdm\.com\/sou\/list_v10\?script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/smzdm/smzdm_ads.js,requires-body=true,timeout=60,tag=什么值得买去广告,enable={smzdm_enable}
+http-response^https?:\/\/user-api\.smzdm\.com\/vip\/creator_user_centerscript-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/smzdm/smzdm_ads.js,requires-body=true,timeout=60,tag=什么值得买去广告,enable={smzdm_enable}
+http-response^https?:\/\/user-api\.smzdm\.com\/vip$script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/smzdm/Smzdm.js,requires-body=true,timeout=60,tag=什么值得买去广告,enable={smzdm_enable}
+http-response^https?:\/\/app-api\.smzdm\.com\/util\/loadingscript-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Smzdm.js,requires-body=true,timeout=60,tag=Smzdm,enable={smzdm_enable}
+http-response^https?:\/\/app-api\.smzdm\.com\/util\/updatescript-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Smzdm.js,requires-body=true,timeout=60,tag=Smzdm,enable={smzdm_enable}
+http-response^https?:\/\/user-api\.smzdm\.com\/vip\/bottom_card_listscript-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Smzdm.js,requires-body=true,timeout=60,tag=Smzdm,enable={smzdm_enable}
+http-response^https?:\/\/haojia-api\.smzdm\.com\/home\/listscript-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Smzdm.js,requires-body=true,timeout=60,tag=Smzdm,enable={smzdm_enable}
+http-response^https?:\/\/homepage-api\.smzdm\.com\/v3\/homescript-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Smzdm.js,requires-body=true,timeout=60,tag=Smzdm,enable={smzdm_enable}
+http-response^https?:\/\/article-api\.smzdm\.com\/publish\/get_bubblescript-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Smzdm.js,requires-body=true,timeout=60,tag=Smzdm,enable={smzdm_enable}
+http-response^https?:\/\/qianbao\.smzdm\.com\/v\d\/app\/homescript-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Smzdm.js,requires-body=true,timeout=60,tag=Smzdm,enable={smzdm_enable}
+
+#淘宝
+http-response^https?:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.taobao\.(cloudvideo\.video\.query|wireless\.home\.splash\.awesome\.get)script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/myBlockAds.js,requires-body=true,timeout=60,tag=淘宝,enable={tcbc_enable}
+http-response^https?:\/\/poplayer\.template\.alibaba\.com\/\w+\.jsonscript-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/myBlockAds.js,requires-body=true,timeout=60,tag=淘宝,enable={tcbc_enable}
+
+#腾讯新闻
+http-response^https?:\/\/(news\.ssp\.qq\.com\/app|r\.inews\.qq\.com\/(get(QQNewsUnreadList|TagFeedList)|gw\/page\/event_detail|news_feed\/hot_module_list))script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/qq-news.js,requires-body=true,timeout=60,tag=腾讯新闻,enable={tgxyxbwf_enable}
+
+#网易云音乐
+#mian|热推、有话想说、分享一下、歌曲下的祝福等小提示去除｜评论区乐迷、星评等级关注等图标去除
+http-response^https?:\/\/(ipv4|interface\d?)\.music\.163\.com\/e?api\/(batch|v\d\/resource\/comment\/floor\/get)script-path=https://raw.githubusercontent.com/Keywos/rule/main/script/wy/js/wyres.js,requires-body=true,binary-body-mode=true,timeout=20,tag=NetEaseCloudMusic_mian,enable={whyiyyybyt_enable}
+#伪vip
+#http-response^https?:\/\/(ipv4|interface\d?)\.music\.163\.com\/e?api\/(music-vip-membership\/client\/vip\/info|vipnewcenter\/app\/resource\/newaccountpage)script-path=https://raw.githubusercontent.com/Keywos/rule/main/script/wy/js/wyres.js,requires-body=true,binary-body-mode=true,timeout=20,tag=NetEaseCloudMusic_vip,enable={whyiyyybyt_enable}
+#tab
+http-response^https?:\/\/(ipv4|interface\d?)\.music\.163\.com\/e?api\/link\/home\/framework\/tabscript-path=https://raw.githubusercontent.com/Keywos/rule/main/script/wy/js/wyres.js,requires-body=true,binary-body-mode=true,timeout=20,tag=NetEaseCloudMusic_tab,argument=[{MY},{DT},{FX}],enable={whyiyyybyt_enable}
+#推荐|home|主页
+http-response^https?:\/\/(ipv4|interface\d?)\.music\.163\.com\/e?api\/(homepage\/block\/page|link\/page\/rcmd\/(resource\/show|block\/resource\/multi\/refresh))script-path=https://raw.githubusercontent.com/Keywos/rule/main/script/wy/js/wyres.js,requires-body=true,binary-body-mode=true,timeout=20,tag=NetEaseCloudMusic_home,argument=[{PRGG},{PRRK},{PRDRD},{PRSCVPT},{PRST},{PRRR},{HMPR},{PRMST},{PRCN}],enable={whyiyyybyt_enable}
+#发现
+http-response^https?:\/\/(ipv4|interface\d?)\.music\.163\.com\/e?api\/link\/page\/discovery\/resource\/showscript-path=https://raw.githubusercontent.com/Keywos/rule/main/script/wy/js/wyres.js,requires-body=true,binary-body-mode=true,timeout=20,tag=NetEaseCloudMusic_fx,enable={whyiyyybyt_enable}
+#effect
+#http-response^https?:\/\/(ipv4|interface\d?)\.music\.163\.com\/e?api\/song\/play\/more\/list\/v\dscript-path=https://raw.githubusercontent.com/Keywos/rule/main/script/wy/js/wyres.js,requires-body=true,binary-body-mode=true,timeout=20,tag=NetEaseCloudMusic_effect,enable={whyiyyybyt_enable}
+#我的MyPageBarad
+http-response^https?:\/\/(ipv4|interface\d?)\.music\.163\.com\/e?api\/link\/position\/show\/resourcescript-path=https://raw.githubusercontent.com/Keywos/rule/main/script/wy/js/wyres.js,requires-body=true,binary-body-mode=true,timeout=20,tag=NetEaseCloudMusic_mybarad,enable={whyiyyybyt_enable}
+#显示未关注你
+http-response^https?:\/\/(ipv4|interface\d?)\.music\.163\.com\/e?api\/user\/follow\/users\/mixed\/getscript-path=https://raw.githubusercontent.com/Keywos/rule/main/script/wy/js/wyres.js,requires-body=true,binary-body-mode=true,timeout=20,tag=NetEaseCloudMusic_foll,enable={whyiyyybyt_enable}
+
+#小米商城
+http-response^https?:\/\/api\.m\.mi\.com\/v1\/app\/startscript-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/myBlockAds.js,requires-body=true,timeout=60,tag=小米商城,enable={xnmiuhig_enable}
+
+#小兔充充
+http-response^https?:\/\/mapi\.xiaotucc\.com\/(mall\/main|main_page\/index\/getActivity)script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/xiaotucc.js,requires-body=true,timeout=60,tag=小兔充充,enable={xntuisis_enable}
+
+#闲鱼
+#商品信息流广告
+http-response^https:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlehome\.home\.nextfresh\/script-path=https://klraw.pages.dev/kelv1n1n/script/refs/heads/main/js/goofish.js?token=209863,requires-body=true,tag=商品信息流广告
+#定位地区页面的信息流广告
+http-response^https:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.local\.home\/script-path=https://klraw.pages.dev/kelv1n1n/script/refs/heads/main/js/goofish.js?token=209863,requires-body=true,tag=定位地区页面的信息流广告
+#个人主页
+http-response^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.idle\.user\.page\.my\.adapter\/script-path=https://klraw.pages.dev/kelv1n1n/script/refs/heads/main/js/goofish.js?token=209863,requires-body=true,tag=个人主页
+#首页顶部频道菜单
+http-response^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlehome\.home\.circle\.list\/1\.0script-path=https://klraw.pages.dev/kelv1n1n/script/refs/heads/main/js/goofish.js?token=209863,requires-body=true,tag=首页顶部频道菜单
+#商品详情页周边推荐
+http-response^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.local\.nearby\.itemdetail\.enter\/1\.0script-path=https://klraw.pages.dev/kelv1n1n/script/refs/heads/main/js/goofish.js?token=209863,requires-body=true,tag=商品详情页周边推荐
+#搜索结果信息流广告
+http-response^https:\/\/g-acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlemtopsearch\.search\/script-path=https://klraw.pages.dev/kelv1n1n/script/refs/heads/main/js/goofish.js?token=209863,requires-body=true,tag=搜索结果信息流广告
+#同城页横幅广告
+http-response^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.local\.flow\.plat\.sectionscript-path=https://klraw.pages.dev/kelv1n1n/script/refs/heads/main/js/goofish.js?token=209863,requires-body=true,tag=同城页横幅广告
+
+#小红书
+#搜索页
+http-response^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d+\/search\/(banner|hot)_listscript-path=https://github.com/fmz200/wool_scripts/raw/main/Scripts/xiaohongshu/xiaohongshu.js,requires-body=true,timeout=60,tag=小红书搜索页,enable={xhs_enable}
+http-response^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d+\/search\/(hint|trending)\?script-path=https://github.com/fmz200/wool_scripts/raw/main/Scripts/xiaohongshu/xiaohongshu.js,requires-body=true,timeout=60,tag=小红书搜索页,enable={xhs_enable}
+http-response^https?:\/\/(so|edith)\.xiaohongshu\.com\/api\/sns\/v\d+\/search\/notes\?script-path=https://github.com/fmz200/wool_scripts/raw/main/Scripts/xiaohongshu/xiaohongshu.js,requires-body=true,timeout=60,tag=小红书搜索页,enable={xhs_enable}
+#开屏广告
+http-response^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d+\/system_service\/config\?script-path=https://github.com/fmz200/wool_scripts/raw/main/Scripts/xiaohongshu/xiaohongshu.js,requires-body=true,timeout=60,tag=小红书开屏广告,enable={xhs_enable}
+http-response^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d+\/system_service\/splash_configscript-path=https://github.com/fmz200/wool_scripts/raw/main/Scripts/xiaohongshu/xiaohongshu.js,requires-body=true,timeout=60,tag=小红书开屏广告,enable={xhs_enable}
+#详情页,小部件
+http-response^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d+\/note\/widgetsscript-path=https://github.com/fmz200/wool_scripts/raw/main/Scripts/xiaohongshu/xiaohongshu.js,requires-body=true,timeout=60,tag=小红书详情页,enable={xhs_enable}
+#图片水印,视频水印
+http-response^https?:\/\/(edith|rec|www)\.xiaohongshu\.com\/api\/sns\/v\d+\/note\/(imagefeed|live_photo\/save)script-path=https://github.com/fmz200/wool_scripts/raw/main/Scripts/xiaohongshu/xiaohongshu.js,requires-body=true,timeout=60,tag=小红书图片视频水印,enable={xhs_enable}
+http-response^https?:\/\/(edith|rec|www)\.xiaohongshu\.com\/api\/sns\/v\d+\/(followfeed|homefeed)\?script-path=https://github.com/fmz200/wool_scripts/raw/main/Scripts/xiaohongshu/xiaohongshu.js,requires-body=true,timeout=60,tag=小红书图片视频水印,enable={xhs_enable}
+http-response^https?:\/\/(edith|rec|www)\.xiaohongshu\.com\/api\/sns\/(v2\/note\/feed|v3\/note\/videofeed)\?script-path=https://github.com/fmz200/wool_scripts/raw/main/Scripts/xiaohongshu/xiaohongshu.js,requires-body=true,timeout=60,tag=小红书图片视频水印,enable={xhs_enable}
+http-response^https?:\/\/(edith|rec|www)\.xiaohongshu\.com\/api\/sns\/(v4\/note\/videofeed|v10\/note\/video\/save)\?script-path=https://github.com/fmz200/wool_scripts/raw/main/Scripts/xiaohongshu/xiaohongshu.js,requires-body=true,timeout=60,tag=小红书图片视频水印,enable={xhs_enable}
+#评论区图片、live图水印，表情包下载
+http-response^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/(v5\/note\/comment\/list|v3\/note\/comment\/sub_comments)\?script-path=https://github.com/fmz200/wool_scripts/raw/main/Scripts/xiaohongshu/xiaohongshu.js,requires-body=true,timeout=60,tag=小红书评论区去水印存储,enable={xhs_enable}
+http-response^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v1\/interaction\/comment\/video\/download\?script-path=https://github.com/fmz200/wool_scripts/raw/main/Scripts/xiaohongshu/xiaohongshu.js,requires-body=true,timeout=60,tag=小红书评论区去水印下载,enable={xhs_enable}
+
+#YouTube
+#响应体
+http-response^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch)script-path=https://raw.githubusercontent.com/Maasea/sgmodule/refs/heads/master/Script/Youtube/youtube.response.js,requires-body=true,binary-body-mode=true,timeout=60,tag=YouTube响应体,enable={youtube_enable}
+
+#优酷
+#播放详情页,首页信息流,顶部tab,我的页面,评论区
+http-response^https?:\/\/acs\.youku\.com\/gw\/mtop\.youku\.columbus\.(gateway\.new\.execute|home\.feed|home\.query|uc\.query|ycp\.query)script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cnftp.js,requires-body=true,timeout=60,tag=优酷,enable={yzku_enable}
+#底部tab
+http-response^https?:\/\/acs\.youku\.com\/gw\/mtop\.youku\.haidai\.lantern\.appconfig\.getscript-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cnftp.js,requires-body=true,timeout=60,tag=优酷底部tab,enable={yzku_enable}
+#青少年模式弹窗
+http-response^https?:\/\/acs\.youku\.com\/gw\/mtop\.youku\.huluwa\.dispatcher\.youthmode\.config2script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cnftp.js,requires-body=true,timeout=60,tag=优酷青少年模式弹窗,enable={yzku_enable}
+#搜索列表
+http-response^https?:\/\/acs\.youku\.com\/gw\/mtop\.youku\.soku\.yksearchscript-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cnftp.js,requires-body=true,timeout=60,tag=优酷搜索列表,enable={yzku_enable}
+#热剧弹窗
+http-response^https?:\/\/push\.m\.youku\.com\/collect-api\/get_push_interval_config_wx\?script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cnftp.js,requires-body=true,timeout=60,tag=优酷热剧弹窗,enable={yzku_enable}
+#开屏广告
+http-response^https?:\/\/un-acs\.youku\.com\/gw\/mtop\.youku\.play\.ups\.appinfo\.getscript-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cnftp.js,requires-body=true,timeout=60,tag=优酷开屏广告,enable={yzku_enable}
+
+#知乎
+#首页-悬浮图标、顶部横幅、开屏广告、关注页推荐、推荐信息流、热榜信息流、热榜直播、回答底部卡片、精简顶部标签
+http-response^https:\/\/(?:api|page-info)\.zhihu\.com\/(?:answers|articles)\/v2\/\d+script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/zhihu/zhihu.js,requires-body=true,tag=知乎移除首页推广,enable={vihu_enable}
+http-response^https:\/\/api\.zhihu\.com\/commercial_api\/app_float_layerscript-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/zhihu/zhihu.js,requires-body=true,tag=知乎移除首页推广,enable={vihu_enable}
+http-response^https:\/\/api\.zhihu\.com\/feed\/render\/tab\/config\?script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/zhihu/zhihu.js,requires-body=true,tag=知乎移除首页推广,enable={vihu_enable}
+http-response^https:\/\/api\.zhihu\.com\/(?:moments_v3|topstory\/hot-lists\/total|topstory\/recommend)script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/zhihu/zhihu.js,requires-body=true,tag=知乎移除首页推广,enable={vihu_enable}
+http-response^https:\/\/api\.zhihu\.com\/root\/tabscript-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/zhihu/zhihu.js,requires-body=true,tag=知乎精简顶部标签,enable={vihu_enable}
+http-response^https:\/\/api\.zhihu\.com\/v2\/topstory\/hot-lists\/everyone-seeing\?script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/zhihu/zhihu.js,requires-body=true,tag=知乎移除首页推广,enable={vihu_enable}
+#会员页面-弹窗、悬浮动图
+http-response^https:\/\/api\.zhihu\.com\/bazaar\/vip_tab\/header\?script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/zhihu/zhihu.js,requires-body=true,tag=知乎移除会员页面推广,enable={vihu_enable}
+#回答详情页-评论区顶部、下一个回答
+http-response^https:\/\/api\.zhihu\.com\/next-(?:bff|data|render)script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/zhihu/zhihu.js,requires-body=true,tag=知乎移除回答详情页推广,enable={vihu_enable}
+http-response^https:\/\/api\.zhihu\.com\/questions\/\d+(?:\/answers|\/feeds|\?include=)script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/zhihu/zhihu.js,requires-body=true,tag=知乎移除回答详情页推广,enable={vihu_enable}
+http-response^https:\/\/www\.zhihu\.com\/api\/v4\/(?:articles|answers)\/\d+\/recommendations?\?script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/zhihu/zhihu.js,requires-body=true,tag=知乎移除回答详情页推广,enable={vihu_enable}
+#其他-服务器推送配置
+http-response^https:\/\/appcloud2\.zhihu\.com\/v3\/configscript-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/zhihu/zhihu.js,requires-body=true,tag=知乎拦截服务器推送配置,enable={vihu_enable}
+http-response^https:\/\/m-cloud\.zhihu\.com\/api\/cloud\/config\/all\?script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/zhihu/zhihu.js,requires-body=true,tag=知乎拦截服务器推送配置,enable={vihu_enable}
+
+#招商证券
+#hostname=marketing.cmschina.com
+#首页和理财页面横幅广告
+http-response^https:\/\/marketing\.cmschina\.com\/mkt\/api\/v1\?.*script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/cmschina/cmschina.js,requires-body=true,timeout=20,tag=招商证券去广告
+
+#掌上公交
+http-response^https?:\/\/wx\.mygolbs\.com\/WxBusServer\/ApiData\.doscript-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/zhangshanggongjiao.js,requires-body=true,timeout=60,tag=掌上公交小程序广告,enable={vhuhgsjn_enable}
+
+#转转
+#“我的”页面去除冗余的模块
+http-response^https?:\/\/app\.zhuanzhuan\.com\/zz\/transfer\/getmyprofilev3script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/zhuanzhuan/zhuanzhuan.js,requires-body=true,timeout=60,tag=转转,enable={vrvr_enable}
+
+#中国国际航空
+http-response^https:\/\/m\.airchina\.com\.cn\/airchina\/gateway\/v\d(\.\d)*\/api\/servicesscript-path=https://raw.githubusercontent.com/zirawell/R-Store/main/Res/Scripts/AntiAd/airchina.js,timeout=60,tag=中国国际航空,enable={vsgogojihhks_enable}
+
+#中国人保
+#主页面
+http-response^https?:\/\/zgrb\.epicc\.com\.cn\/G-HAPP\/a\/config\/homeInit\/vscript-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/picc/picc_ads.js,requires-body=true,timeout=60,tag=中国人保主页面,enable={vsgorfbc_enable}
+#我的页面
+http-response^https?:\/\/zgrb\.epicc\.com\.cn\/G-HAPP\/mpageconfig\/myPageConfigList\/vscript-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/picc/picc_ads.js,requires-body=true,timeout=60,tag=中国人保我的页面,enable={vsgorfbc_enable}
+
 
 
 
