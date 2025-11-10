@@ -4,7 +4,7 @@
 #!system=iOS,iPadOS
 #!system_version=
 #!loon_version=
-#!date=2025-11-10 11:30:00
+#!date=2025-11-10 11:35:00
 
 [Rule]
 
@@ -91,6 +91,7 @@ AND,((DOMAIN-KEYWORD,api),(DOMAIN-KEYWORD,-dual-event-),(DOMAIN-SUFFIX,pangle.io
 AND,((DOMAIN-KEYWORD,api),(DOMAIN-KEYWORD,pangolin),(DOMAIN-SUFFIX,sgsnssdk.com)),REJECT
 AND,((DOMAIN-KEYWORD,ads),(DOMAIN-KEYWORD,-normal-lq),(DOMAIN-SUFFIX,zijieapi.com)),REJECT
 URL-REGEX,^http:\/\/p\d+-be-pack-sign\.pglstatp-toutiao\.com\/(ad-app-package|web\.business\.image)\/,REJECT
+DOMAIN,tnc0-alisc1.zijieapi.com,REJECT
 DOMAIN,log.sgsnssdk.com,REJECT
 DOMAIN,mon.zijieapi.com,REJECT
 DOMAIN,bds.snssdk.com,REJECT
@@ -98,6 +99,7 @@ DOMAIN,dm.bytedance.com,REJECT
 DOMAIN,dm.pstatp.com,REJECT
 DOMAIN,dm.toutiao.com,REJECT
 DOMAIN,log.snssdk.com,REJECT
+DOMAIN,is.snssdk.com,REJECT
 DOMAIN,s3a.pstatp.com,REJECT
 DOMAIN,sdfp.snssdk.com,REJECT
 DOMAIN,tosv.boe.byted.org,REJECT
@@ -4860,5 +4862,6 @@ hostname=capi.lkcoffee.com,ecapi.lkcoffee.com,m.lkcoffee.com,img0*.luckincoffeec
 ^https?:\/\/img0[1-9]{1}\.luckincoffeecdn\.com\/group\d/M00/[A-Z0-9]{2}/[A-Z0-9]{2}/[a-zA-Z0-9]{29}\.(jpg|jpeg)_\.webpreject-200
 
 [Script]
+
 
 
