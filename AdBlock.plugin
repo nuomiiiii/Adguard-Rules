@@ -3,10 +3,9 @@
 #!tag=去广告,nuomi
 #!icon=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/AdGuard_01.png
 #!system=iOS,iPadOS
-#!category=自用测试
 #!system_version=
 #!loon_version=
-#!date=2025-11-10 13:40:00
+#!date=2025-11-10 13:50:00
 
 [Argument]
 51job_enable=switch,true,false,tag=51job-脚本开关
@@ -5249,7 +5248,6 @@ hostname= rr*.googlevideo.com, youtubei.googleapis.com
 ^https:\/\/rr[\w-]+\.googlevideo\.com\/initplayback\? reject-dict
 
 [Script]
-
 #前程无忧51Job
 http-response^https?:\/\/cupid\.51job(app)?\.com\/open\/noauth\/recommend\/job-tab-dynamicscript-path=https://raw.githubusercontent.com/zirawell/R-Store/main/Res/Scripts/AntiAd/51job.js,requires-body=true,timeout=60,tag=51job,enable={51job_enable}
 
@@ -5574,7 +5572,7 @@ http-response^https:\/\/appcloud2\.zhihu\.com\/v3\/configscript-pathhttps://raw.
 http-response^https:\/\/m-cloud\.zhihu\.com\/api\/cloud\/config\/all\?script-pathhttps://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts//zhihu/zhihu.js,requires-body=true,tag=知乎拦截服务器推送配置,enable={vihu_enable}
 
 #招商证券
-#hostname=marketing.cmschina.com
+hostname=marketing.cmschina.com
 #首页和理财页面横幅广告
 http-response^https:\/\/marketing\.cmschina\.com\/mkt\/api\/v1\?.*script-pathhttps://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts//cmschina/cmschina.js,requires-body=true,timeout=20,tag=招商证券去广告
 
@@ -5593,6 +5591,3 @@ http-response^https:\/\/m\.airchina\.com\.cn\/airchina\/gateway\/v\d(\.\d)*\/api
 http-response^https?:\/\/zgrb\.epicc\.com\.cn\/G-HAPP\/a\/config\/homeInit\/vscript-pathhttps://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts//picc/picc_ads.js,requires-body=true,timeout=60,tag=中国人保主页面,enable={vsgorfbc_enable}
 #我的页面
 http-response^https?:\/\/zgrb\.epicc\.com\.cn\/G-HAPP\/mpageconfig\/myPageConfigList\/vscript-pathhttps://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts//picc/picc_ads.js,requires-body=true,timeout=60,tag=中国人保我的页面,enable={vsgorfbc_enable}
-
-
-[MITM]
