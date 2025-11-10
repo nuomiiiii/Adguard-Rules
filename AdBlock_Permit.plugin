@@ -4,12 +4,7 @@
 #!system=iOS, iPadOS
 #!system_version = 
 #!loon_version = 
-#!date=2025-11-10 10:00:00
+#!date=2025-11-10 20:37:00
 [Rule]
 #20251107update↓
 DOMAIN,dns.weixin.qq.com.cn,DIRECT
-#DOMAIN,10086.cn,DIRECT
-AND,((DOMAIN-KEYWORD, tnc), (OR, ((DOMAIN-SUFFIX, capcutapi.com), (DOMAIN-SUFFIX, zijieapi.com), (DOMAIN-SUFFIX, isnssdk.com), (DOMAIN-SUFFIX, toutiaoapi.com), (DOMAIN-SUFFIX, bytedance.com), (DOMAIN-SUFFIX, snssdk.com), (DOMAIN-SUFFIX, sgsnssdk.com)))),DIRECT
-AND,((OR, ((DOMAIN-KEYWORD, api-access), (DOMAIN-KEYWORD, log-api))), (DOMAIN-KEYWORD, pangolin-sdk-toutiao)),REJECT
-AND,((DOMAIN-KEYWORD, -ad-), (DOMAIN-SUFFIX, byteimg.com)),REJECT
-AND,((DOMAIN-KEYWORD, ads), (DOMAIN-KEYWORD, normal), (DOMAIN-SUFFIX, zijieapi.com)),REJECT
