@@ -45,7 +45,7 @@ tcbc_enable=switch,true,false,tag=淘宝-脚本开关
 tgxyxbwf_enable=switch,true,false,tag=腾讯新闻-脚本开关
 #网易云音乐
 MY=switch,true,tag=网易云音乐-[隐藏底部]漫游标签
-DT=switch,false,tag=网易云音乐-[隐藏底部]笔记标签
+DT=switch,true,tag=网易云音乐-[隐藏底部]笔记标签
 FX=switch,true,tag=网易云音乐-[隐藏底部]发现标签
 PRGG=switch,true,tag=网易云音乐-[隐藏首页]问候语
 PRRK=switch,false,tag=网易云音乐-[隐藏首页]排行榜
@@ -53,7 +53,7 @@ PRDRD=switch,false,tag=网易云音乐-[隐藏首页]每日推荐
 PRSCVPT=switch,false,tag=网易云音乐-[隐藏首页]推荐歌单
 PRST=switch,false,tag=网易云音乐-[隐藏首页]最近常听
 PRRR=switch,true,tag=网易云音乐-[隐藏首页]雷达歌单
-HMPR=switch,false,tag=网易云音乐-[隐藏首页]音乐合伙人
+HMPR=switch,true,tag=网易云音乐-[隐藏首页]音乐合伙人
 PRMST=switch,true,tag=网易云音乐-[隐藏首页]推荐专属歌单
 PRCN=switch,true,tag=网易云音乐-[隐藏首页]你的专属歌单
 whyiyyybyt_enable=switch,true,false,tag=网易云音乐-脚本开关
@@ -5590,5 +5590,6 @@ http-response^https:\/\/m\.airchina\.com\.cn\/airchina\/gateway\/v\d(\.\d)*\/api
 http-response^https?:\/\/zgrb\.epicc\.com\.cn\/G-HAPP\/a\/config\/homeInit\/vscript-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/picc/picc_ads.js,requires-body=true,timeout=60,tag=中国人保主页面,enable={vsgorfbc_enable}
 #我的页面
 http-response^https?:\/\/zgrb\.epicc\.com\.cn\/G-HAPP\/mpageconfig\/myPageConfigList\/vscript-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/picc/picc_ads.js,requires-body=true,timeout=60,tag=中国人保我的页面,enable={vsgorfbc_enable}
+
 
 
