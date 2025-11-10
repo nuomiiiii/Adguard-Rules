@@ -4,7 +4,7 @@
 #!system=iOS,iPadOS
 #!system_version=
 #!loon_version=
-#!date=2025-11-10 12:05:00
+#!date=2025-11-10 12:06:00
 
 [Rule]
 
@@ -4856,6 +4856,10 @@ hostname=acs.m.goofish.com,g-acs.m.goofish.com
 #主页关注页面圈子常访问
 ^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.circle\.visited\/1\.0response-body-json-jq'.data.visitedCircleList=[]'
 
+#麦当劳
+hostname = api.mcd.cn
+^https?:\/\/api\.mcd\.cn\/bff\/portal\/home\/splash reject-200
+
 #瑞幸
 hostname=capi.lkcoffee.com,ecapi.lkcoffee.com,m.lkcoffee.com,img0*.luckincoffeecdn.com
 ^https?:\/\/capi\.lkcoffee\.com\/resource\/m\/sys\/app\/adposNewresponse-body-replace-regex\{.+\}{"status":"SUCCESS"}
@@ -4880,6 +4884,7 @@ hostname = m.ctrip.com
 ^https?:\/\/m\.ctrip\.com\/restapi\/soa2\/13916\/scjson\/tripAds reject-dict
 
 [Script]
+
 
 
 
