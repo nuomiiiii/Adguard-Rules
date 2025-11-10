@@ -4,7 +4,7 @@
 #!system=iOS,iPadOS
 #!system_version=
 #!loon_version=
-#!date=2025-11-10 11:00:00
+#!date=2025-11-10 11:01:00
 
 [Rule]
 
@@ -113,10 +113,12 @@ DOMAIN-KEYWORD,-ad.byteoversea.com,REJECT
 DOMAIN-KEYWORD,video-cn.snssdk.com,REJECT
 DOMAIN-KEYWORD,asiad.byteactivity,REJECT
 #字节跳动广告拦截测试↑
+DOMAIN-SUFFIX,adashx.ut.amap.com,REJECT
 DOMAIN-SUFFIX,resolver.msg.xiaomi.net,REJECT
 DOMAIN-SUFFIX,dualstack-logs.amap.com,REJECT
-DOMAIN-SUFFIX,log.aliyuncs.com
-DOMAIN-SUFFIX,uhabo.com^,REJECT
+DOMAIN-SUFFIX,log.aliyuncs.com,REJECT
+DOMAIN-SUFFIX,uhabo.com,REJECT
+DOMAIN-KEYWORD,qchannel,REJECT
 #20251110update↑
 
 #20251107update↓
@@ -5023,5 +5025,6 @@ hostname=acs.m.goofish.com,g-acs.m.goofish.com
 ^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.circle\.visited\/1\.0response-body-json-jq'.data.visitedCircleList=[]'
 
 [Script]
+
 
 
