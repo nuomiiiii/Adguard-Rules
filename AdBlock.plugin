@@ -4,7 +4,7 @@
 #!system=iOS,iPadOS
 #!system_version=
 #!loon_version=
-#!date=2025-11-10 10:10:00
+#!date=2025-11-10 11:00:00
 
 [Rule]
 
@@ -5023,4 +5023,5 @@ hostname=acs.m.goofish.com,g-acs.m.goofish.com
 ^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.circle\.visited\/1\.0response-body-json-jq'.data.visitedCircleList=[]'
 
 [Script]
+
 
