@@ -5,7 +5,7 @@
 #!system=iOS,iPadOS
 #!system_version=
 #!loon_version=
-#!date=2025-11-10 15:20:00
+#!date=2025-11-10 15:25:00
 
 [Argument]
 51job_enable=switch,true,false,tag=51job-脚本开关
@@ -134,8 +134,8 @@ DOMAIN,httpdns.immomo.com,REJECT
 
 #20251110update↓
 #字节跳动广告拦截测试↓
-#AND,((DOMAIN-KEYWORD,tnc0-alisc),(DOMAIN-SUFFIX,zijieapi.com)),REJECT
-AND,((DOMAIN-KEYWORD,tnc),(DOMAIN-KEYWORD,alisc),(DOMAIN-SUFFIX,zijieapi.com)),REJECT
+AND,((DOMAIN-KEYWORD,tnc0),(DOMAIN-KEYWORD,alisc),(DOMAIN-SUFFIX,zijieapi.com)),REJECT
+AND,((DOMAIN-KEYWORD,tnc0),(DOMAIN-KEYWORD,aliec),(DOMAIN-SUFFIX,zijieapi.com)),REJECT
 AND,((DOMAIN-KEYWORD,log),(DOMAIN-SUFFIX,zijieapi.com)),REJECT
 AND,((OR,((DOMAIN-KEYWORD,api-access),(DOMAIN-KEYWORD,log-api))),(DOMAIN-KEYWORD,pangolin-sdk-toutiao)),REJECT
 AND,((DOMAIN-KEYWORD,-ad-),(DOMAIN-SUFFIX,byteimg.com)),REJECT
@@ -157,6 +157,7 @@ AND,((DOMAIN-KEYWORD,api),(DOMAIN-KEYWORD,-log-),(DOMAIN-SUFFIX,pangle.io)),REJE
 AND,((DOMAIN-KEYWORD,api),(DOMAIN-KEYWORD,-dual-event-),(DOMAIN-SUFFIX,pangle.io)),REJECT
 AND,((DOMAIN-KEYWORD,api),(DOMAIN-KEYWORD,pangolin),(DOMAIN-SUFFIX,sgsnssdk.com)),REJECT
 AND,((DOMAIN-KEYWORD,ads),(DOMAIN-KEYWORD,-normal-lq),(DOMAIN-SUFFIX,zijieapi.com)),REJECT
+DOMAIN,tnc3-bjlgy.snssdk.com,REJECT
 DOMAIN,log.sgsnssdk.com,REJECT
 DOMAIN,mon.zijieapi.com,REJECT
 DOMAIN,bds.snssdk.com,REJECT
@@ -5607,3 +5608,4 @@ http-response ^https?:\/\/zgrb\.epicc\.com\.cn\/G-HAPP\/mpageconfig\/myPageConfi
 
 [MITM]
 hostname=*.pstatp.com,amemv.com,musical.com,snssdk.com,tiktokv.com,dsp.toutiao.com,api.m.jd.com,dns.jd.com,bdsp-x.jd.com,dsp-x.jd.com,ms.jr.jd.com,appconf.mail.163.com,support.you.163.com,jdread-api.jd.com,router-app-api.jdcloud.com,www.meituan.com,img.meituan.net,s3plus.meituan.net,flowplus.meituan.net,peisongapi.meituan.com,cdb.meituan.com,elemecdn.com,fuss10.elemecdn.com,cube.elemecdn.com,www1.elecfans.com,nr-op.elemecdn.com,res.kfc.com.cn,res.pizzahut.com.cn,acs.m.goofish.com,g-acs.m.goofish.com,api.mcd.cn,capi.lkcoffee.com,ecapi.lkcoffee.com,m.lkcoffee.com,img0*.luckincoffeecdn.com,m.ctrip.com,ma-adx.ctrip.com,mbd.baidu.com,mlife.jf365.boc.cn,client.app.coc.10086.cn,app.10086.cn,mcmm.caiyun.feixin.10086.cn,mrp.mcloud.139.com,ad.mcloud.139.com,middle.yun.139.com,m.client.10010.com,m1.ad.10010.com,res.mall.10010.cn,cloud.189.cn,zt-app.go189.cn,api.petkit.cn,p0.pipi.cn,adproxy.autohome.com.cn,app2.autoimg.cn,ccsp-egmas.sf-express.com,ucmp.sf-express.com,mcs-mimp-web.sf-express.com,mapi.sfbest.com,shopapi.io.mi.com,info.mina.xiaoaisound.com,marketing-aibox.v.mitvos.com,home.mi.com,ad.xiaotucc.com,mapi.xiaotucc.com,smarket.dian.so,file.dian.so,portal.zjzwfw.gov.cn,api.alipan.com,member.alipan.com,-i.vip.iqiyi.com,*.iqiyi.com,b2baifanfan.baidu.com,gw.aihuishou.com,list-app-m.i4.cn,www.baidu.com,fcvbjbcebos.baidu.com,cover.baidu.com,baichuan.baidu.com,api*.tuisong.baidu.com,afd.baidu.com,mobads.baidu.com,issuecdn.baidupcs.com,update.pan.baidu.com,sa*.tuisong.baidu.com,m.baidu.com,sofire.baidu.com,appwk.baidu.com,api.boohee.com,bohe.sfo-tx-shanghai-01.saas.sensorsdata.cn,lego.boohee.com,status.boohee.com,app-gw.csdn.net,gw.csdn.net,103.37.155.60,*.dianping.com,p.meituan.com,rms.meituan.com,www.dpfile.com,awp-assets.meituan.net,s3plus.meituan.net,p*.meituan.net,ddplus.meituan.net,acs.m.taobao.com,amdc.m.taobao.com,daoyu.sdo.com,rtbapi.douyucdn.cn,staticlive.douyucdn.cn,capi.douyucdn.cn,douyucdn.cn,app.ceair.com,gw.alicdn.com,img.alicdn.com,acs.m.taobao.com,gw.alicdn.com,app.variflight.com,gab.122.gov.cn,appapi.51job*.com,cupid.51job*.com,ipv4.music.163.com,interface.music.163.com,interface3.music.163.com,interface9.music.163.com,osg-static.sgcc.com.cn,osg-service.sgcc.com.cn,dss0.bdstatic.com,tb1.bdstatic.com,tb2.bdstatic.com,ss0.bdstatic.com,gss0.bdstatic.com,newclient.map.baidu.com,rr*.googlevideo.com,youtubei.googleapis.com,cdn.wup.huya.com,business.msstatic.com,cdnfile1.msstatic.com,live-ads.huya.com,yunbusiness.ccb.com,g.alicdn.com,waimai-guide.ele.me
+
