@@ -4,7 +4,7 @@
 #!system=iOS,iPadOS
 #!system_version=
 #!loon_version=
-#!date=2025-11-10 13:12:00
+#!date=2025-11-10 13:20:00
 
 [Argument]
 51job_enable=switch,true,false,tag=51job-脚本开关
@@ -5590,4 +5590,5 @@ http-response^https:\/\/m\.airchina\.com\.cn\/airchina\/gateway\/v\d(\.\d)*\/api
 http-response^https?:\/\/zgrb\.epicc\.com\.cn\/G-HAPP\/a\/config\/homeInit\/vscript-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/picc/picc_ads.js,requires-body=true,timeout=60,tag=中国人保主页面,enable={vsgorfbc_enable}
 #我的页面
 http-response^https?:\/\/zgrb\.epicc\.com\.cn\/G-HAPP\/mpageconfig\/myPageConfigList\/vscript-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/picc/picc_ads.js,requires-body=true,timeout=60,tag=中国人保我的页面,enable={vsgorfbc_enable}
+
 
