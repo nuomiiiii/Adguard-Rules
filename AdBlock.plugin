@@ -4,7 +4,7 @@
 #!system=iOS,iPadOS
 #!system_version=
 #!loon_version=
-#!date=2025-11-10 11:55:00
+#!date=2025-11-10 11:59:00
 
 [Rule]
 
@@ -69,7 +69,8 @@ DOMAIN,httpdns.immomo.com,REJECT
 
 #20251110update↓
 #字节跳动广告拦截测试↓
-AND,((DOMAIN-KEYWORD,tnc0-alisc),(DOMAIN-SUFFIX,zijieapi.com)),REJECT
+#AND,((DOMAIN-KEYWORD,tnc0-alisc),(DOMAIN-SUFFIX,zijieapi.com)),REJECT
+AND,((DOMAIN-KEYWORD,tnc),(DOMAIN-KEYWORD,alisc),(DOMAIN-SUFFIX,zijieapi.com)),REJECT
 AND,((DOMAIN-KEYWORD,log),(DOMAIN-SUFFIX,zijieapi.com)),REJECT
 AND,((OR,((DOMAIN-KEYWORD,api-access),(DOMAIN-KEYWORD,log-api))),(DOMAIN-KEYWORD,pangolin-sdk-toutiao)),REJECT
 AND,((DOMAIN-KEYWORD,-ad-),(DOMAIN-SUFFIX,byteimg.com)),REJECT
@@ -121,12 +122,13 @@ DOMAIN,h-adashx.ut.taobao.com,REJECT
 DOMAIN,resolver.msg.xiaomi.net,REJECT
 DOMAIN,dualstack-logs.amap.com,REJECT
 DOMAIN-SUFFIX,log.aliyuncs.com,REJECT
-DOMAIN-SUFFIX,,uhabo.com,REJECT
+DOMAIN-SUFFIX,uhabo.com,REJECT
 DOMAIN-KEYWORD,qchannel*.com,REJECT
 DOMAIN-KEYWORD,nbsdk-baichuan.taobao.com,REJECT
 DOMAIN-KEYWORD,h-adashx.ut.ele.me,REJECT
 AND,((DOMAIN-KEYWORD,log),(DOMAIN-SUFFIX,cmpassport.com)),REJECT
 DOMAIN-KEYWORD,apd-pcdnwxlogin.teg.tencent-cloud.net,REJECT
+DOMAIN-SUFFIX,telecome.cn,REJECT
 #20251110update↑
 
 #20251107update↓
@@ -4876,6 +4878,7 @@ hostname = m.ctrip.com
 ^https?:\/\/m\.ctrip\.com\/restapi\/soa2\/13916\/scjson\/tripAds reject-dict
 
 [Script]
+
 
 
 
