@@ -4,7 +4,7 @@
 #!system=iOS,iPadOS
 #!system_version=
 #!loon_version=
-#!date=2025-11-10 13:16:00
+#!date=2025-11-10 13:12:00
 
 [Argument]
 51job_enable=switch,true,false,tag=51job-脚本开关
@@ -15,7 +15,6 @@ bdduditu_enable=switch,true,false,tag=百度地图-脚本开关
 bddutpba_enable=switch,true,false,tag=百度贴吧-脚本开关
 lawson_enable=switch,true,false,tag=罗森点点-脚本开关
 bohejmkh_enable=switch,true,false,tag=薄荷健康-脚本开关
-cdyytmqi_enable=switch,false,true,tag=彩云天气-脚本开关
 cdnngogo_enable=switch,true,false,tag=菜鸟裹裹-脚本开关
 davsdmpk_enable=switch,true,false,tag=大众点评-脚本开关
 didiiuxk_enable=switch,true,false,tag=滴滴出行-脚本开关
@@ -5591,3 +5590,4 @@ http-response^https:\/\/m\.airchina\.com\.cn\/airchina\/gateway\/v\d(\.\d)*\/api
 http-response^https?:\/\/zgrb\.epicc\.com\.cn\/G-HAPP\/a\/config\/homeInit\/vscript-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/picc/picc_ads.js,requires-body=true,timeout=60,tag=中国人保主页面,enable={vsgorfbc_enable}
 #我的页面
 http-response^https?:\/\/zgrb\.epicc\.com\.cn\/G-HAPP\/mpageconfig\/myPageConfigList\/vscript-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/picc/picc_ads.js,requires-body=true,timeout=60,tag=中国人保我的页面,enable={vsgorfbc_enable}
+
