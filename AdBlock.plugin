@@ -6,7 +6,7 @@
 #!system=iOS,iPadOS
 #!system_version=
 #!loon_version=
-#!date=2025-11-13 17:50:00
+#!date=2025-11-14 16:00:00
 
 [Argument]
 51job_enable=switch,true,false,tag=51job-脚本开关
@@ -161,7 +161,7 @@ AND,((DOMAIN-KEYWORD,v),(DOMAIN-KEYWORD,-be-pack.pglstatp-toutiao.com)),REJECT
 AND,((DOMAIN-KEYWORD,sf),(DOMAIN-KEYWORD,-be-pack.pglstatp-toutiao.com)),REJECT
 AND,((DOMAIN-KEYWORD,s),(DOMAIN-KEYWORD,-fe-scm.pglstatp-toutiao.com)),REJECT
 AND,((DOMAIN-KEYWORD,sf),(DOMAIN-KEYWORD,-ttcdn-tos.pstatp.com)),REJECT
-AND,((DOMAIN-KEYWORD,sf),(DOMAIN-KEYWORD,-static.i18n-pglstatp.com)),REJECT
+#AND,((DOMAIN-KEYWORD,sf),(DOMAIN-KEYWORD,-static.i18n-pglstatp.com)),REJECT //test
 AND,((DOMAIN-KEYWORD,if),(DOMAIN-KEYWORD,-analytics.bytescm.com)),REJECT
 AND,((DOMAIN-KEYWORD,lf),(DOMAIN-KEYWORD,-analytics.bytescm.com)),REJECT
 AND,((DOMAIN-KEYWORD,lf),(DOMAIN-KEYWORD,-analytics.bytescm.com)),REJECT
@@ -4914,10 +4914,6 @@ DOMAIN,t.ag.b9ad.com,REJECT
 ^https?:\/\/cube\.elemecdn\.com\/\w\/\w{2}\/\w+mp4\.mp4\? reject
 ^https?:\/\/www1\.elecfans\.com\/www\/delivery\/ reject
 ^https?:\/\/(nr-op|cube)\.elemecdn\.com\/.+\.jpeg\?x-oss-process=image\/resize,m_fill,w_\d{4,},h_\d{4,}\/($|format,webp\/$) reject
-^https?:\/\/waimai-guide\.ele\.me\/\w+\/mtop\.alsc\.eleme\.\w+\.trigger\.respond reject-dict
-^https?:\/\/waimai-guide\.ele\.me\/\w+\/mtop\.alsc\.wamai\.store\.detail\.miniapp\.popup reject
-^https?:\/\/waimai-guide\.ele\.me\/\w+\/mtop\.venus\.shopcouponpopupservice\.getshopcouponspopup reject
-^https?:\/\/waimai-guide\.ele\.me\/\w+\/mtop\.venus\.shopresourceservice\.getshopresource response-body-replace-regex posterList fmz200
 
 #肯德基
 #hostname=res.kfc.com.cn
@@ -4961,6 +4957,7 @@ DOMAIN,t.ag.b9ad.com,REJECT
 ^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.circle\.myself\.banner\/1\.0 response-body-json-jq '.data.bannerList = []'
 #主页关注页面圈子常访问
 ^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.circle\.visited\/1\.0 response-body-json-jq '.data.visitedCircleList = []'
+
 #麦当劳
 #hostname=api.mcd.cn,img.mcd.cn
 ^https?:\/\/api\.mcd\.cn\/bff\/portal\/home\/splash reject-200
@@ -4994,7 +4991,7 @@ DOMAIN,t.ag.b9ad.com,REJECT
 
 #中国移动
 #hostname=client.app.coc.10086.cn,app.10086.cn,img.app.coc.10086.cn,res.app.coc.10086.cn
-#^https?:\/\/client\.app\.coc\.10086\.cn\/biz-orange\/DN\/init\/startInit reject-200 #20251110 影响APP功能
+^https?:\/\/client\.app\.coc\.10086\.cn\/biz-orange\/DN\/init\/startInit reject-200
 ^https?:\/\/client\.app\.coc\.10086\.cn\/biz-orange\/DN\/explorePage\/getAdverList reject
 #开屏，20251111影响内部图片显示，本质是该路径下图片被误拒绝
 ^https:\/\/res\.app\.coc\.10086\.cn\/qwhdcdn_cmcc-cs_cn\/prd-mgcenter\/[^/]*\.jpg(?:\?.*)?$ reject
@@ -5107,25 +5104,6 @@ hostnam =ad.xiaotucc.com, mapi.xiaotucc.com
 #爱思助手
 #hostname=list-app-m.i4.cn
 ^https?:\/\/list-app-m\.i4\.cn\/(adclickcb|getHotSearchList|getopfstadinfo)\.xhtml reject
-
-#百度
-#hostname = www.baidu.com, fcvbjbcebos.baidu.com, cover.baidu.com, baichuan.baidu.com, api*.tuisong.baidu.com, afd.baidu.com, mobads.baidu.com, issuecdn.baidupcs.com, update.pan.baidu.com, sa*.tuisong.baidu.com, m.baidu.com, sofire.baidu.com,appwk.baidu.com
-#^https?:\/\/fcvbjbcebos\.baidu\.com\/.+.mp4 reject
-#^https?:\/\/fcvbjbcebos\.baidu\.com\/.+?\.mp4 reject-img
-#^https?:\/\/cover\.baidu\.com\/cover\/page\/dspSwitchAds\/ reject
-#^https?:\/\/baichuan\.baidu\.com\/rs\/adpmobile\/launch reject
-#^https?:\/\/api\d\.tuisong\.baidu\.com reject-img
-#^https?:\/\/afd\.baidu\.com\/afd\/entry reject
-#^https?:\/\/als\.baidu\.com\/clog\/clog reject
-#^https?:\/\/mobads\.baidu\.com\/cpro\/ui\/mads.+ reject
-#^https?:\/\/issuecdn\.baidupcs\.com\/issue\/netdisk\/guanggao\/ reject-200
-#^https?:\/\/[\s\S]*\.baidu\.com/.*?ad[xs]\.php reject-img
-#^https?:\/\/t\d{2}\.baidu\.com reject-img
-#^https?:\/\/log.+?baidu\.com reject
-#^https?:\/\/sa\d\.tuisong\.baidu\.com reject-img
-#^https?:\/\/www.baidu.com\/?action=static&ms=1&version=css_page_2@0.*? reject
-#百度文库
-#^https?:\/\/appwk\.baidu\.com\/xpage\/interface\/wknaad reject-200
 
 #薄荷健康
 #hostname=api.boohee.com, bohe.sfo-tx-shanghai-01.saas.sensorsdata.cn, lego.boohee.com, status.boohee.com
@@ -5274,6 +5252,29 @@ https?:\/\/(ipv4|interface\d?)\.music\.163.com\/e?api\/ad reject-dict
 #我的页面悬浮广告
 ^https?:\/\/yunbusiness\.ccb\.com\/basic_service\/txCtrl\? response-body-replace-regex "TAG_AD_INFO" "fmz200"
 ^https?:\/\/yunbusiness\.ccb\.com\/basic_service\/txCtrl\?txcode=A3341AB05 mock-response-body data-type=json data-path="https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/ccbLife/A3341AB05.json" status-code=200
+#内置饿了么
+^https?:\/\/waimai-guide\.ele\.me\/\w+\/mtop\.alsc\.eleme\.\w+\.trigger\.respond reject-dict
+^https?:\/\/waimai-guide\.ele\.me\/\w+\/mtop\.alsc\.wamai\.store\.detail\.miniapp\.popup reject
+^https?:\/\/waimai-guide\.ele\.me\/\w+\/mtop\.venus\.shopcouponpopupservice\.getshopcouponspopup reject
+^https?:\/\/waimai-guide\.ele\.me\/\w+\/mtop\.venus\.shopresourceservice\.getshopresource response-body-replace-regex posterList fmz200
+
+#番茄小说
+#hostname=*.pangolin-sdk-toutiao.com, *.pangolin-sdk-toutiao.*, *.pstatp.com, *.pstatp.com.*, *.pglstatp-toutiao.com.*, *.pglstatp-toutiao.com, gurd.snssdk.com, gurd.snssdk.com.*, i-lq.snssdk.com, i-lq.snssdk.com.*, *default.ixigua.com
+#去章末广告
+^https?:\/\/.+\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/(get_ads|stats|settings)\/ reject
+^https?:\/\/.+\.pglstatp-toutiao\.com\/.+\/toutiao\.mp4 reject
+^https?:\/\/.+\.(pglstatp-toutiao|pstatp)\.com\/(obj|img)\/(ad-app-package|ad)\/.+ reject
+^https?:\/\/.+\.(pglstatp-toutiao|pstatp)\.com\/(obj|img)\/web\.business\.image\/.+ reject
+^https?:\/\/.+\.(pglstatp-toutiao|pstatp)\.com\/obj\/ad-pattern\/renderer reject
+^https?:\/\/gurd\.snssdk\.com\/src\/server\/v3\/package reject
+^https?:\/\/.+\.byteimg.com/tos-cn-i-1yzifmftcy\/(.+)-jpeg\.jpeg reject
+^https?:\/\/.+\.pstatp\.com\/obj\/mosaic-legacy\/.+\?from\=ad reject
+^https?:\/\/.+\.pstatp\.com\/bytecom\/resource\/track_log\/src\/.+ reject
+^https?:\/\/.+\.snssdk\.com\/video\/play\/1\/toutiao\/.+\/mp4 reject
+^https?:\/\/.+\.snssdk.com\/api\/ad\/.+ reject
+^https?:\/\/.+\.byteimg\.com\/ad-app-package reject
+^https?:\/\/.+\.byteimg\.com\/web\.business\.image reject
+
 
 [Script]
 #前程无忧51Job
@@ -5621,4 +5622,4 @@ http-response ^https?:\/\/zgrb\.epicc\.com\.cn\/G-HAPP\/a\/config\/homeInit\/v s
 http-response ^https?:\/\/zgrb\.epicc\.com\.cn\/G-HAPP\/mpageconfig\/myPageConfigList\/v script-path=https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts//picc/picc_ads.js,requires-body=true,timeout=60,tag=中国人保我的页面,enable={vsgorfbc_enable}
 
 [MITM]
-hostname=*.pstatp.com,amemv.com,musical.com,snssdk.com,tiktokv.com,dsp.toutiao.com,api.m.jd.com,dns.jd.com,bdsp-x.jd.com,dsp-x.jd.com,ms.jr.jd.com,appconf.mail.163.com,support.you.163.com,jdread-api.jd.com,router-app-api.jdcloud.com,www.meituan.com,img.meituan.net,s3plus.meituan.net,flowplus.meituan.net,peisongapi.meituan.com,cdb.meituan.com,elemecdn.com,fuss10.elemecdn.com,cube.elemecdn.com,www1.elecfans.com,nr-op.elemecdn.com,res.kfc.com.cn,res.pizzahut.com.cn,acs.m.goofish.com,g-acs.m.goofish.com,api.mcd.cn,capi.lkcoffee.com,ecapi.lkcoffee.com,m.lkcoffee.com,img0*.luckincoffeecdn.com,m.ctrip.com,ma-adx.ctrip.com,mbd.baidu.com,mlife.jf365.boc.cn,client.app.coc.10086.cn,app.10086.cn,mcmm.caiyun.feixin.10086.cn,mrp.mcloud.139.com,ad.mcloud.139.com,middle.yun.139.com,m.client.10010.com,m1.ad.10010.com,res.mall.10010.cn,cloud.189.cn,zt-app.go189.cn,api.petkit.cn,p0.pipi.cn,adproxy.autohome.com.cn,app2.autoimg.cn,ccsp-egmas.sf-express.com,ucmp.sf-express.com,mcs-mimp-web.sf-express.com,mapi.sfbest.com,shopapi.io.mi.com,info.mina.xiaoaisound.com,marketing-aibox.v.mitvos.com,home.mi.com,ad.xiaotucc.com,mapi.xiaotucc.com,smarket.dian.so,file.dian.so,portal.zjzwfw.gov.cn,api.alipan.com,member.alipan.com,-i.vip.iqiyi.com,*.iqiyi.com,b2baifanfan.baidu.com,gw.aihuishou.com,list-app-m.i4.cn,www.baidu.com,fcvbjbcebos.baidu.com,cover.baidu.com,baichuan.baidu.com,api*.tuisong.baidu.com,afd.baidu.com,mobads.baidu.com,issuecdn.baidupcs.com,update.pan.baidu.com,sa*.tuisong.baidu.com,m.baidu.com,sofire.baidu.com,appwk.baidu.com,api.boohee.com,bohe.sfo-tx-shanghai-01.saas.sensorsdata.cn,lego.boohee.com,status.boohee.com,app-gw.csdn.net,gw.csdn.net,103.37.155.60,*.dianping.com,p.meituan.com,rms.meituan.com,www.dpfile.com,awp-assets.meituan.net,s3plus.meituan.net,p*.meituan.net,ddplus.meituan.net,acs.m.taobao.com,amdc.m.taobao.com,daoyu.sdo.com,rtbapi.douyucdn.cn,staticlive.douyucdn.cn,capi.douyucdn.cn,douyucdn.cn,app.ceair.com,gw.alicdn.com,img.alicdn.com,acs.m.taobao.com,gw.alicdn.com,app.variflight.com,gab.122.gov.cn,appapi.51job*.com,cupid.51job*.com,ipv4.music.163.com,interface.music.163.com,interface3.music.163.com,interface9.music.163.com,osg-static.sgcc.com.cn,osg-service.sgcc.com.cn,dss0.bdstatic.com,tb1.bdstatic.com,tb2.bdstatic.com,ss0.bdstatic.com,gss0.bdstatic.com,newclient.map.baidu.com,rr*.googlevideo.com,youtubei.googleapis.com,cdn.wup.huya.com,business.msstatic.com,cdnfile1.msstatic.com,live-ads.huya.com,yunbusiness.ccb.com,g.alicdn.com,waimai-guide.ele.me,img.mcd.cn,img.app.coc.10086.cn,res.app.coc.10086.cn
+hostname=*.pstatp.com,amemv.com,musical.com,snssdk.com,tiktokv.com,dsp.toutiao.com,api.m.jd.com,dns.jd.com,bdsp-x.jd.com,dsp-x.jd.com,ms.jr.jd.com,appconf.mail.163.com,support.you.163.com,jdread-api.jd.com,router-app-api.jdcloud.com,www.meituan.com,img.meituan.net,s3plus.meituan.net,flowplus.meituan.net,peisongapi.meituan.com,cdb.meituan.com,elemecdn.com,fuss10.elemecdn.com,cube.elemecdn.com,www1.elecfans.com,nr-op.elemecdn.com,res.kfc.com.cn,res.pizzahut.com.cn,acs.m.goofish.com,g-acs.m.goofish.com,api.mcd.cn,capi.lkcoffee.com,ecapi.lkcoffee.com,m.lkcoffee.com,img0*.luckincoffeecdn.com,m.ctrip.com,ma-adx.ctrip.com,mbd.baidu.com,mlife.jf365.boc.cn,client.app.coc.10086.cn,app.10086.cn,mcmm.caiyun.feixin.10086.cn,mrp.mcloud.139.com,ad.mcloud.139.com,middle.yun.139.com,m.client.10010.com,m1.ad.10010.com,res.mall.10010.cn,cloud.189.cn,zt-app.go189.cn,api.petkit.cn,p0.pipi.cn,adproxy.autohome.com.cn,app2.autoimg.cn,ccsp-egmas.sf-express.com,ucmp.sf-express.com,mcs-mimp-web.sf-express.com,mapi.sfbest.com,shopapi.io.mi.com,info.mina.xiaoaisound.com,marketing-aibox.v.mitvos.com,home.mi.com,ad.xiaotucc.com,mapi.xiaotucc.com,smarket.dian.so,file.dian.so,portal.zjzwfw.gov.cn,api.alipan.com,member.alipan.com,-i.vip.iqiyi.com,*.iqiyi.com,b2baifanfan.baidu.com,gw.aihuishou.com,list-app-m.i4.cn,api.boohee.com,bohe.sfo-tx-shanghai-01.saas.sensorsdata.cn,lego.boohee.com,status.boohee.com,app-gw.csdn.net,gw.csdn.net,103.37.155.60,*.dianping.com,p.meituan.com,rms.meituan.com,www.dpfile.com,awp-assets.meituan.net,s3plus.meituan.net,p*.meituan.net,ddplus.meituan.net,acs.m.taobao.com,amdc.m.taobao.com,daoyu.sdo.com,rtbapi.douyucdn.cn,staticlive.douyucdn.cn,capi.douyucdn.cn,douyucdn.cn,app.ceair.com,gw.alicdn.com,img.alicdn.com,acs.m.taobao.com,gw.alicdn.com,app.variflight.com,gab.122.gov.cn,appapi.51job*.com,cupid.51job*.com,ipv4.music.163.com,interface.music.163.com,interface3.music.163.com,interface9.music.163.com,osg-static.sgcc.com.cn,osg-service.sgcc.com.cn,dss0.bdstatic.com,tb1.bdstatic.com,tb2.bdstatic.com,ss0.bdstatic.com,gss0.bdstatic.com,newclient.map.baidu.com,rr*.googlevideo.com,youtubei.googleapis.com,cdn.wup.huya.com,business.msstatic.com,cdnfile1.msstatic.com,live-ads.huya.com,yunbusiness.ccb.com,g.alicdn.com,waimai-guide.ele.me,img.mcd.cn,img.app.coc.10086.cn,res.app.coc.10086.cn,*.pangolin-sdk-toutiao.com,*.pangolin-sdk-toutiao.*,*.pstatp.com,*.pstatp.com.*,*.pglstatp-toutiao.com.*,*.pglstatp-toutiao.com,gurd.snssdk.com,gurd.snssdk.com.*,i-lq.snssdk.com,i-lq.snssdk.com.*,*default.ixigua.com
