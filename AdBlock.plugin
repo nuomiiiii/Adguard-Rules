@@ -6,7 +6,7 @@
 #!system=iOS,iPadOS
 #!system_version=
 #!loon_version=
-#!date=2025-11-14 16:00:00
+#!date=2025-11-17 09:00:00
 
 [Argument]
 51job_enable=switch,true,false,tag=51job-脚本开关
@@ -220,8 +220,6 @@ DOMAIN,optimus-ads.amap.com,REJECT
 DOMAIN,gaode-acs.m.taobao.com,REJECT
 DOMAIN,dataflow.biliapi.com,REJECT
 DOMAIN,data.bilibili.com,REJECT
-#DOMAIN,edith.xiaohongshu.com,REJECT #2025110 测试
-#DOMAIN,rec.xiaohongshu.com,REJECT #2025110 测试
 DOMAIN,apm-native.xiaohongshu.com,REJECT
 DOMAIN,s.xiaohongshu.com,REJECT
 DOMAIN,crash.xiaohongshu.com,REJECT
@@ -1183,7 +1181,6 @@ DOMAIN,mdt.qq.com,REJECT
 DOMAIN,mig.str.mdt.qq.com,REJECT
 DOMAIN,mini2015.qq.com,REJECT
 DOMAIN,minisite2012.qq.com,REJECT
-#DOMAIN,minorshort.weixin.qq.com,REJECT #20251111 影响微信部分小程序
 DOMAIN,misc.wcd.qq.com,REJECT
 DOMAIN,mobwin.app.qq.com,REJECT
 DOMAIN,monitor.music.qq.com,REJECT
@@ -1921,8 +1918,6 @@ DOMAIN,webcast5-open-lf.douyin.com,REJECT
 DOMAIN,p3-webcast.douyinpic.com,REJECT
 DOMAIN,p6-webcast.douyinpic.com,REJECT
 DOMAIN,p9-webcast.douyinpic.com,REJECT
-#DOMAIN,pull-flv-l11.douyincdn.com,REJECT#20251107解除屏蔽，影响抖音直播
-#DOMAIN,free-lbv3.idouyinvod.com,REJECT#20251107解除屏蔽，影响部分正常内容
 DOMAIN,api3-normal.fqnovel.com,REJECT
 DOMAIN,api3-normal-hl.fqnovel.com,REJECT
 DOMAIN,api3-normal-lf.fqnovel.com,REJECT
@@ -5623,3 +5618,4 @@ http-response ^https?:\/\/zgrb\.epicc\.com\.cn\/G-HAPP\/mpageconfig\/myPageConfi
 
 [MITM]
 hostname=*.pstatp.com,amemv.com,musical.com,snssdk.com,tiktokv.com,dsp.toutiao.com,api.m.jd.com,dns.jd.com,bdsp-x.jd.com,dsp-x.jd.com,ms.jr.jd.com,appconf.mail.163.com,support.you.163.com,jdread-api.jd.com,router-app-api.jdcloud.com,www.meituan.com,img.meituan.net,s3plus.meituan.net,flowplus.meituan.net,peisongapi.meituan.com,cdb.meituan.com,elemecdn.com,fuss10.elemecdn.com,cube.elemecdn.com,www1.elecfans.com,nr-op.elemecdn.com,res.kfc.com.cn,res.pizzahut.com.cn,acs.m.goofish.com,g-acs.m.goofish.com,api.mcd.cn,capi.lkcoffee.com,ecapi.lkcoffee.com,m.lkcoffee.com,img0*.luckincoffeecdn.com,m.ctrip.com,ma-adx.ctrip.com,mbd.baidu.com,mlife.jf365.boc.cn,client.app.coc.10086.cn,app.10086.cn,mcmm.caiyun.feixin.10086.cn,mrp.mcloud.139.com,ad.mcloud.139.com,middle.yun.139.com,m.client.10010.com,m1.ad.10010.com,res.mall.10010.cn,cloud.189.cn,zt-app.go189.cn,api.petkit.cn,p0.pipi.cn,adproxy.autohome.com.cn,app2.autoimg.cn,ccsp-egmas.sf-express.com,ucmp.sf-express.com,mcs-mimp-web.sf-express.com,mapi.sfbest.com,shopapi.io.mi.com,info.mina.xiaoaisound.com,marketing-aibox.v.mitvos.com,home.mi.com,ad.xiaotucc.com,mapi.xiaotucc.com,smarket.dian.so,file.dian.so,portal.zjzwfw.gov.cn,api.alipan.com,member.alipan.com,-i.vip.iqiyi.com,*.iqiyi.com,b2baifanfan.baidu.com,gw.aihuishou.com,list-app-m.i4.cn,api.boohee.com,bohe.sfo-tx-shanghai-01.saas.sensorsdata.cn,lego.boohee.com,status.boohee.com,app-gw.csdn.net,gw.csdn.net,103.37.155.60,*.dianping.com,p.meituan.com,rms.meituan.com,www.dpfile.com,awp-assets.meituan.net,s3plus.meituan.net,p*.meituan.net,ddplus.meituan.net,acs.m.taobao.com,amdc.m.taobao.com,daoyu.sdo.com,rtbapi.douyucdn.cn,staticlive.douyucdn.cn,capi.douyucdn.cn,douyucdn.cn,app.ceair.com,gw.alicdn.com,img.alicdn.com,acs.m.taobao.com,gw.alicdn.com,app.variflight.com,gab.122.gov.cn,appapi.51job*.com,cupid.51job*.com,ipv4.music.163.com,interface.music.163.com,interface3.music.163.com,interface9.music.163.com,osg-static.sgcc.com.cn,osg-service.sgcc.com.cn,dss0.bdstatic.com,tb1.bdstatic.com,tb2.bdstatic.com,ss0.bdstatic.com,gss0.bdstatic.com,newclient.map.baidu.com,rr*.googlevideo.com,youtubei.googleapis.com,cdn.wup.huya.com,business.msstatic.com,cdnfile1.msstatic.com,live-ads.huya.com,yunbusiness.ccb.com,g.alicdn.com,waimai-guide.ele.me,img.mcd.cn,img.app.coc.10086.cn,res.app.coc.10086.cn,*.pangolin-sdk-toutiao.com,*.pangolin-sdk-toutiao.*,*.pstatp.com,*.pstatp.com.*,*.pglstatp-toutiao.com.*,*.pglstatp-toutiao.com,gurd.snssdk.com,gurd.snssdk.com.*,i-lq.snssdk.com,i-lq.snssdk.com.*,*default.ixigua.com
+
